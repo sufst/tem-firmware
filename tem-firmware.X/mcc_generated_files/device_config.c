@@ -47,11 +47,11 @@
 // Configuration bits: selected in the GUI
 
 // CONFIG1
-#pragma config FEXTOSC = OFF    // External Oscillator Selection->Oscillator not enabled
-#pragma config RSTOSC = HFINTOSC_1MHZ    // Reset Oscillator Selection->HFINTOSC with HFFRQ = 4 MHz and CDIV = 4:1
+#pragma config FEXTOSC = ECH    // External Oscillator Selection->EC (external clock) above 8 MHz
+#pragma config RSTOSC = EXTOSC    // Reset Oscillator Selection->EXTOSC operating per FEXTOSC bits (device manufacturing default)
 
 // CONFIG2
-#pragma config CLKOUTEN = OFF    // Clock out Enable bit->CLKOUT function is disabled
+#pragma config CLKOUTEN = ON    // Clock out Enable bit->CLKOUT function is enabled
 #pragma config PR1WAY = ON    // PRLOCKED One-Way Set Enable bit->PRLOCKED bit can be cleared and set only once
 #pragma config CSWEN = ON    // Clock Switch Enable bit->Writing to NOSC and NDIV is allowed
 #pragma config JTAGEN = OFF    // JTAG Enable bit->Disable JTAG Boundary Scan mode, JTAG pins revert to user functions
