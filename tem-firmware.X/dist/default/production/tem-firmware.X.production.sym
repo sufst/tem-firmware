@@ -516,12 +516,9 @@ __Htext19 0 0 ABS 0
 __Ltext19 0 0 ABS 0
 __ptext28 3FF0 0 CODE 0
 _C1TXQCONU 152 0 ABS 0
-__Htext29 0 0 ABS 0
 _C1CONHbits 101 0 ABS 0
-__Ltext29 0 0 ABS 0
 __ptext19 3AC4 0 CODE 0
 ___intlo_sp 0 0 STACK 2
-__ptext29 0 0 CODE 0
 _C1INTHbits 11D 0 ABS 0
 _ADSTATbits 3F7 0 ABS 0
 _C1CONTbits 103 0 ABS 0
@@ -591,7 +588,7 @@ bssBANK5 560 576 BANK5 560 1
 text21 370E 3FF1 CODE 370E 0
 %locals
 dist/default/production\tem-firmware.X.production.o
-C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
+C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
 17329 3D8A 0 CODE 0
 17331 3D8A 0 CODE 0
 17334 3D8A 0 CODE 0
@@ -889,7 +886,7 @@ mcc_generated_files/can1.c
 456 38C8 0 CODE 0
 458 38E2 0 CODE 0
 460 3934 0 CODE 0
-C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\memcpy.c
+C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
 4 3D3A 0 CODE 0
 11 3D3A 0 CODE 0
 12 3D42 0 CODE 0

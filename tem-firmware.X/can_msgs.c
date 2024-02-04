@@ -1,7 +1,7 @@
 /* 
  * File: 
  * Author: Alexander Mills (am9g22@soton.ac.uk)
- * CAN message structure bassed of what is documented in https://github.com/sufst/tem-firmware/blob/main/Orion-BMS-TEM-reference/thermistor_module_canbus.pdf
+ * CAN message structure based of what is documented in https://github.com/sufst/tem-firmware/blob/main/Orion-BMS-TEM-reference/thermistor_module_canbus.pdf
  * Revision history: 
  */
 #include "config.h"

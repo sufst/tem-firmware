@@ -1,15 +1,15 @@
-Microchip MPLAB XC8 Compiler V2.45
+Microchip MPLAB XC8 Compiler V2.46
 
 Linker command line:
 
 -W-3 \
-  --edf=C:\Program Files\Microchip\xc8\v2.45\pic\dat\20230818022343_en.msgs \
+  --edf=C:\Program Files\Microchip\xc8\v2.46\pic\dat\20240104201356_en.msgs \
   -pivt0x8=08h -cn -h+dist/default/production\tem-firmware.X.production.sym \
   --cmf=dist/default/production\tem-firmware.X.production.cmf -z -Q18F47Q84 \
-  -oC:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_3.o \
+  -oC:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
   -Mdist/default/production/tem-firmware.X.production.map \
-  --md=C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_0.dat -E1 \
+  --md=C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_0.dat -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ACODE=00h-01FFFFh -ACONST=00h-01FFFFh \
   -ASMALLCONST=03700h-037FFhx457 \
   -AMEDIUMCONST=03700h-0FFFFh,013700h-01FFFFh -ACOMRAM=0501h-055Fh \
@@ -41,7 +41,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o \
+  C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o \
   dist/default/production\tem-firmware.X.production.o 
 
 Object code version is 3.11
@@ -51,7 +51,7 @@ Machine type is 18F47Q84
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
                 config                           300000   300000       1F        0       4
                 init                                 1A       1A        4        4       0
                 reset_vec                             0        0        4        0       0
@@ -677,7 +677,6 @@ __Htext25                                                 text25       000000
 __Htext26                                                 text26       000000
 __Htext27                                                 text27       000000
 __Htext28                                                 text28       000000
-__Htext29                                                 text29       000000
 __Htext3                                                  text3        000000
 __Htext4                                                  text4        000000
 __Htext5                                                  text5        000000
@@ -812,7 +811,6 @@ __Ltext25                                                 text25       000000
 __Ltext26                                                 text26       000000
 __Ltext27                                                 text27       000000
 __Ltext28                                                 text28       000000
-__Ltext29                                                 text29       000000
 __Ltext3                                                  text3        000000
 __Ltext4                                                  text4        000000
 __Ltext5                                                  text5        000000
@@ -904,7 +902,6 @@ __ptext25                                                 text25       003FE0
 __ptext26                                                 text26       003E0C
 __ptext27                                                 text27       003E6A
 __ptext28                                                 text28       003FF0
-__ptext29                                                 text29       000000
 __ptext3                                                  text3        003C68
 __ptext4                                                  text4        003F50
 __ptext5                                                  text5        003FEA
@@ -968,11 +965,6 @@ mcc_generated_files/can1.c
 
 mcc_generated_files/can1.c estimated size: 1490
 
-C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\memcpy.c
-		_memcpy        		CODE           	3D3A	0000	80
-
-C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\memcpy.c estimated size: 80
-
 mcc_generated_files/interrupt_manager.c
 		_INTERRUPT_Initialize		CODE           	3FEA	0000	4
 		_INTERRUPT_InterruptManager		CODE           	3E0C	0000	50
@@ -1005,6 +997,11 @@ mcc_generated_files/mcc.c
 		_SYSTEM_Initialize		CODE           	3F36	0000	26
 
 mcc_generated_files/mcc.c estimated size: 90
+
+C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+		_memcpy        		CODE           	3D3A	0000	80
+
+C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c estimated size: 80
 
 main.c
 		_main          		CODE           	3B54	0000	140

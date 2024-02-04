@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+$C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
 init CODE 0 1A 1A 4 1 2
 reset_vec CODE 0 0 0 4 1 2
 config CONFIG 4 300000 300000 1F 1 1
@@ -175,14 +175,14 @@ $dist/default/production\tem-firmware.X.production.o
 3A04 text23 CODE >485:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
 3A08 text23 CODE >488:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
 3A0A text23 CODE >489:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3D3A text22 CODE >4:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\memcpy.c
-3D3A text22 CODE >11:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\memcpy.c
-3D42 text22 CODE >12:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\memcpy.c
-3D4A text22 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\memcpy.c
-3D4E text22 CODE >14:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\memcpy.c
-3D5E text22 CODE >15:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\memcpy.c
-3D6E text22 CODE >13:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\memcpy.c
-3D88 text22 CODE >18:C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\memcpy.c
+3D3A text22 CODE >4:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+3D3A text22 CODE >11:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+3D42 text22 CODE >12:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+3D4A text22 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+3D4E text22 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+3D5E text22 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+3D6E text22 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+3D88 text22 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
 370E text21 CODE >421:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
 370E text21 CODE >423:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
 3726 text21 CODE >425:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
@@ -423,41 +423,41 @@ $dist/default/production\tem-firmware.X.production.o
 3B9E text0 CODE >74:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
 3BAC text0 CODE >76:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
 3BC2 text0 CODE >81:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
-3D8A cinit CODE >17329:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3D8A cinit CODE >17331:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3D8A cinit CODE >17334:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3D8A cinit CODE >17368:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3D8C cinit CODE >17369:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3D8E cinit CODE >17370:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3D90 cinit CODE >17371:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3D92 cinit CODE >17372:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3D94 cinit CODE >17373:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3D96 cinit CODE >17374:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3D98 cinit CODE >17375:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3D9C cinit CODE >17376:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3D9E cinit CODE >17377:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DA2 cinit CODE >17381:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DA6 cinit CODE >17382:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DA8 cinit CODE >17383:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DA8 cinit CODE >17384:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DAA cinit CODE >17385:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DAC cinit CODE >17386:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DAE cinit CODE >17389:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DB2 cinit CODE >17390:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DB4 cinit CODE >17391:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DB4 cinit CODE >17392:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DB6 cinit CODE >17393:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DB8 cinit CODE >17394:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DBA cinit CODE >17402:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DBC cinit CODE >17403:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DBE cinit CODE >17404:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DC0 cinit CODE >17405:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DC2 cinit CODE >17406:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DC4 cinit CODE >17407:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DC6 cinit CODE >17408:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DC8 cinit CODE >17414:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DC8 cinit CODE >17416:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
-3DCA cinit CODE >17417:C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_1.s
+3D8A cinit CODE >17329:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3D8A cinit CODE >17331:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3D8A cinit CODE >17334:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3D8A cinit CODE >17368:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3D8C cinit CODE >17369:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3D8E cinit CODE >17370:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3D90 cinit CODE >17371:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3D92 cinit CODE >17372:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3D94 cinit CODE >17373:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3D96 cinit CODE >17374:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3D98 cinit CODE >17375:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3D9C cinit CODE >17376:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3D9E cinit CODE >17377:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DA2 cinit CODE >17381:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DA6 cinit CODE >17382:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DA8 cinit CODE >17383:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DA8 cinit CODE >17384:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DAA cinit CODE >17385:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DAC cinit CODE >17386:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DAE cinit CODE >17389:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DB2 cinit CODE >17390:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DB4 cinit CODE >17391:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DB4 cinit CODE >17392:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DB6 cinit CODE >17393:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DB8 cinit CODE >17394:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DBA cinit CODE >17402:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DBC cinit CODE >17403:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DBE cinit CODE >17404:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DC0 cinit CODE >17405:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DC2 cinit CODE >17406:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DC4 cinit CODE >17407:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DC6 cinit CODE >17408:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DC8 cinit CODE >17414:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DC8 cinit CODE >17416:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
+3DCA cinit CODE >17417:C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -486,7 +486,7 @@ __end_of_ADC_SetActiveClockTuningInterruptHandler 3FD2 0 CODE 0 text16 dist/defa
 __end_of_ValidateTransmission 3A0C 0 CODE 0 text23 dist/default/production\tem-firmware.X.production.o
 _C1FIFOSTA1Lbits 160 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\tem-firmware.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\tem-firmware.X.production.o
 __end_of_INTERRUPT_Initialize 3FEE 0 CODE 0 text5 dist/default/production\tem-firmware.X.production.o
 _PMD_Initialize 3EC0 0 CODE 0 text2 dist/default/production\tem-firmware.X.production.o
@@ -512,12 +512,12 @@ _WPUB 409 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _WPUC 411 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _WPUD 419 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _WPUE 421 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+___sp 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
 _main 3B54 0 CODE 0 text0 dist/default/production\tem-firmware.X.production.o
-___stack_hi 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
-___stack_lo 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+___stack_hi 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
 _CAN1_Initialize 3CE6 0 CODE 0 text6 dist/default/production\tem-firmware.X.production.o
-start 1A 0 CODE 0 init C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+start 1A 0 CODE 0 init C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
 _isTxChannel$661 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\tem-firmware.X.production.o
 _C1CONHbits 101 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
@@ -530,11 +530,11 @@ _ADC_ConversionComplete_ISR 54A 0 COMRAM 1 nvCOMRAM dist/default/production\tem-
 __LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\tem-firmware.X.production.o
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\tem-firmware.X.production.o
 _ADC_SetContext1ThresholdInterruptHandler 3FB6 0 CODE 0 text15 dist/default/production\tem-firmware.X.production.o
-__accesstop 560 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
-intlevel0 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
-intlevel1 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
-intlevel2 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
-intlevel3 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+__accesstop 560 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
+intlevel0 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\tem-firmware.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\tem-firmware.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\tem-firmware.X.production.o
@@ -575,8 +575,8 @@ _C1FIFOCON1H 15D 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1FIFOCON1L 15C 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1FIFOCON1T 15F 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1FIFOCON1U 15E 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
 _C1CONH 101 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1CONL 100 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1CONU 102 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
@@ -626,7 +626,7 @@ isTxChannel@channel 504 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firm
 _C1INTHbits 11D 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1INTTbits 11F 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1INTUbits 11E 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+isa$xinst 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
 __end_of_CAN1_RXI_ISR 3E96 0 CODE 0 text27 dist/default/production\tem-firmware.X.production.o
 _ADC_DefaultADI_ISR 0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1FIFOBA 14C 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
@@ -702,7 +702,7 @@ __Hbank54 0 0 ABS 0 bank54 dist/default/production\tem-firmware.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\tem-firmware.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\tem-firmware.X.production.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\tem-firmware.X.production.o
-__smallconst 3700 0 SMALLCONST 0 smallconst C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+__smallconst 3700 0 SMALLCONST 0 smallconst C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
 __end_of_ADC_SetADIInterruptHandler 3FE0 0 CODE 0 text17 dist/default/production\tem-firmware.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\tem-firmware.X.production.o
 __Hconfig 30001F 0 CONFIG 4 config dist/default/production\tem-firmware.X.production.o
@@ -816,7 +816,6 @@ __Htext25 0 0 ABS 0 text25 dist/default/production\tem-firmware.X.production.o
 __Htext26 0 0 ABS 0 text26 dist/default/production\tem-firmware.X.production.o
 __Htext27 0 0 ABS 0 text27 dist/default/production\tem-firmware.X.production.o
 __Htext28 0 0 ABS 0 text28 dist/default/production\tem-firmware.X.production.o
-__Htext29 0 0 ABS 0 text29 dist/default/production\tem-firmware.X.production.o
 __end_of_CAN1_OperationModeGet 3FEA 0 CODE 0 text25 dist/default/production\tem-firmware.X.production.o
 __end_of_CAN1_OperationModeSet 3C68 0 CODE 0 text12 dist/default/production\tem-firmware.X.production.o
 _CAN1_Transmit 3AC4 0 CODE 0 text19 dist/default/production\tem-firmware.X.production.o
@@ -846,7 +845,6 @@ __ptext25 3FE0 0 CODE 0 text25 dist/default/production\tem-firmware.X.production
 __ptext26 3E0C 0 CODE 0 text26 dist/default/production\tem-firmware.X.production.o
 __ptext27 3E6A 0 CODE 0 text27 dist/default/production\tem-firmware.X.production.o
 __ptext28 3FF0 0 CODE 0 text28 dist/default/production\tem-firmware.X.production.o
-__ptext29 0 0 CODE 0 text29 dist/default/production\tem-firmware.X.production.o
 _CAN1_TX_FIFO_Configuration 3F80 0 CODE 0 text7 dist/default/production\tem-firmware.X.production.o
 __end_of_PIN_MANAGER_Initialize 3CE6 0 CODE 0 text3 dist/default/production\tem-firmware.X.production.o
 __Lbank10 0 0 ABS 0 bank10 dist/default/production\tem-firmware.X.production.o
@@ -904,13 +902,13 @@ _CAN1_OperationModeGet 3FE0 0 CODE 0 text25 dist/default/production\tem-firmware
 _CAN1_OperationModeSet 3BE0 0 CODE 0 text12 dist/default/production\tem-firmware.X.production.o
 _GetTxFifoStatus 3F68 0 CODE 0 text24 dist/default/production\tem-firmware.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\tem-firmware.X.production.o
-___inthi_stack_hi 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
-___inthi_stack_lo 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\tem-firmware.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+isa$std 1 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
 _DefaultFIFO1FullHandler 3FF0 0 CODE 0 text28 dist/default/production\tem-firmware.X.production.o
-stackhi 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
-stacklo 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+stackhi 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
 CAN1_OperationModeSet@opMode 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 _OSCCON1 AD 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _OSCCON3 AF 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
@@ -978,9 +976,8 @@ __Ltext25 0 0 ABS 0 text25 dist/default/production\tem-firmware.X.production.o
 __Ltext26 0 0 ABS 0 text26 dist/default/production\tem-firmware.X.production.o
 __Ltext27 0 0 ABS 0 text27 dist/default/production\tem-firmware.X.production.o
 __Ltext28 0 0 ABS 0 text28 dist/default/production\tem-firmware.X.production.o
-__Ltext29 0 0 ABS 0 text29 dist/default/production\tem-firmware.X.production.o
 _ADC_DefaultContext1Threshold_ISR 0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-__ramtop 3700 0 RAM 0 ramtop C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+__ramtop 3700 0 RAM 0 ramtop C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
 __end_of_CAN1_RX_FIFO_FilterMaskConfiguration 3F36 0 CODE 0 text9 dist/default/production\tem-firmware.X.production.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\tem-firmware.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\tem-firmware.X.production.o
@@ -997,11 +994,11 @@ _SLRCONB 40B 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _SLRCONC 413 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _SLRCOND 41B 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _SLRCONE 423 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
-___heap_lo 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+___heap_hi 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
 ___param_bank 0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-___intlo_stack_hi 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
-___intlo_stack_lo 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAs1n0.\driver_tmp_9.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAspcs.\driver_tmp_9.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\tem-firmware.X.production.o
 __end_of__initialization 3DC8 0 CODE 0 cinit dist/default/production\tem-firmware.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\tem-firmware.X.production.o
