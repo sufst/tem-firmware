@@ -74,18 +74,16 @@ void main(void)
 			// transmit data
 		    if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(CAN1_TX_TXQ)))
 		    {
-				// broadcase msg
+				// broadcast msg
 				msg = get_TM2BMS_Broadcast_msg(temps);
 				CAN1_Transmit(CAN1_TX_TXQ, &msg);
 				while(CAN1_TransmitFIFOStatusGet(CAN1_TX_TXQ) == CAN_TX_FIFO_FULL);
 
-				// broadcase msg
-				msg = get_TM2BMS_Broadcast_msg(temps);
+				// general broadcast msg
+				msg = get_TM_General_Broadcast_msg(temps);
 				CAN1_Transmit(CAN1_TX_TXQ, &msg);
 				while (CAN1_TransmitFIFOStatusGet(CAN1_TX_TXQ) == CAN_TX_FIFO_FULL);
 		    }
-
-
 			break;
 		default:
 			break;
