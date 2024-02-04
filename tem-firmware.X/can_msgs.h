@@ -53,7 +53,7 @@ int8_t get_checksum(int8_t* data, uint8_t len);
  * Automatically generates the checksum for this message, which mysteriously 
  * needs 0x41 added to the checksum
  */
-CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t* temps_array);
+CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[]);
 
 
 /* generates CAN message object for Thermistor General Broadcast messages
@@ -65,7 +65,7 @@ CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t* temps_array);
  * lowest-temp and highest_temp - 8 bit signed , units are 1'C
  * highest and lowest therm_id - zero based indexes of enabled thermistors on this module
  */ 
-CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t* temps_array);
+CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[]);
 
 
 #ifdef	__cplusplus

@@ -15,7 +15,7 @@ uint8_t get_checksum(uint8_t* data, uint8_t len) {
 }
 
 
-CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t* temps_array) {
+CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[]) {
     CAN_MSG_OBJ msg;
     
     //calculate data
@@ -62,7 +62,7 @@ CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t* temps_array) {
 }
 
 
-CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t* temps_array) {
+CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[]) {
     static uint8_t broadcast_therm_i;
     
     CAN_MSG_OBJ msg;

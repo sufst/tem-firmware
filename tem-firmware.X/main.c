@@ -50,7 +50,7 @@ void main(void)
 
     CAN_MSG_OBJ msg;
     
-    // Initialize the device
+    // initialise the device
     SYSTEM_Initialize();
 
     // Enable the Global Interrupts
@@ -59,26 +59,38 @@ void main(void)
     while (1)
     {   
         //read temps
-        
+		for (uint8_t therm_i = 0; therm_i < THERM_COUNT; therm_i++)
+		{
+			/* code */
+		}
+
         // set up can interface
-        if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
-        { 
-            CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE);
-        }
+		switch (CAN1_OperationModeGet())
+		{
+		case CAN_CONFIGURATION_MODE:
+			CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE);
+			break;
+		case CAN_NORMAL_2_0_MODE:
+			// transmit data
+		    if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(CAN1_TX_TXQ)))
+		    {
+				// broadcase msg
+				msg = get_TM2BMS_Broadcast_msg(temps);
+				CAN1_Transmit(CAN1_TX_TXQ, &msg);
+				while(CAN1_TransmitFIFOStatusGet(CAN1_TX_TXQ) == CAN_TX_FIFO_FULL);
 
-        if(CAN_NORMAL_2_0_MODE == CAN1_OperationModeGet())
-        {
+				// broadcase msg
+				msg = get_TM2BMS_Broadcast_msg(temps);
+				CAN1_Transmit(CAN1_TX_TXQ, &msg);
+				while (CAN1_TransmitFIFOStatusGet(CAN1_TX_TXQ) == CAN_TX_FIFO_FULL);
+		    }
 
-            if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(CAN1_TX_TXQ)))
-            {
-                CAN1_Transmit(CAN1_TX_TXQ, &msg);
 
-                while(CAN1_TransmitFIFOStatusGet(CAN1_TX_TXQ) == CAN_TX_FIFO_FULL);
-
-            }
-        }
-        
-        __delay_ms(100);   
+			break;
+		default:
+			break;
+		}
+		__delay_ms(LOOP_PERIOD);
     }
 }
 /**
