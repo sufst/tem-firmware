@@ -38,9 +38,9 @@
 
 #define LOOP_PERIOD 100 //ms
 
-#define THERM_COUNT 23
 #define MIN_THERM_ID 0
 #define MAX_THERM_ID 23
+#define THERM_COUNT MAX_THERM_ID - MIN_THERM_ID + 1
 
 
 #ifdef	__cplusplus

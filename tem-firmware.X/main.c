@@ -43,6 +43,13 @@
 
 #include "config.h"
 
+uint8_t adc_to_temp(adc_result_t reading) 
+{
+	// TODO : thermistor curve here
+	return (uint8_t)(reading>>8);
+}
+
+
 int8_t temps[THERM_COUNT];
 
 void main(void)
@@ -52,6 +59,7 @@ void main(void)
     
     // initialise the device
     SYSTEM_Initialize();
+	ADC_SelectContext(CONTEXT_1);
 
     // Enable the Global Interrupts
     INTERRUPT_GlobalInterruptEnable();
@@ -59,9 +67,12 @@ void main(void)
     while (1)
     {   
         //read temps
-		for (uint8_t therm_i = 0; therm_i < THERM_COUNT; therm_i++)
+		for (uint8_t therm_i = MIN_THERM_ID; therm_i < MAX_THERM_ID; therm_i++)
 		{
-			/* code */
+			ADC_StartConversion((ADC_channel_t)therm_i);
+			while(!ADC_IsConversionDone());
+			adc_result_t reading = ADC_GetConversionResult();
+			temps[therm_i-MIN_THERM_ID] = adc_to_temp(reading);
 		}
 
         // set up can interface
