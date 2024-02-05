@@ -90,11 +90,12 @@ CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[]) {
     }
     
     uint16_t absolute_therm_id = 80 * MODULE_ID + broadcast_therm_i;
-    uint8_t broadcast_therm_temp = temps_array[broadcast_therm_i];
+    int8_t broadcast_therm_temp = temps_array[broadcast_therm_i];
     
-    uint8_t data_array[8] = {absolute_therm_id, broadcast_therm_temp, 
+    uint8_t data_array[8] = {absolute_therm_id>>8, absolute_therm_id & 0xff,
+                            (uint8_t)broadcast_therm_temp, 
                             THERM_COUNT, 
-                            min_temp, max_temp, 
+                            (uint8_t)min_temp, (uint8_t)max_temp, 
                             max_temp_i, min_temp_i};
     
     // assemble packet

@@ -42,8 +42,9 @@
 */
 
 #include "config.h"
+#include "can_msgs.h"
 
-uint8_t adc_to_temp(adc_result_t reading) 
+int8_t adc_to_temp(adc_result_t reading) 
 {
 	// TODO : thermistor curve here
 	return (uint8_t)(reading>>8);

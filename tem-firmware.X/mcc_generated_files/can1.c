@@ -95,8 +95,20 @@ static void CAN1_TX_FIFO_Configuration(void)
     // TXAT 3; TXPRI 1; 
     C1TXQCONU = 0x60;
     
-    // PLSIZE 8; FSIZE 1; 
-    C1TXQCONT = 0x00;
+    // PLSIZE 8; FSIZE 2; 
+    C1TXQCONT = 0x01;
+    
+    // TXEN enabled; RTREN disabled; RXTSEN disabled; TXATIE disabled; RXOVIE disabled; TFERFFIE disabled; TFHRFHIE disabled; TFNRFNIE disabled; 
+    C1FIFOCON1L = 0x80;
+    
+    // FRESET enabled; TXREQ disabled; UINC disabled; 
+    C1FIFOCON1H = 0x04;
+    
+    // TXAT Unlimited number of retransmission attempts; TXPRI 1; 
+    C1FIFOCON1U = 0x60;
+    
+    // PLSIZE 8; FSIZE 6; 
+    C1FIFOCON1T = 0x05;
     
 }
 
@@ -336,7 +348,4 @@ void CAN1_Sleep(void)
 
 
 
-void CAN1_RXI_ISR(void)
-{
-}
 

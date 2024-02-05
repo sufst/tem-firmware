@@ -57,15 +57,14 @@
 
 // Transmit FIFO's Custom Name
 #define CAN1_TX_TXQ TXQ
+#define CAN1_TX_FIFO1 FIFO1
 
 typedef enum 
 {
-    TXQ = 0
+    TXQ = 0,
+    FIFO1 = 1
 } CAN1_TX_FIFO_CHANNELS;
 
-typedef enum
-{
-} CAN1_RX_FIFO_CHANNELS;
 
 /**
   Section: CAN Module APIs
@@ -769,7 +768,50 @@ CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoCh
 */
 void CAN1_SetTXQnullHandler(void (*handler)(void));
 
+/**
+  @Summary
+    Sets the Disable TX FIFO Interrupt interrupt handler.
 
-void CAN1_RXI_ISR(void);
+  @Description
+    This routine sets the Disable TX FIFO Interrupt interrupt handler for FIFO1.
+
+  @Param
+    Address of the callback routine.
+
+  @Returns
+    None
+ 
+  @Example
+    <code>
+    volatile CAN_MSG_OBJ gMsg;
+    
+    void CustomFIFO1Handler(void)
+    {
+        CAN1_Transmit(CAN1_TX_FIFO1, &gMsg);
+    }
+
+    void main(void)
+    {
+        uint8_t data[8] = {0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48};
+        gMsg.msgId = 0x1FFFF;
+        gMsg.field.formatType = CAN_FD_FORMAT;
+        gMsg.field.brs = CAN_NON_BRS_MODE;
+        gMsg.field.frameType = CAN_FRAME_DATA;
+        gMsg.field.idType = CAN_FRAME_EXT;
+        gMsg.field.dlc = DLC_8;
+        gMsg.data = data;
+        
+        SYSTEM_Initialize();
+        CAN1_SetFIFO1nullHandler(&CustomFIFO1Handler);
+        
+        INTERRUPT_GlobalInterruptEnable();
+
+        while(1);
+    }
+    </code>
+*/
+void CAN1_SetFIFO1nullHandler(void (*handler)(void));
+
+
 
 #endif  //CAN1_H
