@@ -62,9 +62,6 @@ void main(void)
     SYSTEM_Initialize();
 	ADC_SelectContext(CONTEXT_1);
 
-    // Enable the Global Interrupts
-    INTERRUPT_GlobalInterruptEnable();
-
     while (1)
     {   
         //read temps

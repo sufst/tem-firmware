@@ -6,6 +6,8 @@
  */
 #include "config.h"
 
+static uint8_t msg_data[8];
+
 uint8_t get_checksum(uint8_t* data, uint8_t len) {
     uint8_t sum = 0;
     for(uint8_t i=0; i<len; i++) {
@@ -42,21 +44,25 @@ CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[]) {
     
     int8_t avg_temp = total_temp / THERM_COUNT;
     
-    uint8_t data_array[8] = {MODULE_ID, (uint8_t)min_temp, (uint8_t)max_temp, 
-                            (uint8_t)avg_temp, THERM_COUNT, 
-                             max_temp_i, min_temp_i, 0};
+    msg_data[0] = MODULE_ID;
+    msg_data[1] = (uint8_t)min_temp;
+    msg_data[2] = (uint8_t)max_temp;
+    msg_data[3] = (uint8_t)avg_temp;
+    msg_data[4] = THERM_COUNT; 
+    msg_data[5] = max_temp_i;
+    msg_data[6] = min_temp_i;
     
     // checksum has magic offset
-    data_array[7] = get_checksum((uint8_t*)data_array, 7) + 0x41;
+    msg_data[7] = get_checksum((uint8_t*)msg_data, 7) + 0x41;
     
     // assemble packet
-    msg.msgId = 0x1838F380 | MODULE_ID;
+    msg.msgId = 0x1839F380 | MODULE_ID;
     msg.field.formatType = CAN_2_0_FORMAT;
     msg.field.brs = CAN_NON_BRS_MODE;
     msg.field.dlc = DLC_8;
     msg.field.frameType = CAN_FRAME_DATA;
     msg.field.idType = CAN_FRAME_EXT;
-    msg.data = data_array;
+    msg.data = msg_data;
     
     return msg;
 }
@@ -89,14 +95,17 @@ CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[]) {
         total_temp += this_temp;
     }
     
-    uint16_t absolute_therm_id = 80 * MODULE_ID + broadcast_therm_i;
+    uint16_t absolute_therm_id = (80 * MODULE_ID) + broadcast_therm_i;
     int8_t broadcast_therm_temp = temps_array[broadcast_therm_i];
     
-    uint8_t data_array[8] = {absolute_therm_id>>8, absolute_therm_id & 0xff,
-                            (uint8_t)broadcast_therm_temp, 
-                            THERM_COUNT, 
-                            (uint8_t)min_temp, (uint8_t)max_temp, 
-                            max_temp_i, min_temp_i};
+    msg_data[0] = absolute_therm_id>>8;
+    msg_data[1] = absolute_therm_id & 0xff;
+    msg_data[2] = (uint8_t)broadcast_therm_temp;
+    msg_data[3] = THERM_COUNT;
+    msg_data[4] = (uint8_t)min_temp;
+    msg_data[5] = (uint8_t)max_temp; 
+    msg_data[6] = max_temp_i;
+    msg_data[7] = min_temp_i;
     
     // assemble packet
     msg.msgId = 0x1838F380 | MODULE_ID;
@@ -105,11 +114,11 @@ CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[]) {
     msg.field.dlc = DLC_8;
     msg.field.frameType = CAN_FRAME_DATA;
     msg.field.idType = CAN_FRAME_EXT;
-    msg.data = data_array;
+    msg.data = msg_data;
     
     
     // increment broadcast_therm_i
-    if(++broadcast_therm_i > THERM_COUNT) {
+    if(++broadcast_therm_i >= THERM_COUNT) {
         broadcast_therm_i = 0;
     }
     
