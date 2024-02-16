@@ -46,6 +46,8 @@
 
 int8_t adc_to_temp(adc_result_t reading) 
 {
+    // R=10k @25'c B = 3380
+    
 	// TODO : thermistor curve here
 	return (uint8_t)(reading>>8);
 }
