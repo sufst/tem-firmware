@@ -8,4 +8,5 @@ mcc_generated_files/interrupt_manager.h  \
 mcc_generated_files/adc.h  \
 mcc_generated_files/can1.h  \
 mcc_generated_files/can_types.h  \
-can_msgs.h 
+can_msgs.h  \
+therm_LUT.h 

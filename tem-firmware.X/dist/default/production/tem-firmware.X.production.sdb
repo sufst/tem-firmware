@@ -110,11 +110,11 @@ channel_DAC1 61
 channel_FVR_Buffer1 62
 channel_FVR_Buffer2 63
 ]
-"63 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
+"64 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
 [e E23270 . `uc
 CONTEXT_1 0
 ]
-"70
+"71
 [e E23239 . `uc
 channel_ANA0 0
 channel_ANA1 1
@@ -146,7 +146,7 @@ channel_DAC1 61
 channel_FVR_Buffer1 62
 channel_FVR_Buffer2 63
 ]
-"80
+"81
 [e E23400 . `uc
 CAN_NORMAL_FD_MODE 0
 CAN_DISABLE_MODE 1
@@ -162,7 +162,7 @@ CAN_OP_MODE_REQUEST_SUCCESS 0
 CAN_OP_MODE_REQUEST_FAIL 1
 CAN_OP_MODE_SYS_ERROR_OCCURED 2
 ]
-"84
+"85
 [e E23415 . `uc
 CAN_TX_FIFO_FULL 0
 CAN_TX_FIFO_AVAILABLE 1
@@ -171,7 +171,7 @@ CAN_TX_FIFO_AVAILABLE 1
 TXQ 0
 FIFO1 1
 ]
-"88
+"89
 [e E23394 . `uc
 CAN_TX_MSG_REQUEST_SUCCESS 0
 CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR 1
@@ -273,9 +273,9 @@ CAN_FRAME_EXT 1
 [u S354 . 1 `uc 1 msgfields 1 0 `S348 1 . 1 0 ]
 [s S357 . 7 `ul 1 msgId 4 0 `S354 1 field 1 4 `*.39uc 1 data 2 5 ]
 [v _get_TM_General_Broadcast_msg get_TM_General_Broadcast_msg `(S357  1 e 7 0 ]
-"47 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
+"48 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
 [v _adc_to_temp adc_to_temp `(c  1 e 1 0 ]
-"56
+"57
 [v _main main `(v  1 e 1 0 ]
 "65 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
@@ -365,6 +365,8 @@ CAN_FRAME_EXT 1
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 "55 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"10 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X/therm_LUT.h
+[v _therm_lut therm_lut `[256]c  1 e 256 0 ]
 "1338 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q84.h
 [v _PMD0 PMD0 `VEuc  1 e 1 @96 ]
 "1404
@@ -945,7 +947,7 @@ CAN_FRAME_EXT 1
 [v _INLVLE INLVLE `VEuc  1 e 1 @1060 ]
 "9 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
 [v _msg_data msg_data `[8]uc  1 s 8 msg_data ]
-"54 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
+"55 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
 [v _temps temps `[24]c  1 e 24 0 ]
 "56 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
 [v _ADC_ConversionComplete_ISR ADC_ConversionComplete_ISR `*.38(v  1 s 3 ADC_ConversionComplete_ISR ]
@@ -967,12 +969,12 @@ CAN_FRAME_EXT 1
 [v _CAN1_SystemErrorHandler CAN1_SystemErrorHandler `*.38(v  1 s 3 CAN1_SystemErrorHandler ]
 "90
 [v _CAN1_TxAttemptHandler CAN1_TxAttemptHandler `*.38(v  1 s 3 CAN1_TxAttemptHandler ]
-"56 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
+"57 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"72
+"73
 [v main@reading reading `us  1 a 2 35 ]
-"68
+"69
 [v main@therm_i therm_i `uc  1 a 1 37 ]
 [s S348 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
@@ -980,11 +982,11 @@ CAN_FRAME_EXT 1
 `uc 1 formatType 1 0 :1:6 
 `uc 1 brs 1 0 :1:7 
 ]
-"59
+"60
 [u S354 . 1 `uc 1 msgfields 1 0 `S348 1 . 1 0 ]
 [s S357 . 7 `ul 1 msgId 4 0 `S354 1 field 1 4 `*.39uc 1 data 2 5 ]
 [v main@msg msg `S357  1 a 7 38 ]
-"102
+"103
 } 0
 "79 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can_types.h
 "66
@@ -1087,11 +1089,11 @@ CAN_FRAME_EXT 1
 [v ___awdiv@divisor divisor `i  1 p 2 4 ]
 "41
 } 0
-"47 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
+"48 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
 [v _adc_to_temp adc_to_temp `(c  1 e 1 0 ]
 {
 [v adc_to_temp@reading reading `us  1 p 2 2 ]
-"51
+"52
 } 0
 "50 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
