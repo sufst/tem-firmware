@@ -3701,11 +3701,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _total_temp `c ~T0 @X0 1 a ]
 [e = _total_temp -> -> 0 `i `c ]
 "30
-[; ;can_msgs.c: 30:     for(uint8_t temp_i=0; temp_i<23 - 0 + 1; temp_i++) {
+[; ;can_msgs.c: 30:     for(uint8_t temp_i=0; temp_i<1 - 0 + 1; temp_i++) {
 {
 [v _temp_i `uc ~T0 @X0 1 a ]
 [e = _temp_i -> -> 0 `i `uc ]
-[e $ < -> _temp_i `i + - -> 23 `i -> 0 `i -> 1 `i 3286  ]
+[e $ < -> _temp_i `i + - -> 1 `i -> 0 `i -> 1 `i 3286  ]
 [e $U 3287  ]
 [e :U 3286 ]
 {
@@ -3752,13 +3752,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;can_msgs.c: 43:     }
 }
 [e ++ _temp_i -> -> 1 `i `uc ]
-[e $ < -> _temp_i `i + - -> 23 `i -> 0 `i -> 1 `i 3286  ]
+[e $ < -> _temp_i `i + - -> 1 `i -> 0 `i -> 1 `i 3286  ]
 [e :U 3287 ]
 }
 "45
-[; ;can_msgs.c: 45:     int8_t avg_temp = total_temp / 23 - 0 + 1;
+[; ;can_msgs.c: 45:     int8_t avg_temp = total_temp / 1 - 0 + 1;
 [v _avg_temp `c ~T0 @X0 1 a ]
-[e = _avg_temp -> + - / -> _total_temp `i -> 23 `i -> 0 `i -> 1 `i `c ]
+[e = _avg_temp -> + - / -> _total_temp `i -> 1 `i -> 0 `i -> 1 `i `c ]
 "47
 [; ;can_msgs.c: 47:     msg_data[0] = 0;
 [e = *U + &U _msg_data * -> -> -> 0 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> -> 0 `i `uc ]
@@ -3772,8 +3772,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;can_msgs.c: 50:     msg_data[3] = (uint8_t)avg_temp;
 [e = *U + &U _msg_data * -> -> -> 3 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> _avg_temp `uc ]
 "51
-[; ;can_msgs.c: 51:     msg_data[4] = 23 - 0 + 1;
-[e = *U + &U _msg_data * -> -> -> 4 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> + - -> 23 `i -> 0 `i -> 1 `i `uc ]
+[; ;can_msgs.c: 51:     msg_data[4] = 1 - 0 + 1;
+[e = *U + &U _msg_data * -> -> -> 4 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> + - -> 1 `i -> 0 `i -> 1 `i `uc ]
 "52
 [; ;can_msgs.c: 52:     msg_data[5] = max_temp_i;
 [e = *U + &U _msg_data * -> -> -> 5 `i `ui `ux -> -> # *U &U _msg_data `ui `ux _max_temp_i ]
@@ -3846,11 +3846,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _total_temp `c ~T0 @X0 1 a ]
 [e = _total_temp -> -> 0 `i `c ]
 "83
-[; ;can_msgs.c: 83:     for(uint8_t temp_i=0; temp_i<23 - 0 + 1; temp_i++) {
+[; ;can_msgs.c: 83:     for(uint8_t temp_i=0; temp_i<1 - 0 + 1; temp_i++) {
 {
 [v _temp_i `uc ~T0 @X0 1 a ]
 [e = _temp_i -> -> 0 `i `uc ]
-[e $ < -> _temp_i `i + - -> 23 `i -> 0 `i -> 1 `i 3292  ]
+[e $ < -> _temp_i `i + - -> 1 `i -> 0 `i -> 1 `i 3292  ]
 [e $U 3293  ]
 [e :U 3292 ]
 {
@@ -3897,7 +3897,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;can_msgs.c: 96:     }
 }
 [e ++ _temp_i -> -> 1 `i `uc ]
-[e $ < -> _temp_i `i + - -> 23 `i -> 0 `i -> 1 `i 3292  ]
+[e $ < -> _temp_i `i + - -> 1 `i -> 0 `i -> 1 `i 3292  ]
 [e :U 3293 ]
 }
 "98
@@ -3918,8 +3918,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;can_msgs.c: 103:     msg_data[2] = (uint8_t)broadcast_therm_temp;
 [e = *U + &U _msg_data * -> -> -> 2 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> _broadcast_therm_temp `uc ]
 "104
-[; ;can_msgs.c: 104:     msg_data[3] = 23 - 0 + 1;
-[e = *U + &U _msg_data * -> -> -> 3 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> + - -> 23 `i -> 0 `i -> 1 `i `uc ]
+[; ;can_msgs.c: 104:     msg_data[3] = 1 - 0 + 1;
+[e = *U + &U _msg_data * -> -> -> 3 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> + - -> 1 `i -> 0 `i -> 1 `i `uc ]
 "105
 [; ;can_msgs.c: 105:     msg_data[4] = (uint8_t)min_temp;
 [e = *U + &U _msg_data * -> -> -> 4 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> _min_temp `uc ]
@@ -3954,8 +3954,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;can_msgs.c: 117:     msg.data = msg_data;
 [e = . _msg 2 &U _msg_data ]
 "121
-[; ;can_msgs.c: 121:     if(++broadcast_therm_i >= 23 - 0 + 1) {
-[e $ ! >= -> =+ F23517 -> -> 1 `i `uc `i + - -> 23 `i -> 0 `i -> 1 `i 3297  ]
+[; ;can_msgs.c: 121:     if(++broadcast_therm_i >= 1 - 0 + 1) {
+[e $ ! >= -> =+ F23517 -> -> 1 `i `uc `i + - -> 1 `i -> 0 `i -> 1 `i 3297  ]
 {
 "122
 [; ;can_msgs.c: 122:         broadcast_therm_i = 0;

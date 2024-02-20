@@ -26,7 +26,7 @@ CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[]) {
     int8_t max_temp = -128;
     uint8_t max_temp_i = 0;
     
-    int8_t total_temp = 0;
+    int32_t total_temp = 0;
     for(uint8_t temp_i=0; temp_i<THERM_COUNT; temp_i++) {
         int8_t this_temp = temps_array[temp_i];
         if(this_temp < min_temp)

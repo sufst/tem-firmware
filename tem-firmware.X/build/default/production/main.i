@@ -39521,7 +39521,7 @@ int8_t adc_to_temp(adc_result_t reading)
 }
 
 
-int8_t temps[23 - 0 + 1];
+int8_t temps[1 - 0 + 1];
 
 void main(void)
 {
@@ -39535,7 +39535,7 @@ void main(void)
     while (1)
     {
 
-  for (uint8_t therm_i = 0; therm_i < 23; therm_i++)
+  for (uint8_t therm_i = 0; therm_i < 1; therm_i++)
   {
    ADC_StartConversion((ADC_channel_t)therm_i);
    while(!ADC_IsConversionDone());

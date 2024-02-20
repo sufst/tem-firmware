@@ -3962,8 +3962,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 3280 ]
 }
 "55
-[; ;main.c: 55: int8_t temps[23 - 0 + 1];
-[v _temps `c ~T0 @X0 -> 24 `i e ]
+[; ;main.c: 55: int8_t temps[1 - 0 + 1];
+[v _temps `c ~T0 @X0 -> 2 `i e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
 "57
 [; ;main.c: 57: void main(void)
@@ -3989,11 +3989,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 67:     {
 {
 "69
-[; ;main.c: 69:   for (uint8_t therm_i = 0; therm_i < 23; therm_i++)
+[; ;main.c: 69:   for (uint8_t therm_i = 0; therm_i < 1; therm_i++)
 {
 [v _therm_i `uc ~T0 @X0 1 a ]
 [e = _therm_i -> -> 0 `i `uc ]
-[e $ < -> _therm_i `i -> 23 `i 3285  ]
+[e $ < -> _therm_i `i -> 1 `i 3285  ]
 [e $U 3286  ]
 [e :U 3285 ]
 "70
@@ -4020,7 +4020,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 75:   }
 }
 [e ++ _therm_i -> -> 1 `i `uc ]
-[e $ < -> _therm_i `i -> 23 `i 3285  ]
+[e $ < -> _therm_i `i -> 1 `i 3285  ]
 [e :U 3286 ]
 }
 "78

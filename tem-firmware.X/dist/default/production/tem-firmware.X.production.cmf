@@ -11,66 +11,64 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
+$C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
 init CODE 0 1A 1A 4 1 2
 reset_vec CODE 0 0 0 4 1 2
 config CONFIG 4 300000 300000 1F 1 1
 $dist/default/production\tem-firmware.X.production.o
 ivt0x8 CODE 0 8 8 12 1 2
-cinit CODE 0 431E 431E 50 1 2
+cinit CODE 0 42E0 42E0 44 1 2
 text0 CODE 0 3936 3936 14A 1 2
 text1 CODE 0 3BAC 3BAC 10A 1 2
-text2 CODE 0 3CB6 3CB6 108 1 2
-text3 CODE 0 4448 4448 34 1 2
-text4 CODE 0 3F94 3F94 C4 1 2
-text5 CODE 0 45AC 45AC 10 1 2
-text6 CODE 0 4522 4522 1A 1 2
-text7 CODE 0 44AE 44AE 28 1 2
-text8 CODE 0 4228 4228 7E 1 2
-text9 CODE 0 453C 453C 18 1 2
-nvCOMRAM COMRAM 1 54A 54A 9 1 1
-text10 CODE 0 465A 465A 4 1 2
-text11 CODE 0 43BE 43BE 4C 1 2
-text12 CODE 0 44FE 44FE 24 1 2
-text13 CODE 0 41A0 41A0 88 1 2
-text14 CODE 0 42A6 42A6 78 1 2
-text15 CODE 0 45BC 45BC E 1 2
-text16 CODE 0 45CA 45CA E 1 2
-text17 CODE 0 45D8 45D8 E 1 2
-text18 CODE 0 45E6 45E6 E 1 2
-text19 CODE 0 45F4 45F4 E 1 2
-text20 CODE 0 4602 4602 E 1 2
-text21 CODE 0 4598 4598 14 1 2
-text22 CODE 0 4058 4058 B8 1 2
-text23 CODE 0 4610 4610 E 1 2
-text24 CODE 0 461E 461E E 1 2
-text25 CODE 0 462C 462C E 1 2
-text26 CODE 0 44D6 44D6 28 1 2
-text27 CODE 0 4110 4110 90 1 2
-text28 CODE 0 440A 440A 3E 1 2
-text29 CODE 0 370E 370E 228 1 2
-text30 CODE 0 436E 436E 50 1 2
-text31 CODE 0 3EBE 3EBE D6 1 2
-text32 CODE 0 4554 4554 18 1 2
-text33 CODE 0 4648 4648 A 1 2
-text34 CODE 0 463A 463A E 1 2
-text35 CODE 0 4652 4652 8 1 2
-text36 CODE 0 456C 456C 16 1 2
-text37 CODE 0 4582 4582 16 1 2
-text38 CODE 0 447C 447C 32 1 2
-text39 CODE 0 3A80 3A80 12C 1 2
-text40 CODE 0 465E 465E 2 1 2
-text41 CODE 0 4660 4660 2 1 2
-text42 CODE 0 4662 4662 2 1 2
-text43 CODE 0 4664 4664 2 1 2
-text44 CODE 0 4666 4666 2 1 2
-text45 CODE 0 4668 4668 2 1 2
-cstackCOMRAM COMRAM 1 501 501 2D 1 1
-bssBANK5 BANK5 1 560 560 18 1 1
+text2 CODE 0 3DB6 3DB6 F2 1 2
+text3 CODE 0 4362 4362 34 1 2
+text4 CODE 0 44C6 44C6 10 1 2
+text5 CODE 0 443C 443C 1A 1 2
+text6 CODE 0 43C8 43C8 28 1 2
+text7 CODE 0 414E 414E 7E 1 2
+text8 CODE 0 4456 4456 18 1 2
+text9 CODE 0 4574 4574 4 1 2
+nvCOMRAM COMRAM 1 549 549 9 1 1
+text10 CODE 0 4294 4294 4C 1 2
+text11 CODE 0 4418 4418 24 1 2
+text12 CODE 0 40C6 40C6 88 1 2
+text13 CODE 0 41CC 41CC 78 1 2
+text14 CODE 0 44D6 44D6 E 1 2
+text15 CODE 0 44E4 44E4 E 1 2
+text16 CODE 0 44F2 44F2 E 1 2
+text17 CODE 0 4500 4500 E 1 2
+text18 CODE 0 450E 450E E 1 2
+text19 CODE 0 451C 451C E 1 2
+text20 CODE 0 44B2 44B2 14 1 2
+text21 CODE 0 3F7E 3F7E B8 1 2
+text22 CODE 0 452A 452A E 1 2
+text23 CODE 0 4538 4538 E 1 2
+text24 CODE 0 4546 4546 E 1 2
+text25 CODE 0 43F0 43F0 28 1 2
+text26 CODE 0 4036 4036 90 1 2
+text27 CODE 0 4324 4324 3E 1 2
+text28 CODE 0 370E 370E 228 1 2
+text29 CODE 0 4244 4244 50 1 2
+text30 CODE 0 3EA8 3EA8 D6 1 2
+text31 CODE 0 446E 446E 18 1 2
+text32 CODE 0 4562 4562 A 1 2
+text33 CODE 0 4554 4554 E 1 2
+text34 CODE 0 456C 456C 8 1 2
+text35 CODE 0 4486 4486 16 1 2
+text36 CODE 0 449C 449C 16 1 2
+text37 CODE 0 4396 4396 32 1 2
+text38 CODE 0 3A80 3A80 12C 1 2
+text39 CODE 0 4578 4578 2 1 2
+text40 CODE 0 457A 457A 2 1 2
+text41 CODE 0 457C 457C 2 1 2
+text42 CODE 0 457E 457E 2 1 2
+text43 CODE 0 4580 4580 2 1 2
+text44 CODE 0 4582 4582 2 1 2
+cstackCOMRAM COMRAM 1 501 501 2A 1 1
 smallconst SMALLCONST 0 3700 3700 E 1 2
-idataBANK6 CODE 0 3DBE 3DBE 100 1 1
+idataBANK6 CODE 0 3CB6 3CB6 100 1 1
 dataBANK6 BANK6 1 600 600 100 1 1
-bssCOMRAM COMRAM 1 52E 52E 1C 1 1
+bssCOMRAM COMRAM 1 52B 52B 1E 1 1
 config CONFIG 4 300000 300000 1F 1 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -78,22 +76,22 @@ config CONFIG 4 300000 300000 1F 1 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 578-5FF 1
+RAM 560-5FF 1
 RAM 700-36FF 1
 SFR 0-4FF 1
 SFR 3700-3FFF 1
-BANK5 578-5FF 1
+BANK5 560-5FF 1
 BANK7 700-7FF 1
 BANK8 800-8FF 1
 BANK9 900-9FF 1
 CONST 4-7 1
 CONST 1E-36FF 1
-CONST 466A-1FFFF 1
+CONST 4584-1FFFF 1
 IDLOC 200000-20003F 1
-SMALLCONST 466A-1FFFF 1
+SMALLCONST 4584-1FFFF 1
 CODE 4-7 1
 CODE 1E-36FF 1
-CODE 466A-1FFFF 1
+CODE 4584-1FFFF 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
@@ -139,15 +137,14 @@ BANK51 3300-33FF 1
 BANK52 3400-34FF 1
 BANK53 3500-35FF 1
 BANK54 3600-36FF 1
-BIGRAM 553-55F 1
-BIGRAM 578-5FF 1
+BIGRAM 552-5FF 1
 BIGRAM 700-36FF 1
 BIGSFR 0-4FF 1
 BIGSFR 3700-3FFF 1
-COMRAM 553-55F 1
+COMRAM 552-55F 1
 CONFIG 30001F-300023 1
 EEDATA 380000-3803FF 1
-MEDIUMCONST 466A-FFFF 1
+MEDIUMCONST 4584-FFFF 1
 MEDIUMCONST 13700-1FFFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -163,393 +160,368 @@ MEDIUMCONST 13700-1FFFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\tem-firmware.X.production.o
-4668 text45 CODE >100:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4668 text45 CODE >102:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4666 text44 CODE >96:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4666 text44 CODE >98:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4664 text43 CODE >92:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4664 text43 CODE >94:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4662 text42 CODE >104:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4662 text42 CODE >106:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4660 text41 CODE >108:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4660 text41 CODE >110:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-465E text40 CODE >112:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-465E text40 CODE >114:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3A80 text39 CODE >434:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3A80 text39 CODE >436:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3A90 text39 CODE >438:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3AAA text39 CODE >439:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3AAE text39 CODE >442:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3ABC text39 CODE >444:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3AD6 text39 CODE >445:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3ADA text39 CODE >448:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3AE8 text39 CODE >450:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3B02 text39 CODE >451:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3B06 text39 CODE >454:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3B14 text39 CODE >456:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3B2E text39 CODE >457:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3B32 text39 CODE >460:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3B40 text39 CODE >462:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3B5A text39 CODE >463:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3B5E text39 CODE >466:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3B6C text39 CODE >468:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3B86 text39 CODE >469:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3B96 text39 CODE >471:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3B98 text39 CODE >472:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3B98 text39 CODE >473:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3BA6 text39 CODE >475:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3BA8 text39 CODE >477:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3BA8 text39 CODE >479:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3BAA text39 CODE >480:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-447C text38 CODE >58:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/interrupt_manager.c
-4484 text38 CODE >61:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/interrupt_manager.c
-44A0 text38 CODE >63:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/interrupt_manager.c
-44A4 text38 CODE >69:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/interrupt_manager.c
-4582 text37 CODE >240:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4582 text37 CODE >243:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4596 text37 CODE >244:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-456C text36 CODE >235:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-456C text36 CODE >237:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4580 text36 CODE >238:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4652 text35 CODE >194:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4654 text35 CODE >196:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4658 text35 CODE >197:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-463A text34 CODE >223:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-463C text34 CODE >226:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4640 text34 CODE >229:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4644 text34 CODE >232:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4646 text34 CODE >233:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4648 text33 CODE >241:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4648 text33 CODE >243:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4650 text33 CODE >244:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4554 text32 CODE >252:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4556 text32 CODE >254:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-456A text32 CODE >255:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3EBE text31 CODE >298:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3EC0 text31 CODE >300:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3EC4 text31 CODE >301:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3ED4 text31 CODE >302:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3ED4 text31 CODE >304:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3EF6 text31 CODE >306:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3EF8 text31 CODE >309:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3F32 text31 CODE >311:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3F34 text31 CODE >314:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3F74 text31 CODE >316:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3F76 text31 CODE >319:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3F8C text31 CODE >321:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3F90 text31 CODE >324:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3F92 text31 CODE >325:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-436E text30 CODE >4:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
-436E text30 CODE >11:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
-4376 text30 CODE >12:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
-437E text30 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
-4382 text30 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
-4392 text30 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
-43A2 text30 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
-43BC text30 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
-370E text29 CODE >257:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-370E text29 CODE >259:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3726 text29 CODE >261:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3726 text29 CODE >267:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3740 text29 CODE >269:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3756 text29 CODE >270:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-376A text29 CODE >271:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-377A text29 CODE >272:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3788 text29 CODE >273:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-379A text29 CODE >274:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-37AE text29 CODE >275:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-37B2 text29 CODE >278:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-37E0 text29 CODE >281:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-37EC text29 CODE >282:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-37FA text29 CODE >283:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3812 text29 CODE >285:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3826 text29 CODE >286:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-384C text29 CODE >287:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3870 text29 CODE >288:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3894 text29 CODE >289:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-38B8 text29 CODE >290:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-38C8 text29 CODE >292:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-38E2 text29 CODE >294:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-3934 text29 CODE >296:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-440A text28 CODE >247:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-440C text28 CODE >249:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4446 text28 CODE >250:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4110 text27 CODE >327:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4112 text27 CODE >329:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4112 text27 CODE >331:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4128 text27 CODE >333:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4138 text27 CODE >334:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4148 text27 CODE >336:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4160 text27 CODE >338:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4172 text27 CODE >340:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4186 text27 CODE >341:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-419E text27 CODE >344:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-419E text27 CODE >347:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-44D6 text26 CODE >349:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-44D8 text26 CODE >351:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-44DC text26 CODE >353:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-44F2 text26 CODE >355:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-44FA text26 CODE >358:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-44FC text26 CODE >359:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-462C text25 CODE >418:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-462C text25 CODE >420:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4638 text25 CODE >421:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-461E text24 CODE >428:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-461E text24 CODE >430:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-462A text24 CODE >431:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4610 text23 CODE >423:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4610 text23 CODE >425:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-461C text23 CODE >426:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4058 text22 CODE >65:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4058 text22 CODE >68:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-405E text22 CODE >71:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4062 text22 CODE >74:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4066 text22 CODE >80:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-406A text22 CODE >83:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-406E text22 CODE >86:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4072 text22 CODE >89:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4076 text22 CODE >92:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-407A text22 CODE >95:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-407E text22 CODE >98:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4082 text22 CODE >101:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4086 text22 CODE >104:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-408A text22 CODE >107:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-408E text22 CODE >110:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4092 text22 CODE >113:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4096 text22 CODE >116:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-409A text22 CODE >119:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-409E text22 CODE >122:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40A2 text22 CODE >125:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40A6 text22 CODE >128:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40AA text22 CODE >131:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40AE text22 CODE >134:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40B2 text22 CODE >137:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40B6 text22 CODE >140:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40BA text22 CODE >143:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40BE text22 CODE >146:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40C2 text22 CODE >149:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40C6 text22 CODE >152:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40CA text22 CODE >155:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40CE text22 CODE >158:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40D2 text22 CODE >161:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40D4 text22 CODE >164:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40D6 text22 CODE >167:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40D8 text22 CODE >171:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40E8 text22 CODE >172:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-40F8 text22 CODE >173:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4108 text22 CODE >176:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-410E text22 CODE >177:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
-4598 text21 CODE >145:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4598 text21 CODE >148:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-459E text21 CODE >151:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45A2 text21 CODE >154:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45A6 text21 CODE >157:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45AA text21 CODE >159:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4602 text20 CODE >414:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4602 text20 CODE >416:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-460E text20 CODE >417:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45F4 text19 CODE >409:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45F4 text19 CODE >411:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4600 text19 CODE >412:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45E6 text18 CODE >404:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45E6 text18 CODE >406:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45F2 text18 CODE >407:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45D8 text17 CODE >419:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45D8 text17 CODE >421:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45E4 text17 CODE >422:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45CA text16 CODE >424:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45CA text16 CODE >426:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45D6 text16 CODE >427:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45BC text15 CODE >429:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45BC text15 CODE >431:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-45C8 text15 CODE >432:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-42A6 text14 CODE >161:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-42A6 text14 CODE >163:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-42B6 text14 CODE >164:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-42C6 text14 CODE >165:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-42D6 text14 CODE >166:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-42E6 text14 CODE >167:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-42F6 text14 CODE >168:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4306 text14 CODE >169:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4308 text14 CODE >172:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-430E text14 CODE >175:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4312 text14 CODE >178:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4316 text14 CODE >181:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-431A text14 CODE >183:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-431C text14 CODE >184:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-41A0 text13 CODE >212:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-41A2 text13 CODE >214:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-41A6 text13 CODE >215:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-41AC text13 CODE >217:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-41E0 text13 CODE >221:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-41EC text13 CODE >223:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-41F0 text13 CODE >226:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-41FE text13 CODE >228:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4202 text13 CODE >229:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4206 text13 CODE >223:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4220 text13 CODE >235:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4224 text13 CODE >236:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4224 text13 CODE >238:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4226 text13 CODE >239:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-44FE text12 CODE >117:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-44FE text12 CODE >120:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4504 text12 CODE >123:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4508 text12 CODE >126:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-450C text12 CODE >129:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4510 text12 CODE >132:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4514 text12 CODE >135:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4518 text12 CODE >138:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-451C text12 CODE >141:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4520 text12 CODE >143:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-43BE text11 CODE >186:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-43BE text11 CODE >189:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-43C2 text11 CODE >191:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-43D8 text11 CODE >194:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-43EA text11 CODE >197:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-43EE text11 CODE >200:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-43F2 text11 CODE >203:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-43F6 text11 CODE >205:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-43FA text11 CODE >206:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-43FE text11 CODE >207:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4402 text11 CODE >208:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-4408 text11 CODE >210:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
-465A text10 CODE >52:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/interrupt_manager.c
-465A text10 CODE >55:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/interrupt_manager.c
-465C text10 CODE >56:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/interrupt_manager.c
-453C text9 CODE >60:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-453C text9 CODE >63:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-4542 text9 CODE >65:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-4546 text9 CODE >67:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-454A text9 CODE >69:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-454E text9 CODE >71:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-4552 text9 CODE >72:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-4228 text8 CODE >55:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4228 text8 CODE >60:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-422C text8 CODE >61:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4230 text8 CODE >62:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4234 text8 CODE >63:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4238 text8 CODE >64:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-423C text8 CODE >69:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4240 text8 CODE >70:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4242 text8 CODE >71:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4244 text8 CODE >72:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4246 text8 CODE >73:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-424A text8 CODE >78:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4250 text8 CODE >79:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4252 text8 CODE >80:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4254 text8 CODE >81:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4258 text8 CODE >82:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-425A text8 CODE >87:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-425E text8 CODE >88:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4262 text8 CODE >89:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4266 text8 CODE >90:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-426A text8 CODE >91:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-426E text8 CODE >96:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4272 text8 CODE >97:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4276 text8 CODE >98:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-427A text8 CODE >99:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-427E text8 CODE >100:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4282 text8 CODE >105:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4284 text8 CODE >106:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4286 text8 CODE >107:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4288 text8 CODE >108:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-428A text8 CODE >109:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-428E text8 CODE >114:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4290 text8 CODE >115:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4292 text8 CODE >116:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4294 text8 CODE >117:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-4296 text8 CODE >118:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-429A text8 CODE >127:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-42A0 text8 CODE >128:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-42A4 text8 CODE >129:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
-44AE text7 CODE >74:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-44AE text7 CODE >77:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-44B4 text7 CODE >79:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-44B8 text7 CODE >81:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-44BC text7 CODE >83:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-44C0 text7 CODE >85:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-44C4 text7 CODE >87:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-44C8 text7 CODE >89:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-44CC text7 CODE >91:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-44D0 text7 CODE >93:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-44D4 text7 CODE >94:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-4522 text6 CODE >50:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-4522 text6 CODE >52:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-4526 text6 CODE >53:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-452A text6 CODE >54:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-452E text6 CODE >55:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-4532 text6 CODE >56:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-4536 text6 CODE >57:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-453A text6 CODE >58:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
-45AC text5 CODE >48:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
-45AC text5 CODE >51:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
-45BA text5 CODE >52:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
-3F94 text4 CODE >7:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-3F94 text4 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-3F98 text4 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-3FA6 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-3FAE text4 CODE >16:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-3FB2 text4 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-3FC0 text4 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-3FC8 text4 CODE >20:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-3FCC text4 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-3FD4 text4 CODE >23:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-3FE6 text4 CODE >24:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-3FEA text4 CODE >25:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-3FEE text4 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-3FF4 text4 CODE >27:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-3FF6 text4 CODE >25:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-4004 text4 CODE >30:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-400A text4 CODE >31:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-4020 text4 CODE >32:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-4028 text4 CODE >33:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-402A text4 CODE >35:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-4030 text4 CODE >36:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-4036 text4 CODE >38:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-4046 text4 CODE >39:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-404E text4 CODE >40:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-4056 text4 CODE >41:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
-4448 text3 CODE >11:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-4448 text3 CODE >12:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-444C text3 CODE >13:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-4454 text3 CODE >14:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-4464 text3 CODE >15:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-4478 text3 CODE >16:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-447A text3 CODE >17:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3CB6 text2 CODE >20:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3CB6 text2 CODE >24:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3CBA text2 CODE >25:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3CBE text2 CODE >26:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3CC2 text2 CODE >27:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3CC6 text2 CODE >29:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3CCA text2 CODE >30:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3CCE text2 CODE >31:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3CDE text2 CODE >32:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3CF8 text2 CODE >34:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3CFC text2 CODE >35:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D00 text2 CODE >37:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D1A text2 CODE >39:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D1E text2 CODE >40:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D22 text2 CODE >42:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D26 text2 CODE >43:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D38 text2 CODE >45:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D52 text2 CODE >47:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D56 text2 CODE >48:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D5A text2 CODE >49:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D5E text2 CODE >50:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D62 text2 CODE >51:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D66 text2 CODE >52:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D6A text2 CODE >53:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D6E text2 CODE >56:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D82 text2 CODE >59:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D92 text2 CODE >60:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D94 text2 CODE >61:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D96 text2 CODE >62:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3D9E text2 CODE >63:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3DA0 text2 CODE >64:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3DA2 text2 CODE >65:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3DAA text2 CODE >67:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
-3DBC text2 CODE >68:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+4582 text44 CODE >100:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4582 text44 CODE >102:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4580 text43 CODE >96:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4580 text43 CODE >98:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+457E text42 CODE >92:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+457E text42 CODE >94:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+457C text41 CODE >104:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+457C text41 CODE >106:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+457A text40 CODE >108:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+457A text40 CODE >110:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4578 text39 CODE >112:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4578 text39 CODE >114:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3A80 text38 CODE >434:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3A80 text38 CODE >436:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3A90 text38 CODE >438:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3AAA text38 CODE >439:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3AAE text38 CODE >442:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3ABC text38 CODE >444:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3AD6 text38 CODE >445:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3ADA text38 CODE >448:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3AE8 text38 CODE >450:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3B02 text38 CODE >451:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3B06 text38 CODE >454:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3B14 text38 CODE >456:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3B2E text38 CODE >457:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3B32 text38 CODE >460:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3B40 text38 CODE >462:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3B5A text38 CODE >463:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3B5E text38 CODE >466:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3B6C text38 CODE >468:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3B86 text38 CODE >469:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3B96 text38 CODE >471:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3B98 text38 CODE >472:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3B98 text38 CODE >473:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3BA6 text38 CODE >475:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3BA8 text38 CODE >477:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3BA8 text38 CODE >479:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3BAA text38 CODE >480:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4396 text37 CODE >58:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/interrupt_manager.c
+439E text37 CODE >61:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/interrupt_manager.c
+43BA text37 CODE >63:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/interrupt_manager.c
+43BE text37 CODE >69:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/interrupt_manager.c
+449C text36 CODE >240:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+449C text36 CODE >243:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+44B0 text36 CODE >244:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+4486 text35 CODE >235:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+4486 text35 CODE >237:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+449A text35 CODE >238:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+456C text34 CODE >194:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+456E text34 CODE >196:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+4572 text34 CODE >197:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+4554 text33 CODE >223:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+4556 text33 CODE >226:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+455A text33 CODE >229:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+455E text33 CODE >232:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+4560 text33 CODE >233:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+4562 text32 CODE >241:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4562 text32 CODE >243:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+456A text32 CODE >244:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+446E text31 CODE >252:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4470 text31 CODE >254:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4484 text31 CODE >255:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3EA8 text30 CODE >298:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3EAA text30 CODE >300:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3EAE text30 CODE >301:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3EBE text30 CODE >302:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3EBE text30 CODE >304:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3EE0 text30 CODE >306:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3EE2 text30 CODE >309:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3F1C text30 CODE >311:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3F1E text30 CODE >314:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3F5E text30 CODE >316:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3F60 text30 CODE >319:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3F76 text30 CODE >321:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3F7A text30 CODE >324:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3F7C text30 CODE >325:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4244 text29 CODE >4:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+4244 text29 CODE >11:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+424C text29 CODE >12:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+4254 text29 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+4258 text29 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+4268 text29 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+4278 text29 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+4292 text29 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+370E text28 CODE >257:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+370E text28 CODE >259:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3726 text28 CODE >261:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3726 text28 CODE >267:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3740 text28 CODE >269:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3756 text28 CODE >270:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+376A text28 CODE >271:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+377A text28 CODE >272:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3788 text28 CODE >273:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+379A text28 CODE >274:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+37AE text28 CODE >275:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+37B2 text28 CODE >278:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+37E0 text28 CODE >281:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+37EC text28 CODE >282:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+37FA text28 CODE >283:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3812 text28 CODE >285:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3826 text28 CODE >286:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+384C text28 CODE >287:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3870 text28 CODE >288:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3894 text28 CODE >289:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+38B8 text28 CODE >290:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+38C8 text28 CODE >292:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+38E2 text28 CODE >294:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+3934 text28 CODE >296:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4324 text27 CODE >247:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4326 text27 CODE >249:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4360 text27 CODE >250:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4036 text26 CODE >327:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4038 text26 CODE >329:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4038 text26 CODE >331:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+404E text26 CODE >333:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+405E text26 CODE >334:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+406E text26 CODE >336:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4086 text26 CODE >338:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4098 text26 CODE >340:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+40AC text26 CODE >341:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+40C4 text26 CODE >344:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+40C4 text26 CODE >347:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+43F0 text25 CODE >349:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+43F2 text25 CODE >351:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+43F6 text25 CODE >353:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+440C text25 CODE >355:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4414 text25 CODE >358:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4416 text25 CODE >359:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4546 text24 CODE >418:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+4546 text24 CODE >420:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+4552 text24 CODE >421:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+4538 text23 CODE >428:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+4538 text23 CODE >430:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+4544 text23 CODE >431:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+452A text22 CODE >423:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+452A text22 CODE >425:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+4536 text22 CODE >426:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3F7E text21 CODE >65:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3F7E text21 CODE >68:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3F84 text21 CODE >71:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3F88 text21 CODE >74:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3F8C text21 CODE >80:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3F90 text21 CODE >83:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3F94 text21 CODE >86:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3F98 text21 CODE >89:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3F9C text21 CODE >92:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FA0 text21 CODE >95:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FA4 text21 CODE >98:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FA8 text21 CODE >101:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FAC text21 CODE >104:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FB0 text21 CODE >107:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FB4 text21 CODE >110:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FB8 text21 CODE >113:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FBC text21 CODE >116:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FC0 text21 CODE >119:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FC4 text21 CODE >122:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FC8 text21 CODE >125:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FCC text21 CODE >128:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FD0 text21 CODE >131:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FD4 text21 CODE >134:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FD8 text21 CODE >137:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FDC text21 CODE >140:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FE0 text21 CODE >143:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FE4 text21 CODE >146:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FE8 text21 CODE >149:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FEC text21 CODE >152:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FF0 text21 CODE >155:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FF4 text21 CODE >158:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FF8 text21 CODE >161:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FFA text21 CODE >164:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FFC text21 CODE >167:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+3FFE text21 CODE >171:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+400E text21 CODE >172:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+401E text21 CODE >173:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+402E text21 CODE >176:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+4034 text21 CODE >177:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
+44B2 text20 CODE >145:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+44B2 text20 CODE >148:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+44B8 text20 CODE >151:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+44BC text20 CODE >154:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+44C0 text20 CODE >157:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+44C4 text20 CODE >159:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+451C text19 CODE >414:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+451C text19 CODE >416:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4528 text19 CODE >417:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+450E text18 CODE >409:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+450E text18 CODE >411:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+451A text18 CODE >412:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4500 text17 CODE >404:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4500 text17 CODE >406:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+450C text17 CODE >407:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+44F2 text16 CODE >419:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+44F2 text16 CODE >421:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+44FE text16 CODE >422:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+44E4 text15 CODE >424:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+44E4 text15 CODE >426:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+44F0 text15 CODE >427:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+44D6 text14 CODE >429:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+44D6 text14 CODE >431:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+44E2 text14 CODE >432:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+41CC text13 CODE >161:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+41CC text13 CODE >163:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+41DC text13 CODE >164:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+41EC text13 CODE >165:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+41FC text13 CODE >166:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+420C text13 CODE >167:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+421C text13 CODE >168:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+422C text13 CODE >169:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+422E text13 CODE >172:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4234 text13 CODE >175:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4238 text13 CODE >178:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+423C text13 CODE >181:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4240 text13 CODE >183:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4242 text13 CODE >184:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+40C6 text12 CODE >212:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+40C8 text12 CODE >214:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+40CC text12 CODE >215:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+40D2 text12 CODE >217:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4106 text12 CODE >221:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4112 text12 CODE >223:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4116 text12 CODE >226:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4124 text12 CODE >228:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4128 text12 CODE >229:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+412C text12 CODE >223:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4146 text12 CODE >235:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+414A text12 CODE >236:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+414A text12 CODE >238:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+414C text12 CODE >239:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4418 text11 CODE >117:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4418 text11 CODE >120:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+441E text11 CODE >123:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4422 text11 CODE >126:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4426 text11 CODE >129:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+442A text11 CODE >132:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+442E text11 CODE >135:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4432 text11 CODE >138:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4436 text11 CODE >141:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+443A text11 CODE >143:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4294 text10 CODE >186:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4294 text10 CODE >189:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4298 text10 CODE >191:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+42AE text10 CODE >194:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+42C0 text10 CODE >197:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+42C4 text10 CODE >200:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+42C8 text10 CODE >203:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+42CC text10 CODE >205:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+42D0 text10 CODE >206:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+42D4 text10 CODE >207:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+42D8 text10 CODE >208:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+42DE text10 CODE >210:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can1.c
+4574 text9 CODE >52:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/interrupt_manager.c
+4574 text9 CODE >55:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/interrupt_manager.c
+4576 text9 CODE >56:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/interrupt_manager.c
+4456 text8 CODE >60:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+4456 text8 CODE >63:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+445C text8 CODE >65:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+4460 text8 CODE >67:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+4464 text8 CODE >69:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+4468 text8 CODE >71:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+446C text8 CODE >72:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+414E text7 CODE >55:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+414E text7 CODE >60:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+4152 text7 CODE >61:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+4156 text7 CODE >62:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+415A text7 CODE >63:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+415E text7 CODE >64:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+4162 text7 CODE >69:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+4166 text7 CODE >70:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+4168 text7 CODE >71:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+416A text7 CODE >72:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+416C text7 CODE >73:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+4170 text7 CODE >78:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+4176 text7 CODE >79:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+4178 text7 CODE >80:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+417A text7 CODE >81:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+417E text7 CODE >82:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+4180 text7 CODE >87:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+4184 text7 CODE >88:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+4188 text7 CODE >89:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+418C text7 CODE >90:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+4190 text7 CODE >91:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+4194 text7 CODE >96:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+4198 text7 CODE >97:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+419C text7 CODE >98:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+41A0 text7 CODE >99:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+41A4 text7 CODE >100:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+41A8 text7 CODE >105:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+41AA text7 CODE >106:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+41AC text7 CODE >107:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+41AE text7 CODE >108:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+41B0 text7 CODE >109:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+41B4 text7 CODE >114:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+41B6 text7 CODE >115:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+41B8 text7 CODE >116:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+41BA text7 CODE >117:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+41BC text7 CODE >118:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+41C0 text7 CODE >127:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+41C6 text7 CODE >128:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+41CA text7 CODE >129:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
+43C8 text6 CODE >74:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+43C8 text6 CODE >77:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+43CE text6 CODE >79:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+43D2 text6 CODE >81:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+43D6 text6 CODE >83:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+43DA text6 CODE >85:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+43DE text6 CODE >87:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+43E2 text6 CODE >89:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+43E6 text6 CODE >91:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+43EA text6 CODE >93:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+43EE text6 CODE >94:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+443C text5 CODE >50:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+443C text5 CODE >52:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+4440 text5 CODE >53:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+4444 text5 CODE >54:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+4448 text5 CODE >55:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+444C text5 CODE >56:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+4450 text5 CODE >57:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+4454 text5 CODE >58:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/mcc.c
+44C6 text4 CODE >48:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
+44C6 text4 CODE >51:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
+44D4 text4 CODE >52:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
+4362 text3 CODE >11:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+4362 text3 CODE >12:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+4366 text3 CODE >13:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+436E text3 CODE >14:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+437E text3 CODE >15:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+4392 text3 CODE >16:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+4394 text3 CODE >17:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3DB6 text2 CODE >20:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3DB6 text2 CODE >24:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3DBA text2 CODE >25:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3DBE text2 CODE >26:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3DC2 text2 CODE >27:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3DC6 text2 CODE >29:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3DCA text2 CODE >30:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3DCE text2 CODE >31:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3DDE text2 CODE >32:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3DF8 text2 CODE >34:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3DFC text2 CODE >35:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E00 text2 CODE >37:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E1A text2 CODE >39:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E1E text2 CODE >40:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E22 text2 CODE >42:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E26 text2 CODE >43:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E38 text2 CODE >45:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E3C text2 CODE >47:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E40 text2 CODE >48:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E44 text2 CODE >49:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E48 text2 CODE >50:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E4C text2 CODE >51:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E50 text2 CODE >52:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E54 text2 CODE >53:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E58 text2 CODE >56:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E6C text2 CODE >59:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E7C text2 CODE >60:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E7E text2 CODE >61:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E80 text2 CODE >62:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E88 text2 CODE >63:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E8A text2 CODE >64:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E8C text2 CODE >65:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3E94 text2 CODE >67:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+3EA6 text2 CODE >68:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
 3BAC text1 CODE >71:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
 3BAC text1 CODE >77:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
 3BB0 text1 CODE >78:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
@@ -610,47 +582,41 @@ $dist/default/production\tem-firmware.X.production.o
 3A58 text0 CODE >100:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
 3A60 text0 CODE >100:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
 3A6A text0 CODE >101:C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
-431E cinit CODE >17598:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-431E cinit CODE >17600:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-431E cinit CODE >17603:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-431E cinit CODE >17645:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4320 cinit CODE >17646:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4322 cinit CODE >17647:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4324 cinit CODE >17648:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4326 cinit CODE >17649:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4328 cinit CODE >17650:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-432A cinit CODE >17651:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-432E cinit CODE >17652:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4332 cinit CODE >17653:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4332 cinit CODE >17654:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4334 cinit CODE >17655:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4338 cinit CODE >17656:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-433A cinit CODE >17657:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-433C cinit CODE >17658:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-433E cinit CODE >17659:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4340 cinit CODE >17660:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4342 cinit CODE >17664:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4346 cinit CODE >17665:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4348 cinit CODE >17666:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4348 cinit CODE >17667:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-434A cinit CODE >17668:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-434C cinit CODE >17669:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-434E cinit CODE >17672:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4352 cinit CODE >17673:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4354 cinit CODE >17674:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4354 cinit CODE >17675:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4356 cinit CODE >17676:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4358 cinit CODE >17677:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-435A cinit CODE >17685:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-435C cinit CODE >17686:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-435E cinit CODE >17687:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4360 cinit CODE >17688:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4362 cinit CODE >17689:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4364 cinit CODE >17690:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4366 cinit CODE >17691:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4368 cinit CODE >17697:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-4368 cinit CODE >17699:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
-436A cinit CODE >17700:C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_1.s
+42E0 cinit CODE >17597:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42E0 cinit CODE >17599:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42E0 cinit CODE >17602:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42E0 cinit CODE >17641:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42E2 cinit CODE >17642:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42E4 cinit CODE >17643:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42E6 cinit CODE >17644:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42E8 cinit CODE >17645:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42EA cinit CODE >17646:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42EC cinit CODE >17647:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42F0 cinit CODE >17648:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42F4 cinit CODE >17649:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42F4 cinit CODE >17650:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42F6 cinit CODE >17651:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42FA cinit CODE >17652:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42FC cinit CODE >17653:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+42FE cinit CODE >17654:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+4300 cinit CODE >17655:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+4302 cinit CODE >17656:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+4304 cinit CODE >17660:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+4308 cinit CODE >17661:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+430A cinit CODE >17662:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+430A cinit CODE >17663:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+430C cinit CODE >17664:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+430E cinit CODE >17665:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+4310 cinit CODE >17673:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+4312 cinit CODE >17674:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+4314 cinit CODE >17675:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+4316 cinit CODE >17676:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+4318 cinit CODE >17677:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+431A cinit CODE >17678:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+431C cinit CODE >17679:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+431E cinit CODE >17685:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+431E cinit CODE >17687:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
+4320 cinit CODE >17688:C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -663,30 +629,29 @@ $dist/default/production\tem-firmware.X.production.o
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-_CAN1_ErrorNotificationInterruptEnable 42A6 0 CODE 0 text14 dist/default/production\tem-firmware.X.production.o
-___awdiv@counter 507 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+_CAN1_ErrorNotificationInterruptEnable 41CC 0 CODE 0 text13 dist/default/production\tem-firmware.X.production.o
 __LdataBANK6 0 0 ABS 0 dataBANK6 dist/default/production\tem-firmware.X.production.o
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\tem-firmware.X.production.o
-__Hspace_0 466A 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
+__Hspace_0 4584 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __Hspace_1 700 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __Hspace_4 60001F 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 ADC_SetContext1ThresholdInterruptHandler@InterruptHandler 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __HidataBANK6 0 0 ABS 0 idataBANK6 dist/default/production\tem-firmware.X.production.o
 CAN1_Transmit@status 51B 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-__end_of_ADC_SetActiveClockTuningInterruptHandler 462C 0 CODE 0 text24 dist/default/production\tem-firmware.X.production.o
-__end_of_ValidateTransmission 3F94 0 CODE 0 text31 dist/default/production\tem-firmware.X.production.o
+__end_of_ADC_SetActiveClockTuningInterruptHandler 4546 0 CODE 0 text23 dist/default/production\tem-firmware.X.production.o
+__end_of_ValidateTransmission 3F7E 0 CODE 0 text30 dist/default/production\tem-firmware.X.production.o
 _C1FIFOSTA1Lbits 160 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-_CAN1_SetBusErrorInterruptHandler 4602 0 CODE 0 text20 dist/default/production\tem-firmware.X.production.o
+_CAN1_SetBusErrorInterruptHandler 451C 0 CODE 0 text19 dist/default/production\tem-firmware.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\tem-firmware.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-_CAN1_SetBusWakeUpActivityInterruptHandler 45F4 0 CODE 0 text19 dist/default/production\tem-firmware.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+_CAN1_SetBusWakeUpActivityInterruptHandler 450E 0 CODE 0 text18 dist/default/production\tem-firmware.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\tem-firmware.X.production.o
-get_TM2BMS_Broadcast_msg@max_temp 518 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-__end_of_INTERRUPT_Initialize 465E 0 CODE 0 text10 dist/default/production\tem-firmware.X.production.o
-_CAN1_InvalidMessageHandler 53D 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
+get_TM2BMS_Broadcast_msg@max_temp 515 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+__end_of_INTERRUPT_Initialize 4578 0 CODE 0 text9 dist/default/production\tem-firmware.X.production.o
+_CAN1_InvalidMessageHandler 53A 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
 __end_of_get_TM_General_Broadcast_msg 3CB6 0 CODE 0 text1 dist/default/production\tem-firmware.X.production.o
-_PMD_Initialize 44AE 0 CODE 0 text7 dist/default/production\tem-firmware.X.production.o
+_PMD_Initialize 43C8 0 CODE 0 text6 dist/default/production\tem-firmware.X.production.o
 __L__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\tem-firmware.X.production.o
 __Lsmallconst 3700 0 SMALLCONST 0 smallconst dist/default/production\tem-firmware.X.production.o
 _ADCP 3D8 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
@@ -709,13 +674,13 @@ _WPUB 409 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _WPUC 411 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _WPUD 419 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _WPUE 421 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
+___sp 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
 _main 3936 0 CODE 0 text0 dist/default/production\tem-firmware.X.production.o
-___stack_hi 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-___stack_lo 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-_CAN1_Initialize 43BE 0 CODE 0 text11 dist/default/production\tem-firmware.X.production.o
-start 1A 0 CODE 0 init C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-_DefaultBusErrorHandler 4668 0 CODE 0 text45 dist/default/production\tem-firmware.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+_CAN1_Initialize 4294 0 CODE 0 text10 dist/default/production\tem-firmware.X.production.o
+start 1A 0 CODE 0 init C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+_DefaultBusErrorHandler 4582 0 CODE 0 text44 dist/default/production\tem-firmware.X.production.o
 CAN1_SetBusWakeUpActivityInterruptHandler@handler 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 _isTxChannel$587 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\tem-firmware.X.production.o
@@ -723,39 +688,38 @@ _C1CONHbits 101 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1CONTbits 103 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1CONUbits 102 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 ?_get_TM_General_Broadcast_msg 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-_CAN1_SetInvalidMessageInterruptHandler 45E6 0 CODE 0 text18 dist/default/production\tem-firmware.X.production.o
+_CAN1_SetInvalidMessageInterruptHandler 4500 0 CODE 0 text17 dist/default/production\tem-firmware.X.production.o
 __LidataBANK6 0 0 ABS 0 idataBANK6 dist/default/production\tem-firmware.X.production.o
-__end_of_CAN1_SetInvalidMessageInterruptHandler 45F4 0 CODE 0 text18 dist/default/production\tem-firmware.X.production.o
-__end_of_CAN1_SetModeChangeInterruptHandler 45E6 0 CODE 0 text17 dist/default/production\tem-firmware.X.production.o
+__end_of_CAN1_SetInvalidMessageInterruptHandler 450E 0 CODE 0 text17 dist/default/production\tem-firmware.X.production.o
+__end_of_CAN1_SetModeChangeInterruptHandler 4500 0 CODE 0 text16 dist/default/production\tem-firmware.X.production.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\tem-firmware.X.production.o
-__end_of_CAN1_BitRateConfiguration 45AC 0 CODE 0 text21 dist/default/production\tem-firmware.X.production.o
+__end_of_CAN1_BitRateConfiguration 44C6 0 CODE 0 text20 dist/default/production\tem-firmware.X.production.o
 get_checksum@data 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-__end_of_CAN1_SetSystemErrorInterruptHandler 45D8 0 CODE 0 text16 dist/default/production\tem-firmware.X.production.o
-__end_of_ADC_IsConversionDone 4582 0 CODE 0 text36 dist/default/production\tem-firmware.X.production.o
-_isTxChannel 440A 0 CODE 0 text28 dist/default/production\tem-firmware.X.production.o
-_ADC_ConversionComplete_ISR 550 0 COMRAM 1 nvCOMRAM dist/default/production\tem-firmware.X.production.o
-_ADC_StartConversion 463A 0 CODE 0 text34 dist/default/production\tem-firmware.X.production.o
+__end_of_CAN1_SetSystemErrorInterruptHandler 44F2 0 CODE 0 text15 dist/default/production\tem-firmware.X.production.o
+__end_of_ADC_IsConversionDone 449C 0 CODE 0 text35 dist/default/production\tem-firmware.X.production.o
+_isTxChannel 4324 0 CODE 0 text27 dist/default/production\tem-firmware.X.production.o
+_ADC_ConversionComplete_ISR 54F 0 COMRAM 1 nvCOMRAM dist/default/production\tem-firmware.X.production.o
+_ADC_StartConversion 4554 0 CODE 0 text33 dist/default/production\tem-firmware.X.production.o
 __LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\tem-firmware.X.production.o
-get_TM2BMS_Broadcast_msg@avg_temp 513 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-_ADC_SetContext1ThresholdInterruptHandler 4610 0 CODE 0 text23 dist/default/production\tem-firmware.X.production.o
-__accesstop 560 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-intlevel0 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-intlevel1 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-intlevel2 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-intlevel3 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
+get_TM2BMS_Broadcast_msg@avg_temp 510 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+_ADC_SetContext1ThresholdInterruptHandler 452A 0 CODE 0 text22 dist/default/production\tem-firmware.X.production.o
+__accesstop 560 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+intlevel0 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\tem-firmware.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\tem-firmware.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\tem-firmware.X.production.o
-__end_of_PMD_Initialize 44D6 0 CODE 0 text7 dist/default/production\tem-firmware.X.production.o
-_ADC_SelectContext 4652 0 CODE 0 text35 dist/default/production\tem-firmware.X.production.o
-get_TM_General_Broadcast_msg@broadcast_therm_i 540 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
-___awdiv@sign 508 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+__end_of_PMD_Initialize 43F0 0 CODE 0 text6 dist/default/production\tem-firmware.X.production.o
+_ADC_SelectContext 456C 0 CODE 0 text34 dist/default/production\tem-firmware.X.production.o
+get_TM_General_Broadcast_msg@broadcast_therm_i 53D 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\tem-firmware.X.production.o
-__end_of_ADC_SetContext1ThresholdInterruptHandler 461E 0 CODE 0 text23 dist/default/production\tem-firmware.X.production.o
+__end_of_ADC_SetContext1ThresholdInterruptHandler 4538 0 CODE 0 text22 dist/default/production\tem-firmware.X.production.o
 CAN1_Transmit@txCanMsg 519 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 get_TM_General_Broadcast_msg@temp_i 514 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 ivt0x8_base 8 0 CODE 0 ivt0x8 dist/default/production\tem-firmware.X.production.o
-get_TM2BMS_Broadcast_msg@total_temp 516 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+get_TM2BMS_Broadcast_msg@total_temp 513 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 _ADACCH 3E4 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ADACCL 3E3 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ADACCU 3E5 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
@@ -776,7 +740,7 @@ _ADRESL 3EA 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ADSTAT 3F7 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ADUTHH 3DC 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ADUTHL 3DB 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-__end_of_get_TM2BMS_Broadcast_msg 3DBE 0 CODE 0 text2 dist/default/production\tem-firmware.X.production.o
+__end_of_get_TM2BMS_Broadcast_msg 3EA8 0 CODE 0 text2 dist/default/production\tem-firmware.X.production.o
 _ANSELA 400 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ANSELB 408 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ANSELC 410 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
@@ -786,9 +750,8 @@ _C1FIFOCON1H 15D 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1FIFOCON1L 15C 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1FIFOCON1T 15F 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1FIFOCON1U 15E 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-___awdiv@dividend 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
 _C1CONH 101 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1CONL 100 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1CONU 102 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
@@ -796,45 +759,43 @@ _C1INTH 11D 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1INTL 11C 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1INTT 11F 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1INTU 11E 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-__end_of_DefaultSystemErrorHandler 4662 0 CODE 0 text41 dist/default/production\tem-firmware.X.production.o
-__end_of_INTERRUPT_InterruptManager 44AE 0 CODE 0 text38 dist/default/production\tem-firmware.X.production.o
-__end_of_DefaultInvalidMessageHandler 4666 0 CODE 0 text43 dist/default/production\tem-firmware.X.production.o
+__end_of_DefaultSystemErrorHandler 457C 0 CODE 0 text40 dist/default/production\tem-firmware.X.production.o
+__end_of_INTERRUPT_InterruptManager 43C8 0 CODE 0 text37 dist/default/production\tem-firmware.X.production.o
+__end_of_DefaultInvalidMessageHandler 4580 0 CODE 0 text42 dist/default/production\tem-firmware.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\tem-firmware.X.production.o
-main@msg 527 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-__end_of_CAN1_TX_FIFO_Configuration 4522 0 CODE 0 text12 dist/default/production\tem-firmware.X.production.o
+main@msg 524 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+__end_of_CAN1_TX_FIFO_Configuration 443C 0 CODE 0 text11 dist/default/production\tem-firmware.X.production.o
 _ADCPbits 3D8 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\tem-firmware.X.production.o
 get_TM_General_Broadcast_msg@temps_array 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-___awdiv@divisor 505 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 get_TM_General_Broadcast_msg@max_temp_i 50E 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-__end_of___awdiv 4058 0 CODE 0 text4 dist/default/production\tem-firmware.X.production.o
 GetTxFifoStatus@validChannel 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 WriteMessageToFifo@txFifoObj 50E 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-_adc_to_temp 45AC 0 CODE 0 text5 dist/default/production\tem-firmware.X.production.o
+_adc_to_temp 44C6 0 CODE 0 text4 dist/default/production\tem-firmware.X.production.o
 _INLVLA 404 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _INLVLB 40C 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _INLVLC 414 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _INLVLD 41C 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _INLVLE 424 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 get_TM_General_Broadcast_msg@min_temp 511 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-_CAN1_ISR 3A80 0 CODE 0 text39 dist/default/production\tem-firmware.X.production.o
-get_TM2BMS_Broadcast_msg@min_temp_i 514 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+_CAN1_ISR 3A80 0 CODE 0 text38 dist/default/production\tem-firmware.X.production.o
+get_TM2BMS_Broadcast_msg@min_temp_i 511 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 _CANRXPPS 23D 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\tem-firmware.X.production.o
-__end_of_CAN1_ISR 3BAC 0 CODE 0 text39 dist/default/production\tem-firmware.X.production.o
+__end_of_CAN1_ISR 3BAC 0 CODE 0 text38 dist/default/production\tem-firmware.X.production.o
 memcpy@tmp 50D 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 _INTCON0bits 4D6 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 CAN1_SetBusErrorInterruptHandler@handler 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-_PIN_MANAGER_Initialize 4228 0 CODE 0 text8 dist/default/production\tem-firmware.X.production.o
-_msg_data 542 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
+_PIN_MANAGER_Initialize 414E 0 CODE 0 text7 dist/default/production\tem-firmware.X.production.o
+_msg_data 53F 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
 ?_ADC_GetConversionResult 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-start_initialization 431E 0 CODE 0 cinit dist/default/production\tem-firmware.X.production.o
+start_initialization 42E0 0 CODE 0 cinit dist/default/production\tem-firmware.X.production.o
 _ODCONA 402 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ODCONB 40A 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ODCONC 412 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ODCOND 41A 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ODCONE 422 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-__end_of_ADC_StartConversion 4648 0 CODE 0 text34 dist/default/production\tem-firmware.X.production.o
+__end_of_ADC_StartConversion 4562 0 CODE 0 text33 dist/default/production\tem-firmware.X.production.o
 _OSCFRQ B1 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\tem-firmware.X.production.o
 _ADCSEL1 3FC 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
@@ -846,21 +807,21 @@ ___rparam_used 1 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ADSTPTH 3E0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ADSTPTL 3DF 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _RD1PPS 21A 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-__end_of_memcpy 43BE 0 CODE 0 text30 dist/default/production\tem-firmware.X.production.o
-main@therm_i 526 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-__end_of_SYSTEM_Initialize 453C 0 CODE 0 text6 dist/default/production\tem-firmware.X.production.o
-get_TM2BMS_Broadcast_msg@min_temp 517 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+__end_of_memcpy 4294 0 CODE 0 text29 dist/default/production\tem-firmware.X.production.o
+main@therm_i 523 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+__end_of_SYSTEM_Initialize 4456 0 CODE 0 text5 dist/default/production\tem-firmware.X.production.o
+get_TM2BMS_Broadcast_msg@min_temp 514 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 isTxChannel@channel 504 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 CAN1_SetInvalidMessageInterruptHandler@handler 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-__end_of_DefaultBusErrorHandler 466A 0 CODE 0 text45 dist/default/production\tem-firmware.X.production.o
+__end_of_DefaultBusErrorHandler 4584 0 CODE 0 text44 dist/default/production\tem-firmware.X.production.o
 _C1INTHbits 11D 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1INTLbits 11C 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1INTTbits 11F 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-__end_of_DefaultModeChangeHandler 4664 0 CODE 0 text42 dist/default/production\tem-firmware.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
+__end_of_DefaultModeChangeHandler 457E 0 CODE 0 text41 dist/default/production\tem-firmware.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
 _ADC_DefaultADI_ISR 0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1FIFOBA 14C 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-__end_of_CAN1_TransmitFIFOStatusGet 44FE 0 CODE 0 text26 dist/default/production\tem-firmware.X.production.o
+__end_of_CAN1_TransmitFIFOStatusGet 4418 0 CODE 0 text25 dist/default/production\tem-firmware.X.production.o
 __Hbank5 0 0 ABS 0 bank5 dist/default/production\tem-firmware.X.production.o
 __Hbank6 0 0 ABS 0 bank6 dist/default/production\tem-firmware.X.production.o
 __Hbank7 0 0 ABS 0 bank7 dist/default/production\tem-firmware.X.production.o
@@ -933,8 +894,8 @@ __Hbank54 0 0 ABS 0 bank54 dist/default/production\tem-firmware.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\tem-firmware.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\tem-firmware.X.production.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\tem-firmware.X.production.o
-__smallconst 3700 0 SMALLCONST 0 smallconst C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-__end_of_ADC_SetADIInterruptHandler 463A 0 CODE 0 text25 dist/default/production\tem-firmware.X.production.o
+__smallconst 3700 0 SMALLCONST 0 smallconst C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+__end_of_ADC_SetADIInterruptHandler 4554 0 CODE 0 text24 dist/default/production\tem-firmware.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\tem-firmware.X.production.o
 __Hconfig 30001F 0 CONFIG 4 config dist/default/production\tem-firmware.X.production.o
 adc_to_temp@reading 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
@@ -948,7 +909,7 @@ __Lconst 0 0 CONST 0 const dist/default/production\tem-firmware.X.production.o
 __Lidata 0 0 CODE 0 idata dist/default/production\tem-firmware.X.production.o
 __Lidloc 0 0 ABS 0 idloc dist/default/production\tem-firmware.X.production.o
 __Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\tem-firmware.X.production.o
-_ValidateTransmission 3EBE 0 CODE 0 text31 dist/default/production\tem-firmware.X.production.o
+_ValidateTransmission 3EA8 0 CODE 0 text30 dist/default/production\tem-firmware.X.production.o
 __Lparam 0 0 COMRAM 1 rparam dist/default/production\tem-firmware.X.production.o
 __Lrdata 0 0 COMRAM 1 rdata dist/default/production\tem-firmware.X.production.o
 __Lstack 0 0 STACK 2 stack dist/default/production\tem-firmware.X.production.o
@@ -963,10 +924,10 @@ __Ltext7 0 0 ABS 0 text7 dist/default/production\tem-firmware.X.production.o
 __Ltext8 0 0 ABS 0 text8 dist/default/production\tem-firmware.X.production.o
 __Ltext9 0 0 ABS 0 text9 dist/default/production\tem-firmware.X.production.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/production\tem-firmware.X.production.o
-_CAN1_BusErrorHandler 537 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
+_CAN1_BusErrorHandler 534 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
 memcpy@d1 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 memcpy@s1 505 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-_INTERRUPT_Initialize 465A 0 CODE 0 text10 dist/default/production\tem-firmware.X.production.o
+_INTERRUPT_Initialize 4574 0 CODE 0 text9 dist/default/production\tem-firmware.X.production.o
 __Habs1 0 0 ABS 0 abs1 dist/default/production\tem-firmware.X.production.o
 __Hdata 0 0 ABS 0 data dist/default/production\tem-firmware.X.production.o
 __Hheap 0 0 HEAP 7 heap dist/default/production\tem-firmware.X.production.o
@@ -987,18 +948,18 @@ memcpy@d 509 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.prod
 memcpy@n 507 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 memcpy@s 50B 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 _C1TRECUbits 136 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-__end_of_DefaultBusWakeUpActivityHandler 4668 0 CODE 0 text44 dist/default/production\tem-firmware.X.production.o
-__end_of_CAN1_SetBusWakeUpActivityInterruptHandler 4602 0 CODE 0 text19 dist/default/production\tem-firmware.X.production.o
+__end_of_DefaultBusWakeUpActivityHandler 4582 0 CODE 0 text43 dist/default/production\tem-firmware.X.production.o
+__end_of_CAN1_SetBusWakeUpActivityInterruptHandler 451C 0 CODE 0 text18 dist/default/production\tem-firmware.X.production.o
 CAN1_SetModeChangeInterruptHandler@handler 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-_CAN1_BitRateConfiguration 4598 0 CODE 0 text21 dist/default/production\tem-firmware.X.production.o
+_CAN1_BitRateConfiguration 44B2 0 CODE 0 text20 dist/default/production\tem-firmware.X.production.o
 __Hirdata 0 0 CODE 0 irdata dist/default/production\tem-firmware.X.production.o
-__S0 466A 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
+__S0 4584 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __S1 700 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __S4 0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __S5 0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __Hivt0x8 1A 0 CODE 0 ivt0x8 dist/default/production\tem-firmware.X.production.o
-__end_of_CAN1_SetBusErrorInterruptHandler 4610 0 CODE 0 text20 dist/default/production\tem-firmware.X.production.o
+__end_of_CAN1_SetBusErrorInterruptHandler 452A 0 CODE 0 text19 dist/default/production\tem-firmware.X.production.o
 _C1NBTCFGH 105 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1NBTCFGL 104 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1NBTCFGT 107 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
@@ -1010,34 +971,33 @@ _C1TXQCONH 151 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1TXQCONL 150 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1TXQCONT 153 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _C1TXQCONU 152 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-__pnvCOMRAM 54A 0 COMRAM 1 nvCOMRAM dist/default/production\tem-firmware.X.production.o
+__pnvCOMRAM 549 0 COMRAM 1 nvCOMRAM dist/default/production\tem-firmware.X.production.o
 get_TM_General_Broadcast_msg@broadcast_therm_temp 50C 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-_CAN1_TxAttemptHandler 52E 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
-__end_of_isTxChannel 4448 0 CODE 0 text28 dist/default/production\tem-firmware.X.production.o
+_CAN1_TxAttemptHandler 52B 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
+__end_of_isTxChannel 4362 0 CODE 0 text27 dist/default/production\tem-firmware.X.production.o
 __pivt0x8 8 0 CODE 0 ivt0x8 dist/default/production\tem-firmware.X.production.o
 ValidateTransmission@txMsgStatus 50A 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 CAN1_SetTxAttemptInterruptHandler@handler 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\tem-firmware.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\tem-firmware.X.production.o
-_SYSTEM_Initialize 4522 0 CODE 0 text6 dist/default/production\tem-firmware.X.production.o
-__end_of_GetTxFifoStatus 456C 0 CODE 0 text32 dist/default/production\tem-firmware.X.production.o
-_ADC_IsConversionDone 456C 0 CODE 0 text36 dist/default/production\tem-firmware.X.production.o
-_CAN1_SetSystemErrorInterruptHandler 45CA 0 CODE 0 text16 dist/default/production\tem-firmware.X.production.o
+_SYSTEM_Initialize 443C 0 CODE 0 text5 dist/default/production\tem-firmware.X.production.o
+__end_of_GetTxFifoStatus 4486 0 CODE 0 text31 dist/default/production\tem-firmware.X.production.o
+_ADC_IsConversionDone 4486 0 CODE 0 text35 dist/default/production\tem-firmware.X.production.o
+_CAN1_SetSystemErrorInterruptHandler 44E4 0 CODE 0 text15 dist/default/production\tem-firmware.X.production.o
 get_checksum@len 505 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 get_checksum@sum 506 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-_CAN1_SetTxAttemptInterruptHandler 45BC 0 CODE 0 text15 dist/default/production\tem-firmware.X.production.o
-_ADC_GetConversionResult 4582 0 CODE 0 text37 dist/default/production\tem-firmware.X.production.o
-get_TM2BMS_Broadcast_msg@msg 51B 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+_CAN1_SetTxAttemptInterruptHandler 44D6 0 CODE 0 text14 dist/default/production\tem-firmware.X.production.o
+_ADC_GetConversionResult 449C 0 CODE 0 text36 dist/default/production\tem-firmware.X.production.o
+get_TM2BMS_Broadcast_msg@msg 518 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __Hramtop 3700 0 RAM 0 ramtop dist/default/production\tem-firmware.X.production.o
-__end_of_ADC_GetConversionResult 4598 0 CODE 0 text37 dist/default/production\tem-firmware.X.production.o
+__end_of_ADC_GetConversionResult 44B2 0 CODE 0 text36 dist/default/production\tem-firmware.X.production.o
 get_TM_General_Broadcast_msg@total_temp 50B 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\tem-firmware.X.production.o
 CAN1_OperationModeSet@requestMode 505 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __pdataBANK6 600 0 BANK6 1 dataBANK6 dist/default/production\tem-firmware.X.production.o
 __activetblptr 3 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __Hstruct 0 0 COMRAM 1 struct dist/default/production\tem-firmware.X.production.o
-__LbssBANK5 0 0 ABS 0 bssBANK5 dist/default/production\tem-firmware.X.production.o
-get_TM2BMS_Broadcast_msg@this_temp 519 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+get_TM2BMS_Broadcast_msg@this_temp 516 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __Htext10 0 0 ABS 0 text10 dist/default/production\tem-firmware.X.production.o
 __Htext11 0 0 ABS 0 text11 dist/default/production\tem-firmware.X.production.o
 __Htext12 0 0 ABS 0 text12 dist/default/production\tem-firmware.X.production.o
@@ -1073,57 +1033,54 @@ __Htext41 0 0 ABS 0 text41 dist/default/production\tem-firmware.X.production.o
 __Htext42 0 0 ABS 0 text42 dist/default/production\tem-firmware.X.production.o
 __Htext43 0 0 ABS 0 text43 dist/default/production\tem-firmware.X.production.o
 __Htext44 0 0 ABS 0 text44 dist/default/production\tem-firmware.X.production.o
-__Htext45 0 0 ABS 0 text45 dist/default/production\tem-firmware.X.production.o
-_DefaultSystemErrorHandler 4660 0 CODE 0 text41 dist/default/production\tem-firmware.X.production.o
-__end_of_CAN1_OperationModeGet 4652 0 CODE 0 text33 dist/default/production\tem-firmware.X.production.o
-__end_of_CAN1_OperationModeSet 4228 0 CODE 0 text13 dist/default/production\tem-firmware.X.production.o
-_CAN1_Transmit 4110 0 CODE 0 text27 dist/default/production\tem-firmware.X.production.o
-_INTERRUPT_InterruptManager 447C 0 CODE 0 text38 dist/default/production\tem-firmware.X.production.o
-_ADC_Initialize 4058 0 CODE 0 text22 dist/default/production\tem-firmware.X.production.o
+_DefaultSystemErrorHandler 457A 0 CODE 0 text40 dist/default/production\tem-firmware.X.production.o
+__end_of_CAN1_OperationModeGet 456C 0 CODE 0 text32 dist/default/production\tem-firmware.X.production.o
+__end_of_CAN1_OperationModeSet 414E 0 CODE 0 text12 dist/default/production\tem-firmware.X.production.o
+_CAN1_Transmit 4036 0 CODE 0 text26 dist/default/production\tem-firmware.X.production.o
+_INTERRUPT_InterruptManager 4396 0 CODE 0 text37 dist/default/production\tem-firmware.X.production.o
+_ADC_Initialize 3F7E 0 CODE 0 text21 dist/default/production\tem-firmware.X.production.o
 _PIE0bits 49E 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 CAN1_TransmitFIFOStatusGet@fifoChannel 506 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-_memcpy 436E 0 CODE 0 text30 dist/default/production\tem-firmware.X.production.o
+_memcpy 4244 0 CODE 0 text29 dist/default/production\tem-firmware.X.production.o
 CAN1_TransmitFIFOStatusGet@status 505 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-__ptext10 465A 0 CODE 0 text10 dist/default/production\tem-firmware.X.production.o
-__ptext11 43BE 0 CODE 0 text11 dist/default/production\tem-firmware.X.production.o
-__ptext12 44FE 0 CODE 0 text12 dist/default/production\tem-firmware.X.production.o
-__ptext13 41A0 0 CODE 0 text13 dist/default/production\tem-firmware.X.production.o
-__ptext14 42A6 0 CODE 0 text14 dist/default/production\tem-firmware.X.production.o
-__ptext15 45BC 0 CODE 0 text15 dist/default/production\tem-firmware.X.production.o
-__ptext16 45CA 0 CODE 0 text16 dist/default/production\tem-firmware.X.production.o
-__ptext17 45D8 0 CODE 0 text17 dist/default/production\tem-firmware.X.production.o
-__ptext18 45E6 0 CODE 0 text18 dist/default/production\tem-firmware.X.production.o
-__ptext19 45F4 0 CODE 0 text19 dist/default/production\tem-firmware.X.production.o
-__ptext20 4602 0 CODE 0 text20 dist/default/production\tem-firmware.X.production.o
-__ptext21 4598 0 CODE 0 text21 dist/default/production\tem-firmware.X.production.o
-__ptext22 4058 0 CODE 0 text22 dist/default/production\tem-firmware.X.production.o
-__ptext23 4610 0 CODE 0 text23 dist/default/production\tem-firmware.X.production.o
-__ptext24 461E 0 CODE 0 text24 dist/default/production\tem-firmware.X.production.o
-__ptext25 462C 0 CODE 0 text25 dist/default/production\tem-firmware.X.production.o
-__ptext26 44D6 0 CODE 0 text26 dist/default/production\tem-firmware.X.production.o
-__ptext27 4110 0 CODE 0 text27 dist/default/production\tem-firmware.X.production.o
-__ptext28 440A 0 CODE 0 text28 dist/default/production\tem-firmware.X.production.o
-__ptext29 370E 0 CODE 0 text29 dist/default/production\tem-firmware.X.production.o
-__ptext30 436E 0 CODE 0 text30 dist/default/production\tem-firmware.X.production.o
-__ptext31 3EBE 0 CODE 0 text31 dist/default/production\tem-firmware.X.production.o
-__ptext32 4554 0 CODE 0 text32 dist/default/production\tem-firmware.X.production.o
-__ptext33 4648 0 CODE 0 text33 dist/default/production\tem-firmware.X.production.o
-__ptext34 463A 0 CODE 0 text34 dist/default/production\tem-firmware.X.production.o
-__ptext35 4652 0 CODE 0 text35 dist/default/production\tem-firmware.X.production.o
-__ptext36 456C 0 CODE 0 text36 dist/default/production\tem-firmware.X.production.o
-__ptext37 4582 0 CODE 0 text37 dist/default/production\tem-firmware.X.production.o
-__ptext38 447C 0 CODE 0 text38 dist/default/production\tem-firmware.X.production.o
-__ptext39 3A80 0 CODE 0 text39 dist/default/production\tem-firmware.X.production.o
-__ptext40 465E 0 CODE 0 text40 dist/default/production\tem-firmware.X.production.o
-__ptext41 4660 0 CODE 0 text41 dist/default/production\tem-firmware.X.production.o
-__ptext42 4662 0 CODE 0 text42 dist/default/production\tem-firmware.X.production.o
-__ptext43 4664 0 CODE 0 text43 dist/default/production\tem-firmware.X.production.o
-__ptext44 4666 0 CODE 0 text44 dist/default/production\tem-firmware.X.production.o
-__ptext45 4668 0 CODE 0 text45 dist/default/production\tem-firmware.X.production.o
-_CAN1_TX_FIFO_Configuration 44FE 0 CODE 0 text12 dist/default/production\tem-firmware.X.production.o
-__end_of_PIN_MANAGER_Initialize 42A6 0 CODE 0 text8 dist/default/production\tem-firmware.X.production.o
-get_TM2BMS_Broadcast_msg@temp_i 51A 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-___awdiv 3F94 0 CODE 0 text4 dist/default/production\tem-firmware.X.production.o
+__ptext10 4294 0 CODE 0 text10 dist/default/production\tem-firmware.X.production.o
+__ptext11 4418 0 CODE 0 text11 dist/default/production\tem-firmware.X.production.o
+__ptext12 40C6 0 CODE 0 text12 dist/default/production\tem-firmware.X.production.o
+__ptext13 41CC 0 CODE 0 text13 dist/default/production\tem-firmware.X.production.o
+__ptext14 44D6 0 CODE 0 text14 dist/default/production\tem-firmware.X.production.o
+__ptext15 44E4 0 CODE 0 text15 dist/default/production\tem-firmware.X.production.o
+__ptext16 44F2 0 CODE 0 text16 dist/default/production\tem-firmware.X.production.o
+__ptext17 4500 0 CODE 0 text17 dist/default/production\tem-firmware.X.production.o
+__ptext18 450E 0 CODE 0 text18 dist/default/production\tem-firmware.X.production.o
+__ptext19 451C 0 CODE 0 text19 dist/default/production\tem-firmware.X.production.o
+__ptext20 44B2 0 CODE 0 text20 dist/default/production\tem-firmware.X.production.o
+__ptext21 3F7E 0 CODE 0 text21 dist/default/production\tem-firmware.X.production.o
+__ptext22 452A 0 CODE 0 text22 dist/default/production\tem-firmware.X.production.o
+__ptext23 4538 0 CODE 0 text23 dist/default/production\tem-firmware.X.production.o
+__ptext24 4546 0 CODE 0 text24 dist/default/production\tem-firmware.X.production.o
+__ptext25 43F0 0 CODE 0 text25 dist/default/production\tem-firmware.X.production.o
+__ptext26 4036 0 CODE 0 text26 dist/default/production\tem-firmware.X.production.o
+__ptext27 4324 0 CODE 0 text27 dist/default/production\tem-firmware.X.production.o
+__ptext28 370E 0 CODE 0 text28 dist/default/production\tem-firmware.X.production.o
+__ptext29 4244 0 CODE 0 text29 dist/default/production\tem-firmware.X.production.o
+__ptext30 3EA8 0 CODE 0 text30 dist/default/production\tem-firmware.X.production.o
+__ptext31 446E 0 CODE 0 text31 dist/default/production\tem-firmware.X.production.o
+__ptext32 4562 0 CODE 0 text32 dist/default/production\tem-firmware.X.production.o
+__ptext33 4554 0 CODE 0 text33 dist/default/production\tem-firmware.X.production.o
+__ptext34 456C 0 CODE 0 text34 dist/default/production\tem-firmware.X.production.o
+__ptext35 4486 0 CODE 0 text35 dist/default/production\tem-firmware.X.production.o
+__ptext36 449C 0 CODE 0 text36 dist/default/production\tem-firmware.X.production.o
+__ptext37 4396 0 CODE 0 text37 dist/default/production\tem-firmware.X.production.o
+__ptext38 3A80 0 CODE 0 text38 dist/default/production\tem-firmware.X.production.o
+__ptext39 4578 0 CODE 0 text39 dist/default/production\tem-firmware.X.production.o
+__ptext40 457A 0 CODE 0 text40 dist/default/production\tem-firmware.X.production.o
+__ptext41 457C 0 CODE 0 text41 dist/default/production\tem-firmware.X.production.o
+__ptext42 457E 0 CODE 0 text42 dist/default/production\tem-firmware.X.production.o
+__ptext43 4580 0 CODE 0 text43 dist/default/production\tem-firmware.X.production.o
+__ptext44 4582 0 CODE 0 text44 dist/default/production\tem-firmware.X.production.o
+_CAN1_TX_FIFO_Configuration 4418 0 CODE 0 text11 dist/default/production\tem-firmware.X.production.o
+__end_of_PIN_MANAGER_Initialize 41CC 0 CODE 0 text7 dist/default/production\tem-firmware.X.production.o
+get_TM2BMS_Broadcast_msg@temp_i 517 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __Lbank10 0 0 ABS 0 bank10 dist/default/production\tem-firmware.X.production.o
 __Lbank11 0 0 ABS 0 bank11 dist/default/production\tem-firmware.X.production.o
 __Lbank12 0 0 ABS 0 bank12 dist/default/production\tem-firmware.X.production.o
@@ -1175,23 +1132,23 @@ __Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\tem-firmware.X.production.o
 WriteMessageToFifo@msgId 515 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __Lcomram 0 0 ABS 0 comram dist/default/production\tem-firmware.X.production.o
 __Lconfig 0 0 CONFIG 4 config dist/default/production\tem-firmware.X.production.o
-_CAN1_OperationModeGet 4648 0 CODE 0 text33 dist/default/production\tem-firmware.X.production.o
-_CAN1_OperationModeSet 41A0 0 CODE 0 text13 dist/default/production\tem-firmware.X.production.o
-_GetTxFifoStatus 4554 0 CODE 0 text32 dist/default/production\tem-firmware.X.production.o
+_CAN1_OperationModeGet 4562 0 CODE 0 text32 dist/default/production\tem-firmware.X.production.o
+_CAN1_OperationModeSet 40C6 0 CODE 0 text12 dist/default/production\tem-firmware.X.production.o
+_GetTxFifoStatus 446E 0 CODE 0 text31 dist/default/production\tem-firmware.X.production.o
 _C1TXQSTALbits 154 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\tem-firmware.X.production.o
-___inthi_stack_hi 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-___inthi_stack_lo 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
 get_TM_General_Broadcast_msg@min_temp_i 50D 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-__end_of_adc_to_temp 45BC 0 CODE 0 text5 dist/default/production\tem-firmware.X.production.o
+__end_of_adc_to_temp 44D6 0 CODE 0 text4 dist/default/production\tem-firmware.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\tem-firmware.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-_DefaultTxAttemptHandler 465E 0 CODE 0 text40 dist/default/production\tem-firmware.X.production.o
-_CAN1_ModeChangeHandler 534 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
-stackhi 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-stacklo 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
+isa$std 1 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+_DefaultTxAttemptHandler 4578 0 CODE 0 text39 dist/default/production\tem-firmware.X.production.o
+_CAN1_ModeChangeHandler 531 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
 CAN1_OperationModeSet@opMode 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-__end_of_DefaultTxAttemptHandler 4660 0 CODE 0 text40 dist/default/production\tem-firmware.X.production.o
+__end_of_DefaultTxAttemptHandler 457A 0 CODE 0 text39 dist/default/production\tem-firmware.X.production.o
 _OSCCON1 AD 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _OSCCON3 AF 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _OSCTUNE B0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
@@ -1201,51 +1158,48 @@ _ADCON0bits 3F3 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ADCON1bits 3F4 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ADCON2bits 3F5 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _ADCON3bits 3F6 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-__end_of_WriteMessageToFifo 3936 0 CODE 0 text29 dist/default/production\tem-firmware.X.production.o
+__end_of_WriteMessageToFifo 3936 0 CODE 0 text28 dist/default/production\tem-firmware.X.production.o
 __Lspace_0 0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __Lspace_1 0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __Lspace_4 0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 CAN1_Transmit@fifoChannel 51E 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-__pbssCOMRAM 52E 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
-__end_of_ADC_Initialize 4110 0 CODE 0 text22 dist/default/production\tem-firmware.X.production.o
+__pbssCOMRAM 52B 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
+__end_of_ADC_Initialize 4036 0 CODE 0 text21 dist/default/production\tem-firmware.X.production.o
 _PIR0bits 4AE 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _PIR1bits 4AF 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _PIR2bits 4B0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-main@reading 524 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+main@reading 521 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 CAN1_OperationModeSet@status 504 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-_ADC_Context1Thereshld_ISR 54D 0 COMRAM 1 nvCOMRAM dist/default/production\tem-firmware.X.production.o
+_ADC_Context1Thereshld_ISR 54C 0 COMRAM 1 nvCOMRAM dist/default/production\tem-firmware.X.production.o
 _get_TM_General_Broadcast_msg 3BAC 0 CODE 0 text1 dist/default/production\tem-firmware.X.production.o
-end_of_initialization 4368 0 CODE 0 cinit dist/default/production\tem-firmware.X.production.o
+end_of_initialization 431E 0 CODE 0 cinit dist/default/production\tem-firmware.X.production.o
 CAN1_SetSystemErrorInterruptHandler@handler 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\tem-firmware.X.production.o
-_ADC_ActiveClockTuning_ISR 54A 0 COMRAM 1 nvCOMRAM dist/default/production\tem-firmware.X.production.o
-___awdiv@quotient 509 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-?___awdiv 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+_ADC_ActiveClockTuning_ISR 549 0 COMRAM 1 nvCOMRAM dist/default/production\tem-firmware.X.production.o
 get_checksum@i 507 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\tem-firmware.X.production.o
-__HbssBANK5 0 0 ABS 0 bssBANK5 dist/default/production\tem-firmware.X.production.o
 __end_of_DLC_BYTES 370A 0 SMALLCONST 0 smallconst dist/default/production\tem-firmware.X.production.o
-get_TM2BMS_Broadcast_msg@temps_array 50B 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+get_TM2BMS_Broadcast_msg@temps_array 508 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __Lramtop 3700 0 RAM 0 ramtop dist/default/production\tem-firmware.X.production.o
-__end_of_CAN1_SetTxAttemptInterruptHandler 45CA 0 CODE 0 text15 dist/default/production\tem-firmware.X.production.o
+__end_of_CAN1_SetTxAttemptInterruptHandler 44E4 0 CODE 0 text14 dist/default/production\tem-firmware.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\tem-firmware.X.production.o
-__pcinit 431E 0 CODE 0 cinit dist/default/production\tem-firmware.X.production.o
+__pcinit 42E0 0 CODE 0 cinit dist/default/production\tem-firmware.X.production.o
 __ptext0 3936 0 CODE 0 text0 dist/default/production\tem-firmware.X.production.o
 __ptext1 3BAC 0 CODE 0 text1 dist/default/production\tem-firmware.X.production.o
-__ptext2 3CB6 0 CODE 0 text2 dist/default/production\tem-firmware.X.production.o
-__ptext3 4448 0 CODE 0 text3 dist/default/production\tem-firmware.X.production.o
-__ptext4 3F94 0 CODE 0 text4 dist/default/production\tem-firmware.X.production.o
-__ptext5 45AC 0 CODE 0 text5 dist/default/production\tem-firmware.X.production.o
-__ptext6 4522 0 CODE 0 text6 dist/default/production\tem-firmware.X.production.o
-__ptext7 44AE 0 CODE 0 text7 dist/default/production\tem-firmware.X.production.o
-__ptext8 4228 0 CODE 0 text8 dist/default/production\tem-firmware.X.production.o
-__ptext9 453C 0 CODE 0 text9 dist/default/production\tem-firmware.X.production.o
-_WriteMessageToFifo 370E 0 CODE 0 text29 dist/default/production\tem-firmware.X.production.o
+__ptext2 3DB6 0 CODE 0 text2 dist/default/production\tem-firmware.X.production.o
+__ptext3 4362 0 CODE 0 text3 dist/default/production\tem-firmware.X.production.o
+__ptext4 44C6 0 CODE 0 text4 dist/default/production\tem-firmware.X.production.o
+__ptext5 443C 0 CODE 0 text5 dist/default/production\tem-firmware.X.production.o
+__ptext6 43C8 0 CODE 0 text6 dist/default/production\tem-firmware.X.production.o
+__ptext7 414E 0 CODE 0 text7 dist/default/production\tem-firmware.X.production.o
+__ptext8 4456 0 CODE 0 text8 dist/default/production\tem-firmware.X.production.o
+__ptext9 4574 0 CODE 0 text9 dist/default/production\tem-firmware.X.production.o
+_WriteMessageToFifo 370E 0 CODE 0 text28 dist/default/production\tem-firmware.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\tem-firmware.X.production.o
-_get_TM2BMS_Broadcast_msg 3CB6 0 CODE 0 text2 dist/default/production\tem-firmware.X.production.o
-_CAN1_TransmitFIFOStatusGet 44D6 0 CODE 0 text26 dist/default/production\tem-firmware.X.production.o
+_get_TM2BMS_Broadcast_msg 3DB6 0 CODE 0 text2 dist/default/production\tem-firmware.X.production.o
+_CAN1_TransmitFIFOStatusGet 43F0 0 CODE 0 text25 dist/default/production\tem-firmware.X.production.o
 ADC_StartConversion@channel 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __Ltext10 0 0 ABS 0 text10 dist/default/production\tem-firmware.X.production.o
 __Ltext11 0 0 ABS 0 text11 dist/default/production\tem-firmware.X.production.o
@@ -1282,14 +1236,13 @@ __Ltext41 0 0 ABS 0 text41 dist/default/production\tem-firmware.X.production.o
 __Ltext42 0 0 ABS 0 text42 dist/default/production\tem-firmware.X.production.o
 __Ltext43 0 0 ABS 0 text43 dist/default/production\tem-firmware.X.production.o
 __Ltext44 0 0 ABS 0 text44 dist/default/production\tem-firmware.X.production.o
-__Ltext45 0 0 ABS 0 text45 dist/default/production\tem-firmware.X.production.o
 _ADC_DefaultContext1Threshold_ISR 0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-__ramtop 3700 0 RAM 0 ramtop C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
+__ramtop 3700 0 RAM 0 ramtop C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\tem-firmware.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\tem-firmware.X.production.o
 get_TM_General_Broadcast_msg@this_temp 513 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\tem-firmware.X.production.o
-_ADC_SetADIInterruptHandler 462C 0 CODE 0 text25 dist/default/production\tem-firmware.X.production.o
+_ADC_SetADIInterruptHandler 4546 0 CODE 0 text24 dist/default/production\tem-firmware.X.production.o
 __psmallconst 3700 0 SMALLCONST 0 smallconst dist/default/production\tem-firmware.X.production.o
 ValidateTransmission@validChannel 509 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 WriteMessageToFifo@status 514 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
@@ -1301,28 +1254,28 @@ _SLRCONB 40B 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _SLRCONC 413 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _SLRCOND 41B 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 _SLRCONE 423 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-___heap_lo 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-_get_checksum 4448 0 CODE 0 text3 dist/default/production\tem-firmware.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+_get_checksum 4362 0 CODE 0 text3 dist/default/production\tem-firmware.X.production.o
 ___param_bank 0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-___intlo_stack_hi 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
-___intlo_stack_lo 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsoi4.\driver_tmp_9.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\alexl\AppData\Local\Temp\xcAsg40.\driver_tmp_9.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\tem-firmware.X.production.o
-__end_of__initialization 4368 0 CODE 0 cinit dist/default/production\tem-firmware.X.production.o
+__end_of__initialization 431E 0 CODE 0 cinit dist/default/production\tem-firmware.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\tem-firmware.X.production.o
-__end_of_CAN1_ErrorNotificationInterruptEnable 431E 0 CODE 0 text14 dist/default/production\tem-firmware.X.production.o
+__end_of_CAN1_ErrorNotificationInterruptEnable 4244 0 CODE 0 text13 dist/default/production\tem-firmware.X.production.o
 _ADSTATbits 3F7 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
-_DefaultBusWakeUpActivityHandler 4666 0 CODE 0 text44 dist/default/production\tem-firmware.X.production.o
-__pidataBANK6 3DBE 0 CODE 0 idataBANK6 dist/default/production\tem-firmware.X.production.o
+_DefaultBusWakeUpActivityHandler 4580 0 CODE 0 text43 dist/default/production\tem-firmware.X.production.o
+__pidataBANK6 3CB6 0 CODE 0 idataBANK6 dist/default/production\tem-firmware.X.production.o
 WriteMessageToFifo@txCanMsg 510 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\tem-firmware.X.production.o
-__end_of_CAN1_Transmit 41A0 0 CODE 0 text27 dist/default/production\tem-firmware.X.production.o
-get_TM2BMS_Broadcast_msg@max_temp_i 515 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-_CAN1_SetModeChangeInterruptHandler 45D8 0 CODE 0 text17 dist/default/production\tem-firmware.X.production.o
+__end_of_CAN1_Transmit 40C6 0 CODE 0 text26 dist/default/production\tem-firmware.X.production.o
+get_TM2BMS_Broadcast_msg@max_temp_i 512 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+_CAN1_SetModeChangeInterruptHandler 44F2 0 CODE 0 text16 dist/default/production\tem-firmware.X.production.o
 __pcstackCOMRAM 501 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 ValidateTransmission@txCanMsg 504 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 CAN1_Transmit@txFifoObj 51C 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-_DefaultInvalidMessageHandler 4664 0 CODE 0 text43 dist/default/production\tem-firmware.X.production.o
+_DefaultInvalidMessageHandler 457E 0 CODE 0 text42 dist/default/production\tem-firmware.X.production.o
 __end_of_FIFO 370C 0 SMALLCONST 0 smallconst dist/default/production\tem-firmware.X.production.o
 __end_of_main 3A80 0 CODE 0 text0 dist/default/production\tem-firmware.X.production.o
 _ADC_DefaultActiveClockTuning_ISR 0 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
@@ -1350,29 +1303,28 @@ __LRAM 1 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __Lbss 0 0 RAM 1 bss dist/default/production\tem-firmware.X.production.o
 __Lram 0 0 ABS 0 ram dist/default/production\tem-firmware.X.production.o
 __Lsfr 0 0 ABS 0 sfr dist/default/production\tem-firmware.X.production.o
-?_get_TM2BMS_Broadcast_msg 50B 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-_temps 560 0 BANK5 1 bssBANK5 dist/default/production\tem-firmware.X.production.o
-_CAN1_BusWakeUpActivityHandler 53A 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
+?_get_TM2BMS_Broadcast_msg 508 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
+_temps 547 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
+_CAN1_BusWakeUpActivityHandler 537 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
 ADC_SetActiveClockTuningInterruptHandler@InterruptHandler 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 ADC_SelectContext@context 503 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __HdataBANK6 0 0 ABS 0 dataBANK6 dist/default/production\tem-firmware.X.production.o
-__end_of_OSCILLATOR_Initialize 4554 0 CODE 0 text9 dist/default/production\tem-firmware.X.production.o
-__end_of_CAN1_Initialize 440A 0 CODE 0 text11 dist/default/production\tem-firmware.X.production.o
+__end_of_OSCILLATOR_Initialize 446E 0 CODE 0 text8 dist/default/production\tem-firmware.X.production.o
+__end_of_CAN1_Initialize 42E0 0 CODE 0 text10 dist/default/production\tem-firmware.X.production.o
 get_TM_General_Broadcast_msg@max_temp 512 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
-__initialization 431E 0 CODE 0 cinit dist/default/production\tem-firmware.X.production.o
-__pbssBANK5 560 0 BANK5 1 bssBANK5 dist/default/production\tem-firmware.X.production.o
-_CAN1_SystemErrorHandler 531 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
-_DefaultModeChangeHandler 4662 0 CODE 0 text42 dist/default/production\tem-firmware.X.production.o
+__initialization 42E0 0 CODE 0 cinit dist/default/production\tem-firmware.X.production.o
+_CAN1_SystemErrorHandler 52E 0 COMRAM 1 bssCOMRAM dist/default/production\tem-firmware.X.production.o
+_DefaultModeChangeHandler 457C 0 CODE 0 text41 dist/default/production\tem-firmware.X.production.o
 ValidateTransmission@field 50B 0 COMRAM 1 cstackCOMRAM dist/default/production\tem-firmware.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\tem-firmware.X.production.o
 __Hsmallconst 370E 0 SMALLCONST 0 smallconst dist/default/production\tem-firmware.X.production.o
-_ADC_SetActiveClockTuningInterruptHandler 461E 0 CODE 0 text24 dist/default/production\tem-firmware.X.production.o
+_ADC_SetActiveClockTuningInterruptHandler 4538 0 CODE 0 text23 dist/default/production\tem-firmware.X.production.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/production\tem-firmware.X.production.o
-__end_of_ADC_SelectContext 465A 0 CODE 0 text35 dist/default/production\tem-firmware.X.production.o
+__end_of_ADC_SelectContext 4574 0 CODE 0 text34 dist/default/production\tem-firmware.X.production.o
 _ADCSEL1bits 3FC 0 ABS 0 - dist/default/production\tem-firmware.X.production.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\tem-firmware.X.production.o
-__end_of_get_checksum 447C 0 CODE 0 text3 dist/default/production\tem-firmware.X.production.o
-_OSCILLATOR_Initialize 453C 0 CODE 0 text9 dist/default/production\tem-firmware.X.production.o
+__end_of_get_checksum 4396 0 CODE 0 text3 dist/default/production\tem-firmware.X.production.o
+_OSCILLATOR_Initialize 4456 0 CODE 0 text8 dist/default/production\tem-firmware.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1398,10 +1350,9 @@ _OSCILLATOR_Initialize 453C 0 CODE 0 text9 dist/default/production\tem-firmware.
 # All other numeric quantities are in decimal.
 %SEGMENTS
 ivt0x8 0 8 8 16 1
-text29 0 370E 370E F5C 1
-cstackCOMRAM 1 501 501 52 1
+text28 0 370E 370E E76 1
+cstackCOMRAM 1 501 501 51 1
 reset_vec 0 0 0 4 1
-bssBANK5 1 560 560 18 1
 smallconst 0 3700 3700 E 1
 dataBANK6 1 600 600 100 1
 # %NOTES Section

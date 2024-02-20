@@ -39263,7 +39263,7 @@ CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[]) {
     uint8_t max_temp_i = 0;
 
     int8_t total_temp = 0;
-    for(uint8_t temp_i=0; temp_i<23 - 0 + 1; temp_i++) {
+    for(uint8_t temp_i=0; temp_i<1 - 0 + 1; temp_i++) {
         int8_t this_temp = temps_array[temp_i];
         if(this_temp < min_temp)
         {
@@ -39278,13 +39278,13 @@ CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[]) {
         total_temp += this_temp;
     }
 
-    int8_t avg_temp = total_temp / 23 - 0 + 1;
+    int8_t avg_temp = total_temp / 1 - 0 + 1;
 
     msg_data[0] = 0;
     msg_data[1] = (uint8_t)min_temp;
     msg_data[2] = (uint8_t)max_temp;
     msg_data[3] = (uint8_t)avg_temp;
-    msg_data[4] = 23 - 0 + 1;
+    msg_data[4] = 1 - 0 + 1;
     msg_data[5] = max_temp_i;
     msg_data[6] = min_temp_i;
 
@@ -39316,7 +39316,7 @@ CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[]) {
     uint8_t max_temp_i = 0;
 
     int8_t total_temp = 0;
-    for(uint8_t temp_i=0; temp_i<23 - 0 + 1; temp_i++) {
+    for(uint8_t temp_i=0; temp_i<1 - 0 + 1; temp_i++) {
         int8_t this_temp = temps_array[temp_i];
         if(this_temp < min_temp)
         {
@@ -39337,7 +39337,7 @@ CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[]) {
     msg_data[0] = absolute_therm_id>>8;
     msg_data[1] = absolute_therm_id & 0xff;
     msg_data[2] = (uint8_t)broadcast_therm_temp;
-    msg_data[3] = 23 - 0 + 1;
+    msg_data[3] = 1 - 0 + 1;
     msg_data[4] = (uint8_t)min_temp;
     msg_data[5] = (uint8_t)max_temp;
     msg_data[6] = max_temp_i;
@@ -39354,7 +39354,7 @@ CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[]) {
 
 
 
-    if(++broadcast_therm_i >= 23 - 0 + 1) {
+    if(++broadcast_therm_i >= 1 - 0 + 1) {
         broadcast_therm_i = 0;
     }
 

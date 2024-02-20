@@ -66,12 +66,12 @@ void main(void)
     while (1)
     {   
         //read temps
-		for (uint8_t therm_i = MIN_THERM_ID; therm_i < MAX_THERM_ID; therm_i++)
+		for (uint8_t therm_i = MIN_THERM_ID; therm_i <= MAX_THERM_ID; therm_i++)
 		{
 			ADC_StartConversion((ADC_channel_t)therm_i);
 			while(!ADC_IsConversionDone());
 			adc_result_t reading = ADC_GetConversionResult();
-			temps[therm_i-MIN_THERM_ID] = adc_to_temp(reading);
+			temps[therm_i-MIN_THERM_ID] = 20+therm_i;//adc_to_temp(reading);
 		}
 
         // set up can interface

@@ -40,7 +40,7 @@
 
 #define MIN_THERM_ID 0 // zero based thermistor id
 #define MAX_THERM_ID 23 // zero based thermistor id
-#define THERM_COUNT MAX_THERM_ID - MIN_THERM_ID + 1
+#define THERM_COUNT (MAX_THERM_ID - MIN_THERM_ID + 1)
 
 
 #ifdef	__cplusplus
