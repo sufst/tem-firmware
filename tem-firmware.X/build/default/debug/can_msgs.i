@@ -39241,7 +39241,7 @@ void PMD_Initialize(void);
 # 35 "./config.h" 2
 
 
-static uint8_t module_id;
+static uint8_t module_id = 1;
 # 7 "can_msgs.c" 2
 
 
@@ -39284,7 +39284,7 @@ CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[]) {
 
     int8_t avg_temp = total_temp / (23 - 0 + 1);
 
-    msg_data[0] = module_id;
+    msg_data[0] = module_id - 1;
     msg_data[1] = (uint8_t)min_temp;
     msg_data[2] = (uint8_t)max_temp;
     msg_data[3] = (uint8_t)avg_temp;
@@ -39332,7 +39332,7 @@ CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[]) {
             max_temp = this_temp;
             max_temp_i = temp_i;
         }
-        total_temp += this_temp;
+            total_temp += this_temp;
     }
 
     uint16_t absolute_therm_id = (80 * module_id) + broadcast_therm_i;

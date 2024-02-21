@@ -366,8 +366,7 @@ CAN_FRAME_EXT 1
 "55 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 "37 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X/config.h
-[v _module_id@config$F1487 module_id `uc  1 s 1 module_id ]
-[v _module_id@config$F1576 module_id `uc  1 s 1 module_id ]
+[v _module_id@config$F1547 module_id `uc  1 s 1 module_id ]
 "10 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X/therm_LUT.h
 [v _therm_lut therm_lut `[4096]c  1 e 4096 0 ]
 "1338 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q84.h
@@ -458,18 +457,6 @@ CAN_FRAME_EXT 1
 [v _TRISD TRISD `VEuc  1 e 1 @1225 ]
 "4088
 [v _TRISE TRISE `VEuc  1 e 1 @1226 ]
-[s S1419 . 1 `uc 1 RD0 1 0 :1:0 
-`uc 1 RD1 1 0 :1:1 
-`uc 1 RD2 1 0 :1:2 
-`uc 1 RD3 1 0 :1:3 
-`uc 1 RD4 1 0 :1:4 
-`uc 1 RD5 1 0 :1:5 
-`uc 1 RD6 1 0 :1:6 
-`uc 1 RD7 1 0 :1:7 
-]
-"4323
-[u S1428 . 1 `S1419 1 . 1 0 ]
-[v _PORTDbits PORTDbits `VES1428  1 e 1 @1233 ]
 [s S1306 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
@@ -990,9 +977,9 @@ CAN_FRAME_EXT 1
 [v _main main `(v  1 e 1 0 ]
 {
 "107
-[v main@reading reading `us  1 a 2 0 ]
+[v main@reading reading `us  1 a 2 47 ]
 "103
-[v main@therm_i therm_i `uc  1 a 1 2 ]
+[v main@therm_i therm_i `uc  1 a 1 49 ]
 [s S348 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
 `uc 1 dlc 1 0 :4:2 
@@ -1002,7 +989,7 @@ CAN_FRAME_EXT 1
 "88
 [u S354 . 1 `uc 1 msgfields 1 0 `S348 1 . 1 0 ]
 [s S357 . 7 `ul 1 msgId 4 0 `S354 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v main@msg msg `S357  1 a 7 3 ]
+[v main@msg msg `S357  1 a 7 50 ]
 "137
 } 0
 "79 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can_types.h
@@ -1297,11 +1284,11 @@ CAN_FRAME_EXT 1
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
 {
 "8
-[v memcpy@s s `*.39Cuc  1 a 2 11 ]
+[v memcpy@s s `*.39Cuc  1 a 2 10 ]
 "7
-[v memcpy@d d `*.39uc  1 a 2 9 ]
+[v memcpy@d d `*.39uc  1 a 2 8 ]
 "9
-[v memcpy@tmp tmp `uc  1 a 1 8 ]
+[v memcpy@tmp tmp `uc  1 a 1 12 ]
 "4
 [v memcpy@d1 d1 `*.39v  1 p 2 2 ]
 [v memcpy@s1 s1 `*.39Cv  1 p 2 4 ]

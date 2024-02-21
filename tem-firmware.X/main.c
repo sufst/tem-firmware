@@ -92,20 +92,25 @@ void main(void)
 	ADC_SelectContext(CONTEXT_1);
     
     // read module ID from config resistors
-    module_id = (CFG_R30_GetValue()) * 1 +
-                (1 - CFG_R31_GetValue()) * 2 +
-                (1 - CFG_R32_GetValue()) * 4 +
-                (1 - CFG_R33_GetValue()) * 8;
+//    module_id = (1 - CFG_R30_GetValue()) * 1 +
+//                (1 - CFG_R31_GetValue()) * 2 +
+//                (1 - CFG_R32_GetValue()) * 4 +
+//                (1 - CFG_R33_GetValue()) * 8;
 
     while (1)
     {   
         //read temps
 		for (uint8_t therm_i = MIN_THERM_ID; therm_i <= MAX_THERM_ID; therm_i++)
 		{
-			ADC_StartConversion(therm_to_adc_channel[therm_i]);
-			while(!ADC_IsConversionDone());
-			adc_result_t reading = ADC_GetConversionResult();
-			temps[therm_i-MIN_THERM_ID] = adc_to_temp(reading);
+            if(therm_i == 20){
+                ADC_StartConversion(therm_to_adc_channel[therm_i]);
+                while(!ADC_IsConversionDone());
+                adc_result_t reading = ADC_GetConversionResult();
+                temps[therm_i-MIN_THERM_ID] = adc_to_temp(reading);
+            }
+            else {
+                temps[therm_i-MIN_THERM_ID] = 15;
+            }
 		}
 
         // set up can interface

@@ -27,18 +27,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "244 ./mcc_generated_files/adc.h
 [; ;./mcc_generated_files/adc.h: 244: __attribute__((inline)) void ADC_SelectContext(ADC_context_t context);
 [v _ADC_SelectContext `TF23281 ~T0 @X0 0 e ]
-"4312 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q84.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q84.h: 4312:         unsigned CLKSEL1 :1;
-[s S3178 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3178 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
-"4311
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q84.h: 4311:         unsigned CLKSEL0 :1;
-[u S3177 `S3178 1 ]
-[n S3177 . . ]
-"4323
-[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q84.h: 4323:         unsigned SPI1CLKSEL2 :1;
-[v _PORTDbits `VS3177 ~T0 @X0 0 e@1233 ]
-"317 ./mcc_generated_files/adc.h
+"317
 [; ;./mcc_generated_files/adc.h: 317: void ADC_StartConversion(ADC_channel_t channel);
 [v _ADC_StartConversion `(v ~T0 @X0 0 ef1`E23239 ]
 "343
@@ -3683,8 +3672,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q84.h: 71204: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
 "37 ./config.h
-[; ;./config.h: 37: static uint8_t module_id;
+[; ;./config.h: 37: static uint8_t module_id = 1;
 [v _module_id `uc ~T0 @X0 1 s ]
+[i _module_id
+-> -> 1 `i `uc
+]
 "36 ./can_msgs.h
 [; ;./can_msgs.h: 36: static uint8_t broadcast_therm_i = 0;
 [v _broadcast_therm_i `uc ~T0 @X0 1 s ]
@@ -7867,9 +7859,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "92
 [; ;main.c: 92:  ADC_SelectContext(CONTEXT_1);
 [e ( _ADC_SelectContext (1 . `E23270 0 ]
-"95
-[; ;main.c: 95:     module_id = (PORTDbits.RD2) * 1 +
-[e = _module_id -> + + + * -> . . _PORTDbits 0 2 `i -> 1 `i * - -> 1 `i -> . . _PORTDbits 0 3 `i -> 2 `i * - -> 1 `i -> . . _PORTDbits 0 4 `i -> 4 `i * - -> 1 `i -> . . _PORTDbits 0 5 `i -> 8 `i `uc ]
 "100
 [; ;main.c: 100:     while (1)
 [e :U 3283 ]

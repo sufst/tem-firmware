@@ -39236,7 +39236,7 @@ void PMD_Initialize(void);
 # 35 "./config.h" 2
 
 
-static uint8_t module_id;
+static uint8_t module_id = 1;
 # 44 "main.c" 2
 
 # 1 "./can_msgs.h" 1
@@ -43404,20 +43404,25 @@ void main(void)
  ADC_SelectContext(CONTEXT_1);
 
 
-    module_id = (PORTDbits.RD2) * 1 +
-                (1 - PORTDbits.RD3) * 2 +
-                (1 - PORTDbits.RD4) * 4 +
-                (1 - PORTDbits.RD5) * 8;
+
+
+
+
 
     while (1)
     {
 
   for (uint8_t therm_i = 0; therm_i <= 23; therm_i++)
   {
-   ADC_StartConversion(therm_to_adc_channel[therm_i]);
-   while(!ADC_IsConversionDone());
-   adc_result_t reading = ADC_GetConversionResult();
-   temps[therm_i-0] = adc_to_temp(reading);
+            if(therm_i == 20){
+                ADC_StartConversion(therm_to_adc_channel[therm_i]);
+                while(!ADC_IsConversionDone());
+                adc_result_t reading = ADC_GetConversionResult();
+                temps[therm_i-0] = adc_to_temp(reading);
+            }
+            else {
+                temps[therm_i-0] = 15;
+            }
   }
 
 

@@ -39236,7 +39236,7 @@ void PMD_Initialize(void);
 # 35 "./config.h" 2
 
 
-static uint8_t module_id;
+static uint8_t module_id = 1;
 # 44 "main.c" 2
 
 # 1 "./can_msgs.h" 1
@@ -43404,10 +43404,10 @@ void main(void)
  ADC_SelectContext(CONTEXT_1);
 
 
-    module_id = (PORTDbits.RD2) * 1 +
-                (1 - PORTDbits.RD3) * 2 +
-                (1 - PORTDbits.RD4) * 4 +
-                (1 - PORTDbits.RD5) * 8;
+
+
+
+
 
     while (1)
     {

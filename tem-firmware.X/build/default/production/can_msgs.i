@@ -39241,7 +39241,7 @@ void PMD_Initialize(void);
 # 35 "./config.h" 2
 
 
-static uint8_t module_id;
+static uint8_t module_id = 1;
 # 7 "can_msgs.c" 2
 
 
