@@ -7,7 +7,7 @@ from pathlib import Path
 therm_r25 = 10e3
 therm_beta = 3380
 
-adc_res = 8
+adc_res = 12
 vcc = 3.3
 pull_up_r = 10e3
 

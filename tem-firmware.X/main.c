@@ -45,6 +45,34 @@
 #include "can_msgs.h"
 #include "therm_LUT.h"
 
+ADC_channel_t therm_to_adc_channel[] = {
+therm1,
+therm2,
+therm3,
+therm4,
+therm5,
+therm6,
+therm7,
+therm8,
+therm9,
+therm10,
+therm11,
+therm12,
+therm13,
+therm14,
+therm15,
+therm16,
+therm17,
+therm18,
+therm19,
+therm20,
+therm21,
+therm22,
+therm23,
+therm24
+};
+
+
 int8_t adc_to_temp(adc_result_t reading) 
 {
     // just read from thermistor curve LUT
@@ -62,16 +90,22 @@ void main(void)
     // initialise the device
     SYSTEM_Initialize();
 	ADC_SelectContext(CONTEXT_1);
+    
+    // read module ID from config resistors
+    module_id = (CFG_R30_GetValue()) * 1 +
+                (1 - CFG_R31_GetValue()) * 2 +
+                (1 - CFG_R32_GetValue()) * 4 +
+                (1 - CFG_R33_GetValue()) * 8;
 
     while (1)
     {   
         //read temps
 		for (uint8_t therm_i = MIN_THERM_ID; therm_i <= MAX_THERM_ID; therm_i++)
 		{
-			ADC_StartConversion((ADC_channel_t)therm_i);
+			ADC_StartConversion(therm_to_adc_channel[therm_i]);
 			while(!ADC_IsConversionDone());
 			adc_result_t reading = ADC_GetConversionResult();
-			temps[therm_i-MIN_THERM_ID] = 20+therm_i;//adc_to_temp(reading);
+			temps[therm_i-MIN_THERM_ID] = adc_to_temp(reading);
 		}
 
         // set up can interface

@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/interrupt_manager.c"
+# 1 "mcc_generated_files/can1.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,15 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/interrupt_manager.c" 2
-# 49 "mcc_generated_files/interrupt_manager.c"
-# 1 "mcc_generated_files/interrupt_manager.h" 1
-# 87 "mcc_generated_files/interrupt_manager.h"
-void INTERRUPT_Initialize (void);
-# 49 "mcc_generated_files/interrupt_manager.c" 2
-
-# 1 "mcc_generated_files/mcc.h" 1
-# 49 "mcc_generated_files/mcc.h"
+# 1 "mcc_generated_files/can1.c" 2
+# 47 "mcc_generated_files/can1.c"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -38700,370 +38693,74 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 33 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 2 3
-# 49 "mcc_generated_files/mcc.h" 2
-
-# 1 "mcc_generated_files/device_config.h" 1
-# 50 "mcc_generated_files/mcc.h" 2
-
-# 1 "mcc_generated_files/pin_manager.h" 1
-# 662 "mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-# 674 "mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_IOC(void);
-# 51 "mcc_generated_files/mcc.h" 2
+# 47 "mcc_generated_files/can1.c" 2
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdbool.h" 1 3
-# 53 "mcc_generated_files/mcc.h" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\conio.h" 1 3
-
-
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 1 3
-# 24 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\string.h" 1 3
+# 25 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\string.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 12 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef void * va_list[1];
+# 421 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef struct __locale_struct * locale_t;
+# 26 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\string.h" 2 3
 
+void *memcpy (void *restrict, const void *restrict, size_t);
+void *memmove (void *, const void *, size_t);
+void *memset (void *, int, size_t);
+int memcmp (const void *, const void *, size_t);
+void *memchr (const void *, int, size_t);
 
+char *strcpy (char *restrict, const char *restrict);
+char *strncpy (char *restrict, const char *restrict, size_t);
 
+char *strcat (char *restrict, const char *restrict);
+char *strncat (char *restrict, const char *restrict, size_t);
 
-typedef void * __isoc_va_list[1];
-# 143 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __int24 ssize_t;
-# 255 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long long off_t;
-# 409 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef struct _IO_FILE FILE;
-# 25 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 2 3
-# 52 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 3
-typedef union _G_fpos64_t {
- char __opaque[16];
- double __align;
-} fpos_t;
+int strcmp (const char *, const char *);
+int strncmp (const char *, const char *, size_t);
 
-extern FILE *const stdin;
-extern FILE *const stdout;
-extern FILE *const stderr;
+int strcoll (const char *, const char *);
+size_t strxfrm (char *restrict, const char *restrict, size_t);
 
+char *strchr (const char *, int);
+char *strrchr (const char *, int);
 
+size_t strcspn (const char *, const char *);
+size_t strspn (const char *, const char *);
+char *strpbrk (const char *, const char *);
+char *strstr (const char *, const char *);
+char *strtok (char *restrict, const char *restrict);
 
+size_t strlen (const char *);
 
+char *strerror (int);
 
-FILE *fopen(const char *restrict, const char *restrict);
-FILE *freopen(const char *restrict, const char *restrict, FILE *restrict);
-int fclose(FILE *);
 
-int remove(const char *);
-int rename(const char *, const char *);
 
-int feof(FILE *);
-int ferror(FILE *);
-int fflush(FILE *);
-void clearerr(FILE *);
 
-int fseek(FILE *, long, int);
-long ftell(FILE *);
-void rewind(FILE *);
+char *strtok_r (char *restrict, const char *restrict, char **restrict);
+int strerror_r (int, char *, size_t);
+char *stpcpy(char *restrict, const char *restrict);
+char *stpncpy(char *restrict, const char *restrict, size_t);
+size_t strnlen (const char *, size_t);
+char *strdup (const char *);
+char *strndup (const char *, size_t);
+char *strsignal(int);
+char *strerror_l (int, locale_t);
+int strcoll_l (const char *, const char *, locale_t);
+size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
 
-int fgetpos(FILE *restrict, fpos_t *restrict);
-int fsetpos(FILE *, const fpos_t *);
 
-size_t fread(void *restrict, size_t, size_t, FILE *restrict);
-size_t fwrite(const void *restrict, size_t, size_t, FILE *restrict);
 
-int fgetc(FILE *);
-int getc(FILE *);
-int getchar(void);
 
-
-
-
-
-int ungetc(int, FILE *);
-int getch(void);
-
-int fputc(int, FILE *);
-int putc(int, FILE *);
-int putchar(int);
-
-
-
-
-
-void putch(char);
-
-char *fgets(char *restrict, int, FILE *restrict);
-
-char *gets(char *);
-
-
-int fputs(const char *restrict, FILE *restrict);
-int puts(const char *);
-
-__attribute__((__format__(__printf__, 1, 2)))
-int printf(const char *restrict, ...);
-__attribute__((__format__(__printf__, 2, 3)))
-int fprintf(FILE *restrict, const char *restrict, ...);
-__attribute__((__format__(__printf__, 2, 3)))
-int sprintf(char *restrict, const char *restrict, ...);
-__attribute__((__format__(__printf__, 3, 4)))
-int snprintf(char *restrict, size_t, const char *restrict, ...);
-
-__attribute__((__format__(__printf__, 1, 0)))
-int vprintf(const char *restrict, __isoc_va_list);
-int vfprintf(FILE *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__printf__, 2, 0)))
-int vsprintf(char *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__printf__, 3, 0)))
-int vsnprintf(char *restrict, size_t, const char *restrict, __isoc_va_list);
-
-__attribute__((__format__(__scanf__, 1, 2)))
-int scanf(const char *restrict, ...);
-__attribute__((__format__(__scanf__, 2, 3)))
-int fscanf(FILE *restrict, const char *restrict, ...);
-__attribute__((__format__(__scanf__, 2, 3)))
-int sscanf(const char *restrict, const char *restrict, ...);
-
-__attribute__((__format__(__scanf__, 1, 0)))
-int vscanf(const char *restrict, __isoc_va_list);
-int vfscanf(FILE *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__scanf__, 2, 0)))
-int vsscanf(const char *restrict, const char *restrict, __isoc_va_list);
-
-void perror(const char *);
-
-int setvbuf(FILE *restrict, char *restrict, int, size_t);
-void setbuf(FILE *restrict, char *restrict);
-
-char *tmpnam(char *);
-FILE *tmpfile(void);
-
-
-
-
-FILE *fmemopen(void *restrict, size_t, const char *restrict);
-FILE *open_memstream(char **, size_t *);
-FILE *fdopen(int, const char *);
-FILE *popen(const char *, const char *);
-int pclose(FILE *);
-int fileno(FILE *);
-int fseeko(FILE *, off_t, int);
-off_t ftello(FILE *);
-int dprintf(int, const char *restrict, ...);
-int vdprintf(int, const char *restrict, __isoc_va_list);
-void flockfile(FILE *);
-int ftrylockfile(FILE *);
-void funlockfile(FILE *);
-int getc_unlocked(FILE *);
-int getchar_unlocked(void);
-int putc_unlocked(int, FILE *);
-int putchar_unlocked(int);
-ssize_t getdelim(char **restrict, size_t *restrict, int, FILE *restrict);
-ssize_t getline(char **restrict, size_t *restrict, FILE *restrict);
-int renameat(int, const char *, int, const char *);
-char *ctermid(char *);
-
-
-
-
-
-
-
-char *tempnam(const char *, const char *);
-# 8 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\conio.h" 2 3
-# 54 "mcc_generated_files/mcc.h" 2
-
-
-# 1 "mcc_generated_files/adc.h" 1
-# 65 "mcc_generated_files/adc.h"
-typedef uint16_t adc_result_t;
-
-
-
-
-
-
-typedef enum
-{
-    therm3 = 0x0,
-    therm4 = 0x1,
-    therm7 = 0x2,
-    therm8 = 0x3,
-    therm11 = 0x4,
-    therm12 = 0x5,
-    therm19 = 0x8,
-    therm20 = 0x9,
-    therm23 = 0xA,
-    therm24 = 0xB,
-    therm21 = 0xC,
-    therm22 = 0xD,
-    therm13 = 0x10,
-    therm14 = 0x11,
-    therm9 = 0x12,
-    therm10 = 0x13,
-    therm5 = 0x14,
-    therm6 = 0x15,
-    therm1 = 0x16,
-    therm2 = 0x17,
-    therm17 = 0x1E,
-    therm18 = 0x1F,
-    therm15 = 0x20,
-    therm16 = 0x21,
-    channel_VSS = 0x3B,
-    channel_Temp = 0x3C,
-    channel_DAC1 = 0x3D,
-    channel_FVR_Buffer1 = 0x3E,
-    channel_FVR_Buffer2 = 0x3F
-} ADC_channel_t;
-
-
-
-
-
-
-typedef enum
-{
-    CONTEXT_1,
-} ADC_context_t;
-# 136 "mcc_generated_files/adc.h"
-void ADC_Initialize(void);
-# 167 "mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_EnableChannelSequencer(void);
-# 189 "mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_DisableChannelSequencer(void);
-# 221 "mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_StartChannelSequencer(void);
-# 244 "mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_SelectContext(ADC_context_t context);
-# 266 "mcc_generated_files/adc.h"
-void ADC_EnableChannelScan(ADC_context_t context);
-# 290 "mcc_generated_files/adc.h"
-void ADC_DisableChannelScan(ADC_context_t context);
-# 317 "mcc_generated_files/adc.h"
-void ADC_StartConversion(ADC_channel_t channel);
-# 343 "mcc_generated_files/adc.h"
-_Bool ADC_IsConversionDone(void);
-# 369 "mcc_generated_files/adc.h"
-adc_result_t ADC_GetConversionResult(void);
-# 395 "mcc_generated_files/adc.h"
-adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
-# 420 "mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_StopConversion(void);
-# 444 "mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_SetStopOnInterrupt(void);
-# 472 "mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_DischargeSampleCapacitor(void);
-# 496 "mcc_generated_files/adc.h"
-void ADC_LoadAcquisitionRegister(uint16_t acquisitionValue);
-# 520 "mcc_generated_files/adc.h"
-void ADC_SetPrechargeTime(uint16_t prechargeTime);
-# 544 "mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_SetRepeatCount(uint8_t repeatCount);
-# 568 "mcc_generated_files/adc.h"
-uint8_t ADC_GetCurrentCountofConversions(void);
-# 591 "mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_ClearAccumulator(void);
-# 615 "mcc_generated_files/adc.h"
-uint24_t ADC_GetAccumulatorValue(void);
-# 642 "mcc_generated_files/adc.h"
-_Bool ADC_HasAccumulatorOverflowed(void);
-# 666 "mcc_generated_files/adc.h"
-uint16_t ADC_GetFilterValue(void);
-# 690 "mcc_generated_files/adc.h"
-uint16_t ADC_GetPreviousResult(void);
-# 714 "mcc_generated_files/adc.h"
-void ADC_DefineSetPoint(uint16_t setPoint);
-# 738 "mcc_generated_files/adc.h"
-void ADC_SetUpperThreshold(uint16_t upperThreshold);
-# 762 "mcc_generated_files/adc.h"
-void ADC_SetLowerThreshold(uint16_t lowerThreshold);
-# 787 "mcc_generated_files/adc.h"
-uint16_t ADC_GetErrorCalculation(void);
-# 811 "mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_EnableDoubleSampling(void);
-# 835 "mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_EnableContinuousConversion(void);
-# 859 "mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_DisableContinuousConversion(void);
-# 886 "mcc_generated_files/adc.h"
-_Bool ADC_HasErrorCrossedUpperThreshold(void);
-# 913 "mcc_generated_files/adc.h"
-_Bool ADC_HasErrorCrossedLowerThreshold(void);
-# 938 "mcc_generated_files/adc.h"
-uint8_t ADC_GetConversionStageStatus(void);
-# 959 "mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_EnableChargePump(void);
-# 980 "mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_DisableChargePump(void);
-
-
-
-
-
-
-
-void ADC_ADI_ISR(void);
-# 1016 "mcc_generated_files/adc.h"
-void ADC_SetADIInterruptHandler(void (* InterruptHandler)(void));
-
-
-
-
-
-
-
-void ADC_ACTI_ISR(void);
-# 1052 "mcc_generated_files/adc.h"
-void ADC_SetActiveClockTuningInterruptHandler(void (* InterruptHandler)(void));
-
-
-
-
-
-
-
-void ADC_ADCH1_ISR(void);
-# 1088 "mcc_generated_files/adc.h"
-void ADC_SetContext1ThresholdInterruptHandler(void (* InterruptHandler)(void));
-
-
-
-
-
-
-
-void ADC_ADCH2_ISR(void);
-# 1124 "mcc_generated_files/adc.h"
-void ADC_SetContext2ThresholdInterruptHandler(void (* InterruptHandler)(void));
-
-
-
-
-
-
-
-void ADC_ADCH3_ISR(void);
-# 1160 "mcc_generated_files/adc.h"
-void ADC_SetContext3ThresholdInterruptHandler(void (* InterruptHandler)(void));
-
-
-
-
-
-
-
-void ADC_ADCH4_ISR(void);
-# 1196 "mcc_generated_files/adc.h"
-void ADC_SetContext4ThresholdInterruptHandler(void (* InterruptHandler)(void));
-# 56 "mcc_generated_files/mcc.h" 2
+void *memccpy (void *restrict, const void *restrict, int, size_t);
+# 49 "mcc_generated_files/can1.c" 2
 
 # 1 "mcc_generated_files/can1.h" 1
-# 56 "mcc_generated_files/can1.h"
+# 54 "mcc_generated_files/can1.h"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdbool.h" 1 3
+# 54 "mcc_generated_files/can1.h" 2
+
+
 # 1 "mcc_generated_files/can_types.h" 1
 # 65 "mcc_generated_files/can_types.h"
 typedef union
@@ -39225,31 +38922,417 @@ void CAN1_SetFIFO1nullHandler(void (*handler)(void));
 
 
 void CAN1_ISR(void);
-# 57 "mcc_generated_files/mcc.h" 2
-# 72 "mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
-# 85 "mcc_generated_files/mcc.h"
-void OSCILLATOR_Initialize(void);
-# 98 "mcc_generated_files/mcc.h"
-void PMD_Initialize(void);
-# 50 "mcc_generated_files/interrupt_manager.c" 2
-
-
-void INTERRUPT_Initialize (void)
+# 50 "mcc_generated_files/can1.c" 2
+# 69 "mcc_generated_files/can1.c"
+struct CAN_FIFOREG
 {
+    uint8_t CONL;
+    uint8_t CONH;
+    uint8_t CONU;
+    uint8_t CONT;
+    uint8_t STAL;
+    uint8_t STAH;
+    uint8_t STAU;
+    uint8_t STAT;
+    uint32_t UA;
+};
 
-    INTCON0bits.IPEN = 0;
+static volatile struct CAN_FIFOREG * const FIFO = (struct CAN_FIFOREG *)&C1TXQCONL;
+static const uint8_t DLC_BYTES[] = {0U, 1U, 2U, 3U, 4U, 5U, 6U, 7U, 8U};
+
+static void (*CAN1_InvalidMessageHandler)(void);
+static void (*CAN1_BusWakeUpActivityHandler)(void);
+static void (*CAN1_BusErrorHandler)(void);
+static void (*CAN1_ModeChangeHandler)(void);
+static void (*CAN1_SystemErrorHandler)(void);
+static void (*CAN1_TxAttemptHandler)(void);
+
+static void DefaultInvalidMessageHandler(void)
+{
 }
 
-void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
+static void DefaultBusWakeUpActivityHandler(void)
+{
+}
+
+static void DefaultBusErrorHandler(void)
+{
+}
+
+static void DefaultModeChangeHandler(void)
+{
+}
+
+static void DefaultSystemErrorHandler(void)
+{
+}
+
+static void DefaultTxAttemptHandler(void)
+{
+}
+
+
+static void CAN1_TX_FIFO_Configuration(void)
 {
 
-    if(PIE0bits.CANIE == 1 && PIR0bits.CANIF == 1)
+    C1TXQCONL = 0x10;
+
+
+    C1TXQCONH = 0x04;
+
+
+    C1TXQCONU = 0x60;
+
+
+    C1TXQCONT = 0x01;
+
+
+    C1FIFOCON1L = 0x90;
+
+
+    C1FIFOCON1H = 0x04;
+
+
+    C1FIFOCON1U = 0x60;
+
+
+    C1FIFOCON1T = 0x05;
+
+}
+
+static void CAN1_BitRateConfiguration(void)
+{
+
+    C1NBTCFGL = 0x01;
+
+
+    C1NBTCFGH = 0x01;
+
+
+    C1NBTCFGU = 0x04;
+
+
+    C1NBTCFGT = 0x00;
+
+}
+
+static void CAN1_ErrorNotificationInterruptEnable(void)
+{
+    CAN1_SetInvalidMessageInterruptHandler(DefaultInvalidMessageHandler);
+    CAN1_SetBusWakeUpActivityInterruptHandler(DefaultBusWakeUpActivityHandler);
+    CAN1_SetBusErrorInterruptHandler(DefaultBusErrorHandler);
+    CAN1_SetModeChangeInterruptHandler(DefaultModeChangeHandler);
+    CAN1_SetSystemErrorInterruptHandler(DefaultSystemErrorHandler);
+    CAN1_SetTxAttemptInterruptHandler(DefaultTxAttemptHandler);
+    PIR0bits.CANIF = 0;
+
+
+    C1INTL = 0x00;
+
+
+    C1INTH = 0x00;
+
+
+    C1INTU = 0x08;
+
+
+    C1INTT = 0xFC;
+
+    PIE0bits.CANIE = 1;
+}
+
+void CAN1_Initialize(void)
+{
+
+    C1CONHbits.ON = 1;
+
+    if (CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_CONFIGURATION_MODE))
     {
-        CAN1_ISR();
+
+        C1FIFOBA = 0x3800;
+
+
+        C1CONL = 0x60;
+
+
+        C1CONH = 0x97;
+
+
+        C1CONU = 0x10;
+
+        CAN1_BitRateConfiguration();
+        CAN1_TX_FIFO_Configuration();
+        CAN1_ErrorNotificationInterruptEnable();
+        CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE);
+    }
+}
+
+CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES requestMode)
+{
+    CAN_OP_MODE_STATUS status = CAN_OP_MODE_REQUEST_SUCCESS;
+    CAN_OP_MODES opMode = CAN1_OperationModeGet();
+
+    if (CAN_CONFIGURATION_MODE == opMode
+            || CAN_DISABLE_MODE == requestMode
+            || CAN_CONFIGURATION_MODE == requestMode)
+    {
+        C1CONTbits.REQOP = requestMode;
+
+        while (C1CONUbits.OPMOD != requestMode)
+        {
+
+            if (1 == C1INTHbits.SERRIF)
+            {
+                status = CAN_OP_MODE_SYS_ERROR_OCCURED;
+                break;
+            }
+        }
     }
     else
     {
-
+        status = CAN_OP_MODE_REQUEST_FAIL;
     }
+
+    return status;
+}
+
+CAN_OP_MODES CAN1_OperationModeGet(void)
+{
+    return C1CONUbits.OPMOD;
+}
+
+
+static _Bool isTxChannel(uint8_t channel)
+{
+    return channel < 4u && (FIFO[channel].CONL & 0x80);
+}
+
+static CAN_TX_FIFO_STATUS GetTxFifoStatus(uint8_t validChannel)
+{
+    return (FIFO[validChannel].STAL & 0x1);
+}
+
+static void WriteMessageToFifo(uint8_t *txFifoObj, CAN_MSG_OBJ *txCanMsg)
+{
+    uint32_t msgId = txCanMsg->msgId;
+    uint8_t status;
+    const uint8_t payloadOffsetBytes =
+              4U
+            + 1U
+            + 1U
+            + 2U;
+
+    if (CAN_FRAME_EXT == txCanMsg->field.idType)
+    {
+        txFifoObj[1] = (msgId << (3U)) & (0xF8U);
+        msgId >>= (5U);
+        txFifoObj[2] = msgId;
+        msgId >>= (8U);
+        txFifoObj[3] = (msgId & (0x1FU));
+        msgId >>= (5U);
+    }
+    else
+    {
+        txFifoObj[1] = txFifoObj[2] = txFifoObj[3] = 0;
+    }
+
+    txFifoObj[0] = msgId;
+    msgId >>= (8U);
+    txFifoObj[1] |= (msgId & (0x07U));
+
+    status = txCanMsg->field.dlc;
+    status |= (txCanMsg->field.idType << (4U));
+    status |= (txCanMsg->field.frameType << (5U));
+    status |= (txCanMsg->field.brs << (6U));
+    status |= (txCanMsg->field.formatType << (7U));
+    txFifoObj[4] = status;
+
+    if (CAN_FRAME_DATA == txCanMsg->field.frameType)
+    {
+        memcpy(txFifoObj + payloadOffsetBytes, txCanMsg->data, (DLC_BYTES[(txCanMsg->field.dlc)]));
+    }
+}
+
+static CAN_TX_MSG_REQUEST_STATUS ValidateTransmission(uint8_t validChannel, CAN_MSG_OBJ *txCanMsg)
+{
+    CAN_TX_MSG_REQUEST_STATUS txMsgStatus = CAN_TX_MSG_REQUEST_SUCCESS;
+    CAN_MSG_FIELD field = txCanMsg->field;
+    uint8_t plsize = 0;
+
+    if (CAN_BRS_MODE == field.brs && (CAN_NORMAL_2_0_MODE == CAN1_OperationModeGet()))
+    {
+        txMsgStatus |= CAN_TX_MSG_REQUEST_BRS_ERROR;
+    }
+
+    if (field.dlc > DLC_8 && (CAN_2_0_FORMAT == field.formatType || CAN_NORMAL_2_0_MODE == CAN1_OperationModeGet()))
+    {
+        txMsgStatus |= CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR;
+    }
+
+    if ((DLC_BYTES[(field.dlc)]) > ((DLC_BYTES[(8u + (plsize))])))
+    {
+        txMsgStatus |= CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR;
+    }
+
+    if (CAN_TX_FIFO_FULL == GetTxFifoStatus(validChannel))
+    {
+        txMsgStatus |= CAN_TX_MSG_REQUEST_FIFO_FULL;
+    }
+
+    return txMsgStatus;
+}
+
+CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg)
+{
+    CAN_TX_MSG_REQUEST_STATUS status = CAN_TX_MSG_REQUEST_FIFO_FULL;
+
+    if (isTxChannel(fifoChannel))
+    {
+        status = ValidateTransmission(fifoChannel, txCanMsg);
+        if (CAN_TX_MSG_REQUEST_SUCCESS == status)
+        {
+            uint8_t *txFifoObj = (uint8_t *) FIFO[fifoChannel].UA;
+
+            if (txFifoObj != ((void*)0))
+            {
+                WriteMessageToFifo(txFifoObj, txCanMsg);
+                FIFO[fifoChannel].CONH |= (0x2 | 0x1);
+            }
+        }
+    }
+
+    return status;
+}
+
+CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel)
+{
+    CAN_TX_FIFO_STATUS status = CAN_TX_FIFO_FULL;
+
+    if (isTxChannel(fifoChannel))
+    {
+        status = GetTxFifoStatus(fifoChannel);
+    }
+
+    return status;
+}
+
+_Bool CAN1_IsBusOff(void)
+{
+    return C1TRECUbits.TXBO;
+}
+
+_Bool CAN1_IsRxErrorPassive(void)
+{
+    return C1TRECUbits.RXBP;
+}
+
+_Bool CAN1_IsRxErrorWarning(void)
+{
+    return C1TRECUbits.RXWARN;
+}
+
+_Bool CAN1_IsRxErrorActive(void)
+{
+    return !CAN1_IsRxErrorPassive();
+}
+
+_Bool CAN1_IsTxErrorPassive(void)
+{
+    return C1TRECUbits.TXBP;
+}
+
+_Bool CAN1_IsTxErrorWarning(void)
+{
+    return C1TRECUbits.TXWARN;
+}
+
+_Bool CAN1_IsTxErrorActive(void)
+{
+    return !CAN1_IsTxErrorPassive();
+}
+
+void CAN1_Sleep(void)
+{
+    C1INTHbits.WAKIF = 0;
+    C1INTTbits.WAKIE = 1;
+
+    CAN1_OperationModeSet(CAN_DISABLE_MODE);
+}
+
+void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void))
+{
+    CAN1_InvalidMessageHandler = handler;
+}
+
+void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void))
+{
+    CAN1_BusWakeUpActivityHandler = handler;
+}
+
+void CAN1_SetBusErrorInterruptHandler(void (*handler)(void))
+{
+    CAN1_BusErrorHandler = handler;
+}
+
+void CAN1_SetModeChangeInterruptHandler(void (*handler)(void))
+{
+    CAN1_ModeChangeHandler = handler;
+}
+
+void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void))
+{
+    CAN1_SystemErrorHandler = handler;
+}
+
+void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void))
+{
+    CAN1_TxAttemptHandler = handler;
+}
+
+void CAN1_ISR(void)
+{
+    if (1 == C1INTHbits.IVMIF)
+    {
+        CAN1_InvalidMessageHandler();
+        C1INTHbits.IVMIF = 0;
+    }
+
+    if (1 == C1INTHbits.WAKIF)
+    {
+        CAN1_BusWakeUpActivityHandler();
+        C1INTHbits.WAKIF = 0;
+    }
+
+    if (1 == C1INTHbits.CERRIF)
+    {
+        CAN1_BusErrorHandler();
+        C1INTHbits.CERRIF = 0;
+    }
+
+    if (1 == C1INTLbits.MODIF)
+    {
+        CAN1_ModeChangeHandler();
+        C1INTLbits.MODIF = 0;
+    }
+
+    if (1 == C1INTHbits.SERRIF)
+    {
+        CAN1_SystemErrorHandler();
+        C1INTHbits.SERRIF = 0;
+    }
+
+    if (1 == C1INTHbits.TXATIF)
+    {
+        CAN1_TxAttemptHandler();
+        if (1 == C1TXQSTALbits.TXATIF)
+        {
+            C1TXQSTALbits.TXATIF = 0;
+        }
+        if (1 == C1FIFOSTA1Lbits.TXATIF)
+        {
+            C1FIFOSTA1Lbits.TXATIF = 0;
+        }
+    }
+
+    PIR0bits.CANIF = 0;
 }

@@ -34,7 +34,7 @@
 #include <xc.h> // include processor files - each processor file is guarded.  
 #include "mcc_generated_files/mcc.h"
 // module configuration
-#define MODULE_ID 0 // 0 to 15
+static uint8_t module_id; // 0 to 15, set by config resistors r30-r33
 
 #define LOOP_PERIOD 100 //ms
 

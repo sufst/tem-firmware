@@ -299,7 +299,7 @@
         <property key="memories.programmemory.ranges" value="0-1ffff"/>
         <property key="poweroptions.powerenable" value="true"/>
         <property key="programmerToGoFilePath"
-                  value="C:/Users/alexl/sufst/23/tem-firmware/tem-firmware.X/debug/default/tem-firmware_ptg"/>
+                  value="C:/Users/alexl/MPLABXProjects/blink_test.X/debug/default/blink_test_ptg"/>
         <property key="programmerToGoImageName" value="tem-firmware_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>

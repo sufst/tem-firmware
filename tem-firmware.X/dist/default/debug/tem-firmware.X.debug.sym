@@ -733,8 +733,8 @@ bssBANK5 560 59C BANK5 560 1
 dataBIGRAM 59D 159C BIGRAM 59D 1
 idataBIGRAM 370E 56A9 CODE 370E 0
 %locals
-dist/default/production\tem-firmware.X.production.o
-C:\Users\alexl\AppData\Local\Temp\xcAsqkc.\driver_tmp_1.s
+dist/default/debug\tem-firmware.X.debug.o
+C:\Users\alexl\AppData\Local\Temp\xcAsots.\driver_tmp_1.s
 21477 5326 0 CODE 0
 21479 5326 0 CODE 0
 21482 5326 0 CODE 0

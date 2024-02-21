@@ -3,12 +3,12 @@ Microchip MPLAB XC8 Compiler V2.46
 Linker command line:
 
 --edf=C:\Program Files\Microchip\xc8\v2.46\pic\dat\20240104201356_en.msgs \
-  -pivt0x8=08h -cn -h+dist/default/production\tem-firmware.X.production.sym \
-  --cmf=dist/default/production\tem-firmware.X.production.cmf -z -Q18F47Q84 \
-  -oC:\Users\alexl\AppData\Local\Temp\xcAsqkc.\driver_tmp_3.o \
+  -pivt0x8=08h -cn -h+dist/default/debug\tem-firmware.X.debug.sym \
+  --cmf=dist/default/debug\tem-firmware.X.debug.cmf -z -Q18F47Q84 \
+  -oC:\Users\alexl\AppData\Local\Temp\xcAsots.\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
-  -Mdist/default/production/tem-firmware.X.production.map \
-  --md=C:\Users\alexl\AppData\Local\Temp\xcAsqkc.\driver_tmp_0.dat -E1 \
+  -Mdist/default/debug/tem-firmware.X.debug.map \
+  --md=C:\Users\alexl\AppData\Local\Temp\xcAsots.\driver_tmp_0.dat -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ACODE=00h-01FFFFh -ACONST=00h-01FFFFh \
   -ASMALLCONST=03700h-037FFhx457 \
   -AMEDIUMCONST=03700h-0FFFFh,013700h-01FFFFh -ACOMRAM=0501h-055Fh \
@@ -40,8 +40,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\alexl\AppData\Local\Temp\xcAsqkc.\driver_tmp_9.o \
-  dist/default/production\tem-firmware.X.production.o 
+  C:\Users\alexl\AppData\Local\Temp\xcAsots.\driver_tmp_9.o \
+  dist/default/debug\tem-firmware.X.debug.o 
 
 Object code version is 3.11
 
@@ -50,11 +50,11 @@ Machine type is 18F47Q84
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\alexl\AppData\Local\Temp\xcAsqkc.\driver_tmp_9.o
+C:\Users\alexl\AppData\Local\Temp\xcAsots.\driver_tmp_9.o
                 config                           300000   300000       1F        0       4
                 init                                 1A       1A        4        4       0
                 reset_vec                             0        0        4        0       0
-dist/default/production\tem-firmware.X.production.o
+dist/default/debug\tem-firmware.X.debug.o
                 config                           300000   300000       1F        0       4
                 smallconst                         3700     3700        E     1B80       0
                 ivt0x8                                8        8       12        4       0
