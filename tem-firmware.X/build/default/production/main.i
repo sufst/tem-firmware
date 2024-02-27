@@ -43414,10 +43414,15 @@ void main(void)
 
   for (uint8_t therm_i = 0; therm_i <= 23; therm_i++)
   {
-   ADC_StartConversion(therm_to_adc_channel[therm_i]);
-   while(!ADC_IsConversionDone());
-   adc_result_t reading = ADC_GetConversionResult();
-   temps[therm_i-0] = adc_to_temp(reading);
+            if(therm_i == 20){
+                ADC_StartConversion(therm_to_adc_channel[therm_i]);
+                while(!ADC_IsConversionDone());
+                adc_result_t reading = ADC_GetConversionResult();
+                temps[therm_i-0] = adc_to_temp(reading);
+            }
+            else {
+                temps[therm_i-0] = 15;
+            }
   }
 
 

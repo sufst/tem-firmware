@@ -36,8 +36,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "369
 [; ;./mcc_generated_files/adc.h: 369: adc_result_t ADC_GetConversionResult(void);
 [v _ADC_GetConversionResult `(us ~T0 @X0 0 ef ]
-"115 main.c
-[; ;main.c: 115:    CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE);
+"120 main.c
+[; ;main.c: 120:    CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE);
 [c E23400 0 1 2 3 4 5 6 7 .. ]
 [n E23400 . CAN_NORMAL_FD_MODE CAN_DISABLE_MODE CAN_INTERNAL_LOOPBACK_MODE CAN_LISTEN_ONLY_MODE CAN_CONFIGURATION_MODE CAN_EXTERNAL_LOOPBACK_MODE CAN_NORMAL_2_0_MODE CAN_RESTRICTED_OPERATION_MODE  ]
 [c E23410 0 1 2 .. ]
@@ -45,8 +45,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "145 ./mcc_generated_files/can1.h
 [; ;./mcc_generated_files/can1.h: 145: CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES reqestMode);
 [v _CAN1_OperationModeSet `(E23410 ~T0 @X0 0 ef1`CE23400 ]
-"119 main.c
-[; ;main.c: 119:       if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ)))
+"124 main.c
+[; ;main.c: 124:       if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ)))
 [c E23415 0 1 .. ]
 [n E23415 . CAN_TX_FIFO_FULL CAN_TX_FIFO_AVAILABLE  ]
 [c E23437 0 1 .. ]
@@ -57,8 +57,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "56 ./can_msgs.h
 [; ;./can_msgs.h: 56: CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[]);
 [v _get_TM2BMS_Broadcast_msg `(S3279 ~T0 @X0 0 ef1`*c ]
-"123 main.c
-[; ;main.c: 123:     CAN1_Transmit(TXQ, &msg);
+"128 main.c
+[; ;main.c: 128:     CAN1_Transmit(TXQ, &msg);
 [c E23394 0 1 2 3 .. ]
 [n E23394 . CAN_TX_MSG_REQUEST_SUCCESS CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR CAN_TX_MSG_REQUEST_BRS_ERROR CAN_TX_MSG_REQUEST_FIFO_FULL  ]
 "243 ./mcc_generated_files/can1.h
@@ -7877,111 +7877,130 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 104:   {
 {
 "105
-[; ;main.c: 105:    ADC_StartConversion(therm_to_adc_channel[therm_i]);
-[e ( _ADC_StartConversion (1 *U + &U _therm_to_adc_channel * -> _therm_i `ux -> -> # *U &U _therm_to_adc_channel `ui `ux ]
+[; ;main.c: 105:             if(therm_i == 20){
+[e $ ! == -> _therm_i `i -> 20 `i 3288  ]
+{
 "106
-[; ;main.c: 106:    while(!ADC_IsConversionDone());
-[e $U 3288  ]
-[e :U 3289 ]
-[e :U 3288 ]
-[e $ ! != -> ( _ADC_IsConversionDone ..  `i -> 0 `i 3289  ]
-[e :U 3290 ]
+[; ;main.c: 106:                 ADC_StartConversion(therm_to_adc_channel[therm_i]);
+[e ( _ADC_StartConversion (1 *U + &U _therm_to_adc_channel * -> _therm_i `ux -> -> # *U &U _therm_to_adc_channel `ui `ux ]
 "107
-[; ;main.c: 107:    adc_result_t reading = ADC_GetConversionResult();
+[; ;main.c: 107:                 while(!ADC_IsConversionDone());
+[e $U 3289  ]
+[e :U 3290 ]
+[e :U 3289 ]
+[e $ ! != -> ( _ADC_IsConversionDone ..  `i -> 0 `i 3290  ]
+[e :U 3291 ]
+"108
+[; ;main.c: 108:                 adc_result_t reading = ADC_GetConversionResult();
 [v _reading `us ~T0 @X0 1 a ]
 [e = _reading ( _ADC_GetConversionResult ..  ]
-"108
-[; ;main.c: 108:    temps[therm_i-0] = adc_to_temp(reading);
-[e = *U + &U _temps * -> -> - -> _therm_i `i -> 0 `i `ui `ux -> -> # *U &U _temps `ui `ux ( _adc_to_temp (1 _reading ]
 "109
-[; ;main.c: 109:   }
+[; ;main.c: 109:                 temps[therm_i-0] = adc_to_temp(reading);
+[e = *U + &U _temps * -> -> - -> _therm_i `i -> 0 `i `ui `ux -> -> # *U &U _temps `ui `ux ( _adc_to_temp (1 _reading ]
+"110
+[; ;main.c: 110:             }
+}
+[e $U 3292  ]
+"111
+[; ;main.c: 111:             else {
+[e :U 3288 ]
+{
+"112
+[; ;main.c: 112:                 temps[therm_i-0] = 15;
+[e = *U + &U _temps * -> -> - -> _therm_i `i -> 0 `i `ui `ux -> -> # *U &U _temps `ui `ux -> -> 15 `i `c ]
+"113
+[; ;main.c: 113:             }
+}
+[e :U 3292 ]
+"114
+[; ;main.c: 114:   }
 }
 [e ++ _therm_i -> -> 1 `i `uc ]
 [e $ <= -> _therm_i `i -> 23 `i 3285  ]
 [e :U 3286 ]
 }
-"112
-[; ;main.c: 112:   switch (CAN1_OperationModeGet())
-[e $U 3292  ]
-"113
-[; ;main.c: 113:   {
-{
-"114
-[; ;main.c: 114:   case CAN_CONFIGURATION_MODE:
-[e :U 3293 ]
-"115
-[; ;main.c: 115:    CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE);
-[e ( _CAN1_OperationModeSet (1 . `E23400 6 ]
-"116
-[; ;main.c: 116:    break;
-[e $U 3291  ]
 "117
-[; ;main.c: 117:   case CAN_NORMAL_2_0_MODE:
-[e :U 3294 ]
-"119
-[; ;main.c: 119:       if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ)))
-[e $ ! == -> . `E23415 1 `ui -> ( _CAN1_TransmitFIFOStatusGet (1 . `E23437 0 `ui 3295  ]
-"120
-[; ;main.c: 120:       {
+[; ;main.c: 117:   switch (CAN1_OperationModeGet())
+[e $U 3294  ]
+"118
+[; ;main.c: 118:   {
 {
+"119
+[; ;main.c: 119:   case CAN_CONFIGURATION_MODE:
+[e :U 3295 ]
+"120
+[; ;main.c: 120:    CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE);
+[e ( _CAN1_OperationModeSet (1 . `E23400 6 ]
+"121
+[; ;main.c: 121:    break;
+[e $U 3293  ]
 "122
-[; ;main.c: 122:     msg = get_TM2BMS_Broadcast_msg(temps);
-[e = _msg ( _get_TM2BMS_Broadcast_msg (1 &U _temps ]
-"123
-[; ;main.c: 123:     CAN1_Transmit(TXQ, &msg);
-[e ( _CAN1_Transmit (2 , . `E23437 0 &U _msg ]
-"124
-[; ;main.c: 124:     while(CAN1_TransmitFIFOStatusGet(TXQ) == CAN_TX_FIFO_FULL);
-[e $U 3296  ]
-[e :U 3297 ]
+[; ;main.c: 122:   case CAN_NORMAL_2_0_MODE:
 [e :U 3296 ]
-[e $ == -> ( _CAN1_TransmitFIFOStatusGet (1 . `E23437 0 `ui -> . `E23415 0 `ui 3297  ]
-[e :U 3298 ]
+"124
+[; ;main.c: 124:       if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ)))
+[e $ ! == -> . `E23415 1 `ui -> ( _CAN1_TransmitFIFOStatusGet (1 . `E23437 0 `ui 3297  ]
+"125
+[; ;main.c: 125:       {
+{
 "127
-[; ;main.c: 127:     msg = get_TM_General_Broadcast_msg(temps);
-[e = _msg ( _get_TM_General_Broadcast_msg (1 &U _temps ]
+[; ;main.c: 127:     msg = get_TM2BMS_Broadcast_msg(temps);
+[e = _msg ( _get_TM2BMS_Broadcast_msg (1 &U _temps ]
 "128
 [; ;main.c: 128:     CAN1_Transmit(TXQ, &msg);
 [e ( _CAN1_Transmit (2 , . `E23437 0 &U _msg ]
 "129
-[; ;main.c: 129:     while (CAN1_TransmitFIFOStatusGet(TXQ) == CAN_TX_FIFO_FULL);
-[e $U 3299  ]
-[e :U 3300 ]
+[; ;main.c: 129:     while(CAN1_TransmitFIFOStatusGet(TXQ) == CAN_TX_FIFO_FULL);
+[e $U 3298  ]
 [e :U 3299 ]
-[e $ == -> ( _CAN1_TransmitFIFOStatusGet (1 . `E23437 0 `ui -> . `E23415 0 `ui 3300  ]
-[e :U 3301 ]
-"130
-[; ;main.c: 130:       }
-}
-[e :U 3295 ]
-"131
-[; ;main.c: 131:    break;
-[e $U 3291  ]
+[e :U 3298 ]
+[e $ == -> ( _CAN1_TransmitFIFOStatusGet (1 . `E23437 0 `ui -> . `E23415 0 `ui 3299  ]
+[e :U 3300 ]
 "132
-[; ;main.c: 132:   default:
-[e :U 3302 ]
+[; ;main.c: 132:     msg = get_TM_General_Broadcast_msg(temps);
+[e = _msg ( _get_TM_General_Broadcast_msg (1 &U _temps ]
 "133
-[; ;main.c: 133:    break;
-[e $U 3291  ]
+[; ;main.c: 133:     CAN1_Transmit(TXQ, &msg);
+[e ( _CAN1_Transmit (2 , . `E23437 0 &U _msg ]
 "134
-[; ;main.c: 134:   }
-}
-[e $U 3291  ]
-[e :U 3292 ]
-[e [\ -> ( _CAN1_OperationModeGet ..  `ui , $ -> . `E23400 4 `ui 3293
- , $ -> . `E23400 6 `ui 3294
- 3302 ]
-[e :U 3291 ]
+[; ;main.c: 134:     while (CAN1_TransmitFIFOStatusGet(TXQ) == CAN_TX_FIFO_FULL);
+[e $U 3301  ]
+[e :U 3302 ]
+[e :U 3301 ]
+[e $ == -> ( _CAN1_TransmitFIFOStatusGet (1 . `E23437 0 `ui -> . `E23415 0 `ui 3302  ]
+[e :U 3303 ]
 "135
-[; ;main.c: 135:   _delay((unsigned long)((100)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;main.c: 135:       }
+}
+[e :U 3297 ]
 "136
-[; ;main.c: 136:     }
+[; ;main.c: 136:    break;
+[e $U 3293  ]
+"137
+[; ;main.c: 137:   default:
+[e :U 3304 ]
+"138
+[; ;main.c: 138:    break;
+[e $U 3293  ]
+"139
+[; ;main.c: 139:   }
+}
+[e $U 3293  ]
+[e :U 3294 ]
+[e [\ -> ( _CAN1_OperationModeGet ..  `ui , $ -> . `E23400 4 `ui 3295
+ , $ -> . `E23400 6 `ui 3296
+ 3304 ]
+[e :U 3293 ]
+"140
+[; ;main.c: 140:   _delay((unsigned long)((100)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"141
+[; ;main.c: 141:     }
 }
 [e :U 3282 ]
 [e $U 3283  ]
 [e :U 3284 ]
-"137
-[; ;main.c: 137: }
+"142
+[; ;main.c: 142: }
 [e :UE 3281 ]
 }

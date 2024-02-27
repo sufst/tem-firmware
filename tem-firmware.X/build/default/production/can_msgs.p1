@@ -3769,8 +3769,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _avg_temp `c ~T0 @X0 1 a ]
 [e = _avg_temp -> / _total_temp -> + - -> 23 `i -> 0 `i -> 1 `i `l `c ]
 "48
-[; ;can_msgs.c: 48:     msg_data[0] = module_id;
-[e = *U + &U _msg_data * -> -> -> 0 `i `ui `ux -> -> # *U &U _msg_data `ui `ux _module_id ]
+[; ;can_msgs.c: 48:     msg_data[0] = module_id - 1;
+[e = *U + &U _msg_data * -> -> -> 0 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> - -> _module_id `i -> 1 `i `uc ]
 "49
 [; ;can_msgs.c: 49:     msg_data[1] = (uint8_t)min_temp;
 [e = *U + &U _msg_data * -> -> -> 1 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> _min_temp `uc ]
@@ -3900,7 +3900,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 3296 ]
 "96
-[; ;can_msgs.c: 96:         total_temp += this_temp;
+[; ;can_msgs.c: 96:             total_temp += this_temp;
 [e =+ _total_temp -> _this_temp `c ]
 "97
 [; ;can_msgs.c: 97:     }
