@@ -79,7 +79,7 @@ int8_t adc_to_temp(adc_result_t reading)
 	return therm_lut[reading];
 }
 
-
+uint8_t module_id; // 0 to 15, set by config resistors r30-r33
 int8_t temps[THERM_COUNT];
 
 void main(void)
@@ -91,12 +91,12 @@ void main(void)
     SYSTEM_Initialize();
 	ADC_SelectContext(CONTEXT_1);
     
-    // read module ID from config resistors
-//    module_id = (1 - CFG_R30_GetValue()) * 1 +
-//                (1 - CFG_R31_GetValue()) * 2 +
-//                (1 - CFG_R32_GetValue()) * 4 +
-//                (1 - CFG_R33_GetValue()) * 8;
-
+//     read module ID from config resistors
+    module_id = (1 - CFG_R30_GetValue()) * 1 +
+                (1 - CFG_R31_GetValue()) * 2 +
+                (1 - CFG_R32_GetValue()) * 4 +
+                (1 - CFG_R33_GetValue()) * 8 + 1;
+        
     while (1)
     {   
         //read temps
@@ -124,12 +124,12 @@ void main(void)
 		    if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(CAN1_TX_TXQ)))
 		    {
 				// broadcast msg
-				msg = get_TM2BMS_Broadcast_msg(temps);
+				msg = get_TM2BMS_Broadcast_msg(temps, module_id);
 				CAN1_Transmit(CAN1_TX_TXQ, &msg);
 				while(CAN1_TransmitFIFOStatusGet(CAN1_TX_TXQ) == CAN_TX_FIFO_FULL);
 
 				// general broadcast msg
-				msg = get_TM_General_Broadcast_msg(temps);
+				msg = get_TM_General_Broadcast_msg(temps, module_id);
 				CAN1_Transmit(CAN1_TX_TXQ, &msg);
 				while (CAN1_TransmitFIFOStatusGet(CAN1_TX_TXQ) == CAN_TX_FIFO_FULL);
 		    }

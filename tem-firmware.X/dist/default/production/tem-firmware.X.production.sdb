@@ -178,17 +178,17 @@ CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR 1
 CAN_TX_MSG_REQUEST_BRS_ERROR 2
 CAN_TX_MSG_REQUEST_FIFO_FULL 3
 ]
-"61 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+"60 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
 [e E23390 . `uc
 CAN_2_0_FORMAT 0
 CAN_FD_FORMAT 1
 ]
-"62
+"61
 [e E23378 . `uc
 CAN_NON_BRS_MODE 0
 CAN_BRS_MODE 1
 ]
-"63
+"62
 [e E23419 . `uc
 DLC_0 0
 DLC_1 1
@@ -207,12 +207,12 @@ DLC_32 13
 DLC_48 14
 DLC_64 15
 ]
-"64
+"63
 [e E23386 . `uc
 CAN_FRAME_DATA 0
 CAN_FRAME_RTR 1
 ]
-"65
+"64
 [e E23382 . `uc
 CAN_FRAME_STD 0
 CAN_FRAME_EXT 1
@@ -245,7 +245,7 @@ CAN_FRAME_EXT 1
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"12 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+"11 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
 [v _get_checksum get_checksum `(uc  1 e 1 0 ]
 "79 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can_types.h
 "66
@@ -256,7 +256,7 @@ CAN_FRAME_EXT 1
 `uc 1 formatType 1 0 :1:6 
 `uc 1 brs 1 0 :1:7 
 ]
-"21 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+"20 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
 [u S354 . 1 `uc 1 msgfields 1 0 `S348 1 . 1 0 ]
 [s S357 . 7 `ul 1 msgId 4 0 `S354 1 field 1 4 `*.39uc 1 data 2 5 ]
 [v _get_TM2BMS_Broadcast_msg get_TM2BMS_Broadcast_msg `(S357  1 e 7 0 ]
@@ -269,7 +269,7 @@ CAN_FRAME_EXT 1
 `uc 1 formatType 1 0 :1:6 
 `uc 1 brs 1 0 :1:7 
 ]
-"72 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+"71 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
 [u S354 . 1 `uc 1 msgfields 1 0 `S348 1 . 1 0 ]
 [s S357 . 7 `ul 1 msgId 4 0 `S354 1 field 1 4 `*.39uc 1 data 2 5 ]
 [v _get_TM_General_Broadcast_msg get_TM_General_Broadcast_msg `(S357  1 e 7 0 ]
@@ -365,8 +365,6 @@ CAN_FRAME_EXT 1
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 "55 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"37 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X/config.h
-[v _module_id@config$F1547 module_id `uc  1 s 1 module_id ]
 "10 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X/therm_LUT.h
 [v _therm_lut therm_lut `[4096]c  1 e 4096 0 ]
 "1338 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q84.h
@@ -457,6 +455,18 @@ CAN_FRAME_EXT 1
 [v _TRISD TRISD `VEuc  1 e 1 @1225 ]
 "4088
 [v _TRISE TRISE `VEuc  1 e 1 @1226 ]
+[s S1419 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"4323
+[u S1428 . 1 `S1419 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES1428  1 e 1 @1233 ]
 [s S1306 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
@@ -951,6 +961,8 @@ CAN_FRAME_EXT 1
 [v _msg_data msg_data `[8]uc  1 s 8 msg_data ]
 "48 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\main.c
 [v _therm_to_adc_channel therm_to_adc_channel `[24]E23239  1 e 24 0 ]
+"82
+[v _module_id module_id `uc  1 e 1 0 ]
 "83
 [v _temps temps `[24]c  1 e 24 0 ]
 "56 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/adc.c
@@ -977,9 +989,9 @@ CAN_FRAME_EXT 1
 [v _main main `(v  1 e 1 0 ]
 {
 "108
-[v main@reading reading `us  1 a 2 47 ]
+[v main@reading reading `us  1 a 2 0 ]
 "103
-[v main@therm_i therm_i `uc  1 a 1 56 ]
+[v main@therm_i therm_i `uc  1 a 1 9 ]
 [s S348 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
 `uc 1 dlc 1 0 :4:2 
@@ -989,7 +1001,7 @@ CAN_FRAME_EXT 1
 "88
 [u S354 . 1 `uc 1 msgfields 1 0 `S348 1 . 1 0 ]
 [s S357 . 7 `ul 1 msgId 4 0 `S354 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v main@msg msg `S357  1 a 7 49 ]
+[v main@msg msg `S357  1 a 7 2 ]
 "142
 } 0
 "79 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can_types.h
@@ -1001,36 +1013,37 @@ CAN_FRAME_EXT 1
 `uc 1 formatType 1 0 :1:6 
 `uc 1 brs 1 0 :1:7 
 ]
-"72 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+"71 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
 [u S354 . 1 `uc 1 msgfields 1 0 `S348 1 . 1 0 ]
 [s S357 . 7 `ul 1 msgId 4 0 `S354 1 field 1 4 `*.39uc 1 data 2 5 ]
 [v _get_TM_General_Broadcast_msg get_TM_General_Broadcast_msg `(S357  1 e 7 0 ]
 {
-"85
-[v get_TM_General_Broadcast_msg@this_temp this_temp `c  1 a 1 19 ]
 "84
-[v get_TM_General_Broadcast_msg@temp_i temp_i `uc  1 a 1 20 ]
-"75
-[v get_TM_General_Broadcast_msg@msg msg `S357  1 a 7 21 ]
-"99
-[v get_TM_General_Broadcast_msg@absolute_therm_id absolute_therm_id `us  1 a 2 15 ]
-"80
-[v get_TM_General_Broadcast_msg@max_temp max_temp `c  1 a 1 18 ]
-"78
-[v get_TM_General_Broadcast_msg@min_temp min_temp `c  1 a 1 17 ]
-"81
-[v get_TM_General_Broadcast_msg@max_temp_i max_temp_i `uc  1 a 1 14 ]
-"79
-[v get_TM_General_Broadcast_msg@min_temp_i min_temp_i `uc  1 a 1 13 ]
-"100
-[v get_TM_General_Broadcast_msg@broadcast_therm_temp broadcast_therm_temp `c  1 a 1 12 ]
+[v get_TM_General_Broadcast_msg@this_temp this_temp `c  1 a 1 19 ]
 "83
+[v get_TM_General_Broadcast_msg@temp_i temp_i `uc  1 a 1 20 ]
+"74
+[v get_TM_General_Broadcast_msg@msg msg `S357  1 a 7 21 ]
+"98
+[v get_TM_General_Broadcast_msg@absolute_therm_id absolute_therm_id `us  1 a 2 15 ]
+"79
+[v get_TM_General_Broadcast_msg@max_temp max_temp `c  1 a 1 18 ]
+"77
+[v get_TM_General_Broadcast_msg@min_temp min_temp `c  1 a 1 17 ]
+"80
+[v get_TM_General_Broadcast_msg@max_temp_i max_temp_i `uc  1 a 1 14 ]
+"78
+[v get_TM_General_Broadcast_msg@min_temp_i min_temp_i `uc  1 a 1 13 ]
+"99
+[v get_TM_General_Broadcast_msg@broadcast_therm_temp broadcast_therm_temp `c  1 a 1 12 ]
+"82
 [v get_TM_General_Broadcast_msg@total_temp total_temp `c  1 a 1 11 ]
-"72
+"71
 [v get_TM_General_Broadcast_msg@temps_array temps_array `*.39c  1 p 2 2 ]
-"73
+[v get_TM_General_Broadcast_msg@module_id module_id `uc  1 p 1 4 ]
+"72
 [v get_TM_General_Broadcast_msg@broadcast_therm_i broadcast_therm_i `uc  1 s 1 broadcast_therm_i ]
-"127
+"126
 } 0
 "79 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\mcc_generated_files/can_types.h
 "66
@@ -1041,44 +1054,45 @@ CAN_FRAME_EXT 1
 `uc 1 formatType 1 0 :1:6 
 `uc 1 brs 1 0 :1:7 
 ]
-"21 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
+"20 C:\Users\alexl\sufst\23\tem-firmware\tem-firmware.X\can_msgs.c
 [u S354 . 1 `uc 1 msgfields 1 0 `S348 1 . 1 0 ]
 [s S357 . 7 `ul 1 msgId 4 0 `S354 1 field 1 4 `*.39uc 1 data 2 5 ]
 [v _get_TM2BMS_Broadcast_msg get_TM2BMS_Broadcast_msg `(S357  1 e 7 0 ]
 {
-"32
-[v get_TM2BMS_Broadcast_msg@this_temp this_temp `c  1 a 1 36 ]
 "31
-[v get_TM2BMS_Broadcast_msg@temp_i temp_i `uc  1 a 1 37 ]
-"22
-[v get_TM2BMS_Broadcast_msg@msg msg `S357  1 a 7 38 ]
+[v get_TM2BMS_Broadcast_msg@this_temp this_temp `c  1 a 1 36 ]
 "30
-[v get_TM2BMS_Broadcast_msg@total_temp total_temp `l  1 a 4 27 ]
-"27
-[v get_TM2BMS_Broadcast_msg@max_temp max_temp `c  1 a 1 35 ]
-"25
-[v get_TM2BMS_Broadcast_msg@min_temp min_temp `c  1 a 1 34 ]
-"28
-[v get_TM2BMS_Broadcast_msg@max_temp_i max_temp_i `uc  1 a 1 33 ]
-"26
-[v get_TM2BMS_Broadcast_msg@min_temp_i min_temp_i `uc  1 a 1 32 ]
-"46
-[v get_TM2BMS_Broadcast_msg@avg_temp avg_temp `c  1 a 1 31 ]
+[v get_TM2BMS_Broadcast_msg@temp_i temp_i `uc  1 a 1 37 ]
 "21
+[v get_TM2BMS_Broadcast_msg@msg msg `S357  1 a 7 38 ]
+"29
+[v get_TM2BMS_Broadcast_msg@total_temp total_temp `l  1 a 4 27 ]
+"26
+[v get_TM2BMS_Broadcast_msg@max_temp max_temp `c  1 a 1 35 ]
+"24
+[v get_TM2BMS_Broadcast_msg@min_temp min_temp `c  1 a 1 34 ]
+"27
+[v get_TM2BMS_Broadcast_msg@max_temp_i max_temp_i `uc  1 a 1 33 ]
+"25
+[v get_TM2BMS_Broadcast_msg@min_temp_i min_temp_i `uc  1 a 1 32 ]
+"45
+[v get_TM2BMS_Broadcast_msg@avg_temp avg_temp `c  1 a 1 31 ]
+"20
 [v get_TM2BMS_Broadcast_msg@temps_array temps_array `*.39c  1 p 2 16 ]
-"69
+[v get_TM2BMS_Broadcast_msg@module_id module_id `uc  1 p 1 18 ]
+"68
 } 0
-"12
+"11
 [v _get_checksum get_checksum `(uc  1 e 1 0 ]
 {
-"14
-[v get_checksum@i i `uc  1 a 1 6 ]
 "13
-[v get_checksum@sum sum `uc  1 a 1 5 ]
+[v get_checksum@i i `uc  1 a 1 6 ]
 "12
+[v get_checksum@sum sum `uc  1 a 1 5 ]
+"11
 [v get_checksum@data data `*.39uc  1 p 2 2 ]
 [v get_checksum@len len `uc  1 p 1 4 ]
-"18
+"17
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
@@ -1284,11 +1298,11 @@ CAN_FRAME_EXT 1
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
 {
 "8
-[v memcpy@s s `*.39Cuc  1 a 2 10 ]
+[v memcpy@s s `*.39Cuc  1 a 2 11 ]
 "7
-[v memcpy@d d `*.39uc  1 a 2 8 ]
+[v memcpy@d d `*.39uc  1 a 2 9 ]
 "9
-[v memcpy@tmp tmp `uc  1 a 1 12 ]
+[v memcpy@tmp tmp `uc  1 a 1 8 ]
 "4
 [v memcpy@d1 d1 `*.39v  1 p 2 2 ]
 [v memcpy@s1 s1 `*.39Cv  1 p 2 4 ]

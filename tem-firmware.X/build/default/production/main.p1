@@ -27,7 +27,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 "244 ./mcc_generated_files/adc.h
 [; ;./mcc_generated_files/adc.h: 244: __attribute__((inline)) void ADC_SelectContext(ADC_context_t context);
 [v _ADC_SelectContext `TF23281 ~T0 @X0 0 e ]
-"317
+"4312 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q84.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q84.h: 4312:         unsigned CLKSEL1 :1;
+[s S3178 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3178 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
+"4311
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q84.h: 4311:         unsigned CLKSEL0 :1;
+[u S3177 `S3178 1 ]
+[n S3177 . . ]
+"4323
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q84.h: 4323:         unsigned SPI1CLKSEL2 :1;
+[v _PORTDbits `VS3177 ~T0 @X0 0 e@1233 ]
+"317 ./mcc_generated_files/adc.h
 [; ;./mcc_generated_files/adc.h: 317: void ADC_StartConversion(ADC_channel_t channel);
 [v _ADC_StartConversion `(v ~T0 @X0 0 ef1`E23239 ]
 "343
@@ -55,8 +66,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./mcc_generated_files/can1.h: 724: CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
 [v _CAN1_TransmitFIFOStatusGet `(E23415 ~T0 @X0 0 ef1`CE23437 ]
 "56 ./can_msgs.h
-[; ;./can_msgs.h: 56: CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[]);
-[v _get_TM2BMS_Broadcast_msg `(S3279 ~T0 @X0 0 ef1`*c ]
+[; ;./can_msgs.h: 56: CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[], uint8_t module_id);
+[v _get_TM2BMS_Broadcast_msg `(S3279 ~T0 @X0 0 ef2`*c`uc ]
 "128 main.c
 [; ;main.c: 128:     CAN1_Transmit(TXQ, &msg);
 [c E23394 0 1 2 3 .. ]
@@ -65,8 +76,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./mcc_generated_files/can1.h: 243: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
 [v _CAN1_Transmit `(E23394 ~T0 @X0 0 ef2`CE23437`*S3279 ]
 "68 ./can_msgs.h
-[; ;./can_msgs.h: 68: CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[]);
-[v _get_TM_General_Broadcast_msg `(S3279 ~T0 @X0 0 ef1`*c ]
+[; ;./can_msgs.h: 68: CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[], uint8_t module_id);
+[v _get_TM_General_Broadcast_msg `(S3279 ~T0 @X0 0 ef2`*c`uc ]
 "183 ./mcc_generated_files/can1.h
 [; ;./mcc_generated_files/can1.h: 183: CAN_OP_MODES CAN1_OperationModeGet(void);
 [v _CAN1_OperationModeGet `(E23400 ~T0 @X0 0 ef ]
@@ -3671,12 +3682,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "71204
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q84.h: 71204: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"37 ./config.h
-[; ;./config.h: 37: static uint8_t module_id = 1;
-[v _module_id `uc ~T0 @X0 1 s ]
-[i _module_id
--> -> 1 `i `uc
-]
 "36 ./can_msgs.h
 [; ;./can_msgs.h: 36: static uint8_t broadcast_therm_i = 0;
 [v _broadcast_therm_i `uc ~T0 @X0 1 s ]
@@ -7838,6 +7843,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 80: }
 [e :UE 3280 ]
 }
+"82
+[; ;main.c: 82: uint8_t module_id;
+[v _module_id `uc ~T0 @X0 1 e ]
 "83
 [; ;main.c: 83: int8_t temps[(23 - 0 + 1)];
 [v _temps `c ~T0 @X0 -> 24 `i e ]
@@ -7859,6 +7867,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "92
 [; ;main.c: 92:  ADC_SelectContext(CONTEXT_1);
 [e ( _ADC_SelectContext (1 . `E23270 0 ]
+"95
+[; ;main.c: 95:     module_id = (1 - PORTDbits.RD2) * 1 +
+[e = _module_id -> + + + + * - -> 1 `i -> . . _PORTDbits 0 2 `i -> 1 `i * - -> 1 `i -> . . _PORTDbits 0 3 `i -> 2 `i * - -> 1 `i -> . . _PORTDbits 0 4 `i -> 4 `i * - -> 1 `i -> . . _PORTDbits 0 5 `i -> 8 `i -> 1 `i `uc ]
 "100
 [; ;main.c: 100:     while (1)
 [e :U 3283 ]
@@ -7944,8 +7955,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 125:       {
 {
 "127
-[; ;main.c: 127:     msg = get_TM2BMS_Broadcast_msg(temps);
-[e = _msg ( _get_TM2BMS_Broadcast_msg (1 &U _temps ]
+[; ;main.c: 127:     msg = get_TM2BMS_Broadcast_msg(temps, module_id);
+[e = _msg ( _get_TM2BMS_Broadcast_msg (2 , &U _temps _module_id ]
 "128
 [; ;main.c: 128:     CAN1_Transmit(TXQ, &msg);
 [e ( _CAN1_Transmit (2 , . `E23437 0 &U _msg ]
@@ -7957,8 +7968,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ == -> ( _CAN1_TransmitFIFOStatusGet (1 . `E23437 0 `ui -> . `E23415 0 `ui 3299  ]
 [e :U 3300 ]
 "132
-[; ;main.c: 132:     msg = get_TM_General_Broadcast_msg(temps);
-[e = _msg ( _get_TM_General_Broadcast_msg (1 &U _temps ]
+[; ;main.c: 132:     msg = get_TM_General_Broadcast_msg(temps, module_id);
+[e = _msg ( _get_TM_General_Broadcast_msg (2 , &U _temps _module_id ]
 "133
 [; ;main.c: 133:     CAN1_Transmit(TXQ, &msg);
 [e ( _CAN1_Transmit (2 , . `E23437 0 &U _msg ]

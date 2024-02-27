@@ -11,27 +11,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./mcc_generated_files/can_types.h: 79: {
 [s S3279 `ul 1 `S3277 1 `*uc 1 ]
 [n S3279 . msgId field data ]
-"10 can_msgs.c
-[; ;can_msgs.c: 10: extern uint8_t module_id;
-[v _module_id `uc ~T0 @X0 0 e ]
-"61
-[; ;can_msgs.c: 61:     msg.field.formatType = CAN_2_0_FORMAT;
+"60 can_msgs.c
+[; ;can_msgs.c: 60:     msg.field.formatType = CAN_2_0_FORMAT;
 [c E23390 0 1 .. ]
 [n E23390 . CAN_2_0_FORMAT CAN_FD_FORMAT  ]
-"62
-[; ;can_msgs.c: 62:     msg.field.brs = CAN_NON_BRS_MODE;
+"61
+[; ;can_msgs.c: 61:     msg.field.brs = CAN_NON_BRS_MODE;
 [c E23378 0 1 .. ]
 [n E23378 . CAN_NON_BRS_MODE CAN_BRS_MODE  ]
-"63
-[; ;can_msgs.c: 63:     msg.field.dlc = DLC_8;
+"62
+[; ;can_msgs.c: 62:     msg.field.dlc = DLC_8;
 [c E23419 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 .. ]
 [n E23419 . DLC_0 DLC_1 DLC_2 DLC_3 DLC_4 DLC_5 DLC_6 DLC_7 DLC_8 DLC_12 DLC_16 DLC_20 DLC_24 DLC_32 DLC_48 DLC_64  ]
-"64
-[; ;can_msgs.c: 64:     msg.field.frameType = CAN_FRAME_DATA;
+"63
+[; ;can_msgs.c: 63:     msg.field.frameType = CAN_FRAME_DATA;
 [c E23386 0 1 .. ]
 [n E23386 . CAN_FRAME_DATA CAN_FRAME_RTR  ]
-"65
-[; ;can_msgs.c: 65:     msg.field.idType = CAN_FRAME_EXT;
+"64
+[; ;can_msgs.c: 64:     msg.field.idType = CAN_FRAME_EXT;
 [c E23382 0 1 .. ]
 [n E23382 . CAN_FRAME_STD CAN_FRAME_EXT  ]
 "362 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q84.h
@@ -3631,86 +3628,81 @@ Version 4.0 HI-TECH Software Intermediate Code
 "71204
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q84.h: 71204: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"37 ./config.h
-[; ;./config.h: 37: static uint8_t module_id = 1;
-[v _module_id `uc ~T0 @X0 1 s ]
-[i _module_id
--> -> 1 `i `uc
-]
 "9 can_msgs.c
 [; ;can_msgs.c: 9: static uint8_t msg_data[8];
 [v _msg_data `uc ~T0 @X0 -> 8 `i s ]
-"12
-[; ;can_msgs.c: 12: uint8_t get_checksum(uint8_t* data, uint8_t len) {
+"11
+[; ;can_msgs.c: 11: uint8_t get_checksum(uint8_t* data, uint8_t len) {
 [v _get_checksum `(uc ~T0 @X0 1 ef2`*uc`uc ]
 {
 [e :U _get_checksum ]
 [v _data `*uc ~T0 @X0 1 r1 ]
 [v _len `uc ~T0 @X0 1 r2 ]
 [f ]
-"13
-[; ;can_msgs.c: 13:     uint8_t sum = 0;
+"12
+[; ;can_msgs.c: 12:     uint8_t sum = 0;
 [v _sum `uc ~T0 @X0 1 a ]
 [e = _sum -> -> 0 `i `uc ]
-"14
-[; ;can_msgs.c: 14:     for(uint8_t i=0; i<len; i++) {
+"13
+[; ;can_msgs.c: 13:     for(uint8_t i=0; i<len; i++) {
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
 [e $U 3284  ]
 [e :U 3281 ]
 {
-"15
-[; ;can_msgs.c: 15:         sum += data[i];
+"14
+[; ;can_msgs.c: 14:         sum += data[i];
 [e =+ _sum -> *U + _data * -> _i `ux -> -> # *U _data `ui `ux `uc ]
-"16
-[; ;can_msgs.c: 16:     }
+"15
+[; ;can_msgs.c: 15:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
 [e :U 3284 ]
 [e $ < -> _i `i -> _len `i 3281  ]
 [e :U 3282 ]
 }
-"17
-[; ;can_msgs.c: 17:     return sum;
+"16
+[; ;can_msgs.c: 16:     return sum;
 [e ) _sum ]
 [e $UE 3280  ]
-"18
-[; ;can_msgs.c: 18: }
+"17
+[; ;can_msgs.c: 17: }
 [e :UE 3280 ]
 }
-"21
-[; ;can_msgs.c: 21: CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[]) {
-[v _get_TM2BMS_Broadcast_msg `(S3279 ~T0 @X0 1 ef1`*c ]
+"20
+[; ;can_msgs.c: 20: CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[], uint8_t module_id) {
+[v _get_TM2BMS_Broadcast_msg `(S3279 ~T0 @X0 1 ef2`*c`uc ]
 {
 [e :U _get_TM2BMS_Broadcast_msg ]
 [v _temps_array `*c ~T0 @X0 1 r1 ]
+[v _module_id `uc ~T0 @X0 1 r2 ]
 [f ]
-"22
-[; ;can_msgs.c: 22:     CAN_MSG_OBJ msg;
+"21
+[; ;can_msgs.c: 21:     CAN_MSG_OBJ msg;
 [v _msg `S3279 ~T0 @X0 1 a ]
-"25
-[; ;can_msgs.c: 25:     int8_t min_temp = 127;
+"24
+[; ;can_msgs.c: 24:     int8_t min_temp = 127;
 [v _min_temp `c ~T0 @X0 1 a ]
 [e = _min_temp -> -> 127 `i `c ]
-"26
-[; ;can_msgs.c: 26:     uint8_t min_temp_i = 0;
+"25
+[; ;can_msgs.c: 25:     uint8_t min_temp_i = 0;
 [v _min_temp_i `uc ~T0 @X0 1 a ]
 [e = _min_temp_i -> -> 0 `i `uc ]
-"27
-[; ;can_msgs.c: 27:     int8_t max_temp = -128;
+"26
+[; ;can_msgs.c: 26:     int8_t max_temp = -128;
 [v _max_temp `c ~T0 @X0 1 a ]
 [e = _max_temp -> -U -> 128 `i `c ]
-"28
-[; ;can_msgs.c: 28:     uint8_t max_temp_i = 0;
+"27
+[; ;can_msgs.c: 27:     uint8_t max_temp_i = 0;
 [v _max_temp_i `uc ~T0 @X0 1 a ]
 [e = _max_temp_i -> -> 0 `i `uc ]
-"30
-[; ;can_msgs.c: 30:     int32_t total_temp = 0;
+"29
+[; ;can_msgs.c: 29:     int32_t total_temp = 0;
 [v _total_temp `l ~T0 @X0 1 a ]
 [e = _total_temp -> -> 0 `i `l ]
-"31
-[; ;can_msgs.c: 31:     for(uint8_t temp_i=0; temp_i<(23 - 0 + 1); temp_i++) {
+"30
+[; ;can_msgs.c: 30:     for(uint8_t temp_i=0; temp_i<(23 - 0 + 1); temp_i++) {
 {
 [v _temp_i `uc ~T0 @X0 1 a ]
 [e = _temp_i -> -> 0 `i `uc ]
@@ -3718,144 +3710,145 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 3287  ]
 [e :U 3286 ]
 {
-"32
-[; ;can_msgs.c: 32:         int8_t this_temp = temps_array[temp_i];
+"31
+[; ;can_msgs.c: 31:         int8_t this_temp = temps_array[temp_i];
 [v _this_temp `c ~T0 @X0 1 a ]
 [e = _this_temp *U + _temps_array * -> _temp_i `ux -> -> # *U _temps_array `ui `ux ]
-"33
-[; ;can_msgs.c: 33:         if(this_temp < min_temp)
+"32
+[; ;can_msgs.c: 32:         if(this_temp < min_temp)
 [e $ ! < -> _this_temp `i -> _min_temp `i 3289  ]
-"34
-[; ;can_msgs.c: 34:         {
+"33
+[; ;can_msgs.c: 33:         {
 {
-"35
-[; ;can_msgs.c: 35:             min_temp = this_temp;
+"34
+[; ;can_msgs.c: 34:             min_temp = this_temp;
 [e = _min_temp _this_temp ]
-"36
-[; ;can_msgs.c: 36:             min_temp_i = temp_i;
+"35
+[; ;can_msgs.c: 35:             min_temp_i = temp_i;
 [e = _min_temp_i _temp_i ]
-"37
-[; ;can_msgs.c: 37:         }
+"36
+[; ;can_msgs.c: 36:         }
 }
 [e :U 3289 ]
-"38
-[; ;can_msgs.c: 38:         if(this_temp > max_temp)
+"37
+[; ;can_msgs.c: 37:         if(this_temp > max_temp)
 [e $ ! > -> _this_temp `i -> _max_temp `i 3290  ]
-"39
-[; ;can_msgs.c: 39:         {
+"38
+[; ;can_msgs.c: 38:         {
 {
-"40
-[; ;can_msgs.c: 40:             max_temp = this_temp;
+"39
+[; ;can_msgs.c: 39:             max_temp = this_temp;
 [e = _max_temp _this_temp ]
-"41
-[; ;can_msgs.c: 41:             max_temp_i = temp_i;
+"40
+[; ;can_msgs.c: 40:             max_temp_i = temp_i;
 [e = _max_temp_i _temp_i ]
-"42
-[; ;can_msgs.c: 42:         }
+"41
+[; ;can_msgs.c: 41:         }
 }
 [e :U 3290 ]
-"43
-[; ;can_msgs.c: 43:         total_temp += this_temp;
+"42
+[; ;can_msgs.c: 42:         total_temp += this_temp;
 [e =+ _total_temp -> _this_temp `l ]
-"44
-[; ;can_msgs.c: 44:     }
+"43
+[; ;can_msgs.c: 43:     }
 }
 [e ++ _temp_i -> -> 1 `i `uc ]
 [e $ < -> _temp_i `i + - -> 23 `i -> 0 `i -> 1 `i 3286  ]
 [e :U 3287 ]
 }
-"46
-[; ;can_msgs.c: 46:     int8_t avg_temp = total_temp / (23 - 0 + 1);
+"45
+[; ;can_msgs.c: 45:     int8_t avg_temp = total_temp / (23 - 0 + 1);
 [v _avg_temp `c ~T0 @X0 1 a ]
 [e = _avg_temp -> / _total_temp -> + - -> 23 `i -> 0 `i -> 1 `i `l `c ]
-"48
-[; ;can_msgs.c: 48:     msg_data[0] = module_id - 1;
+"47
+[; ;can_msgs.c: 47:     msg_data[0] = module_id - 1;
 [e = *U + &U _msg_data * -> -> -> 0 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> - -> _module_id `i -> 1 `i `uc ]
-"49
-[; ;can_msgs.c: 49:     msg_data[1] = (uint8_t)min_temp;
+"48
+[; ;can_msgs.c: 48:     msg_data[1] = (uint8_t)min_temp;
 [e = *U + &U _msg_data * -> -> -> 1 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> _min_temp `uc ]
-"50
-[; ;can_msgs.c: 50:     msg_data[2] = (uint8_t)max_temp;
+"49
+[; ;can_msgs.c: 49:     msg_data[2] = (uint8_t)max_temp;
 [e = *U + &U _msg_data * -> -> -> 2 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> _max_temp `uc ]
-"51
-[; ;can_msgs.c: 51:     msg_data[3] = (uint8_t)avg_temp;
+"50
+[; ;can_msgs.c: 50:     msg_data[3] = (uint8_t)avg_temp;
 [e = *U + &U _msg_data * -> -> -> 3 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> _avg_temp `uc ]
-"52
-[; ;can_msgs.c: 52:     msg_data[4] = (23 - 0 + 1);
+"51
+[; ;can_msgs.c: 51:     msg_data[4] = (23 - 0 + 1);
 [e = *U + &U _msg_data * -> -> -> 4 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> + - -> 23 `i -> 0 `i -> 1 `i `uc ]
-"53
-[; ;can_msgs.c: 53:     msg_data[5] = max_temp_i;
+"52
+[; ;can_msgs.c: 52:     msg_data[5] = max_temp_i;
 [e = *U + &U _msg_data * -> -> -> 5 `i `ui `ux -> -> # *U &U _msg_data `ui `ux _max_temp_i ]
-"54
-[; ;can_msgs.c: 54:     msg_data[6] = min_temp_i;
+"53
+[; ;can_msgs.c: 53:     msg_data[6] = min_temp_i;
 [e = *U + &U _msg_data * -> -> -> 6 `i `ui `ux -> -> # *U &U _msg_data `ui `ux _min_temp_i ]
-"57
-[; ;can_msgs.c: 57:     msg_data[7] = get_checksum((uint8_t*)msg_data, 7) + 0x41;
+"56
+[; ;can_msgs.c: 56:     msg_data[7] = get_checksum((uint8_t*)msg_data, 7) + 0x41;
 [e = *U + &U _msg_data * -> -> -> 7 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> + -> ( _get_checksum (2 , &U _msg_data -> -> 7 `i `uc `i -> 65 `i `uc ]
+"59
+[; ;can_msgs.c: 59:     msg.msgId = 0x1839F380 + module_id;
+[e = . _msg 0 -> + -> 406451072 `l -> _module_id `l `ul ]
 "60
-[; ;can_msgs.c: 60:     msg.msgId = 0x1839F380 | module_id;
-[e = . _msg 0 -> | -> 406451072 `l -> _module_id `l `ul ]
-"61
-[; ;can_msgs.c: 61:     msg.field.formatType = CAN_2_0_FORMAT;
+[; ;can_msgs.c: 60:     msg.field.formatType = CAN_2_0_FORMAT;
 [e = . . . _msg 1 1 3 -> . `E23390 0 `uc ]
-"62
-[; ;can_msgs.c: 62:     msg.field.brs = CAN_NON_BRS_MODE;
+"61
+[; ;can_msgs.c: 61:     msg.field.brs = CAN_NON_BRS_MODE;
 [e = . . . _msg 1 1 4 -> . `E23378 0 `uc ]
-"63
-[; ;can_msgs.c: 63:     msg.field.dlc = DLC_8;
+"62
+[; ;can_msgs.c: 62:     msg.field.dlc = DLC_8;
 [e = . . . _msg 1 1 2 -> . `E23419 8 `uc ]
-"64
-[; ;can_msgs.c: 64:     msg.field.frameType = CAN_FRAME_DATA;
+"63
+[; ;can_msgs.c: 63:     msg.field.frameType = CAN_FRAME_DATA;
 [e = . . . _msg 1 1 1 -> . `E23386 0 `uc ]
-"65
-[; ;can_msgs.c: 65:     msg.field.idType = CAN_FRAME_EXT;
+"64
+[; ;can_msgs.c: 64:     msg.field.idType = CAN_FRAME_EXT;
 [e = . . . _msg 1 1 0 -> . `E23382 1 `uc ]
-"66
-[; ;can_msgs.c: 66:     msg.data = msg_data;
+"65
+[; ;can_msgs.c: 65:     msg.data = msg_data;
 [e = . _msg 2 &U _msg_data ]
-"68
-[; ;can_msgs.c: 68:     return msg;
+"67
+[; ;can_msgs.c: 67:     return msg;
 [e ) _msg ]
 [e $UE 3285  ]
-"69
-[; ;can_msgs.c: 69: }
+"68
+[; ;can_msgs.c: 68: }
 [e :UE 3285 ]
 }
-"72
-[; ;can_msgs.c: 72: CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[]) {
-[v _get_TM_General_Broadcast_msg `(S3279 ~T0 @X0 1 ef1`*c ]
+"71
+[; ;can_msgs.c: 71: CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[], uint8_t module_id) {
+[v _get_TM_General_Broadcast_msg `(S3279 ~T0 @X0 1 ef2`*c`uc ]
 {
 [e :U _get_TM_General_Broadcast_msg ]
 [v _temps_array `*c ~T0 @X0 1 r1 ]
+[v _module_id `uc ~T0 @X0 1 r2 ]
 [f ]
-"73
-[; ;can_msgs.c: 73:     static uint8_t broadcast_therm_i;
+"72
+[; ;can_msgs.c: 72:     static uint8_t broadcast_therm_i;
 [v F23519 `uc ~T0 @X0 1 s broadcast_therm_i ]
-"75
-[; ;can_msgs.c: 75:     CAN_MSG_OBJ msg;
+"74
+[; ;can_msgs.c: 74:     CAN_MSG_OBJ msg;
 [v _msg `S3279 ~T0 @X0 1 a ]
-"78
-[; ;can_msgs.c: 78:     int8_t min_temp = 127;
+"77
+[; ;can_msgs.c: 77:     int8_t min_temp = 127;
 [v _min_temp `c ~T0 @X0 1 a ]
 [e = _min_temp -> -> 127 `i `c ]
-"79
-[; ;can_msgs.c: 79:     uint8_t min_temp_i = 0;
+"78
+[; ;can_msgs.c: 78:     uint8_t min_temp_i = 0;
 [v _min_temp_i `uc ~T0 @X0 1 a ]
 [e = _min_temp_i -> -> 0 `i `uc ]
-"80
-[; ;can_msgs.c: 80:     int8_t max_temp = -128;
+"79
+[; ;can_msgs.c: 79:     int8_t max_temp = -128;
 [v _max_temp `c ~T0 @X0 1 a ]
 [e = _max_temp -> -U -> 128 `i `c ]
-"81
-[; ;can_msgs.c: 81:     uint8_t max_temp_i = 0;
+"80
+[; ;can_msgs.c: 80:     uint8_t max_temp_i = 0;
 [v _max_temp_i `uc ~T0 @X0 1 a ]
 [e = _max_temp_i -> -> 0 `i `uc ]
-"83
-[; ;can_msgs.c: 83:     int8_t total_temp = 0;
+"82
+[; ;can_msgs.c: 82:     int8_t total_temp = 0;
 [v _total_temp `c ~T0 @X0 1 a ]
 [e = _total_temp -> -> 0 `i `c ]
-"84
-[; ;can_msgs.c: 84:     for(uint8_t temp_i=0; temp_i<(23 - 0 + 1); temp_i++) {
+"83
+[; ;can_msgs.c: 83:     for(uint8_t temp_i=0; temp_i<(23 - 0 + 1); temp_i++) {
 {
 [v _temp_i `uc ~T0 @X0 1 a ]
 [e = _temp_i -> -> 0 `i `uc ]
@@ -3863,121 +3856,121 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 3293  ]
 [e :U 3292 ]
 {
-"85
-[; ;can_msgs.c: 85:         int8_t this_temp = temps_array[temp_i];
+"84
+[; ;can_msgs.c: 84:         int8_t this_temp = temps_array[temp_i];
 [v _this_temp `c ~T0 @X0 1 a ]
 [e = _this_temp *U + _temps_array * -> _temp_i `ux -> -> # *U _temps_array `ui `ux ]
-"86
-[; ;can_msgs.c: 86:         if(this_temp < min_temp)
+"85
+[; ;can_msgs.c: 85:         if(this_temp < min_temp)
 [e $ ! < -> _this_temp `i -> _min_temp `i 3295  ]
-"87
-[; ;can_msgs.c: 87:         {
+"86
+[; ;can_msgs.c: 86:         {
 {
-"88
-[; ;can_msgs.c: 88:             min_temp = this_temp;
+"87
+[; ;can_msgs.c: 87:             min_temp = this_temp;
 [e = _min_temp _this_temp ]
-"89
-[; ;can_msgs.c: 89:             min_temp_i = temp_i;
+"88
+[; ;can_msgs.c: 88:             min_temp_i = temp_i;
 [e = _min_temp_i _temp_i ]
-"90
-[; ;can_msgs.c: 90:         }
+"89
+[; ;can_msgs.c: 89:         }
 }
 [e :U 3295 ]
-"91
-[; ;can_msgs.c: 91:         if(this_temp > max_temp)
+"90
+[; ;can_msgs.c: 90:         if(this_temp > max_temp)
 [e $ ! > -> _this_temp `i -> _max_temp `i 3296  ]
-"92
-[; ;can_msgs.c: 92:         {
+"91
+[; ;can_msgs.c: 91:         {
 {
-"93
-[; ;can_msgs.c: 93:             max_temp = this_temp;
+"92
+[; ;can_msgs.c: 92:             max_temp = this_temp;
 [e = _max_temp _this_temp ]
-"94
-[; ;can_msgs.c: 94:             max_temp_i = temp_i;
+"93
+[; ;can_msgs.c: 93:             max_temp_i = temp_i;
 [e = _max_temp_i _temp_i ]
-"95
-[; ;can_msgs.c: 95:         }
+"94
+[; ;can_msgs.c: 94:         }
 }
 [e :U 3296 ]
-"96
-[; ;can_msgs.c: 96:             total_temp += this_temp;
+"95
+[; ;can_msgs.c: 95:             total_temp += this_temp;
 [e =+ _total_temp -> _this_temp `c ]
-"97
-[; ;can_msgs.c: 97:     }
+"96
+[; ;can_msgs.c: 96:     }
 }
 [e ++ _temp_i -> -> 1 `i `uc ]
 [e $ < -> _temp_i `i + - -> 23 `i -> 0 `i -> 1 `i 3292  ]
 [e :U 3293 ]
 }
-"99
-[; ;can_msgs.c: 99:     uint16_t absolute_therm_id = (80 * module_id) + broadcast_therm_i;
+"98
+[; ;can_msgs.c: 98:     uint16_t absolute_therm_id = (80 * module_id) + broadcast_therm_i;
 [v _absolute_therm_id `us ~T0 @X0 1 a ]
 [e = _absolute_therm_id -> + * -> 80 `i -> _module_id `i -> F23519 `i `us ]
-"100
-[; ;can_msgs.c: 100:     int8_t broadcast_therm_temp = temps_array[broadcast_therm_i];
+"99
+[; ;can_msgs.c: 99:     int8_t broadcast_therm_temp = temps_array[broadcast_therm_i];
 [v _broadcast_therm_temp `c ~T0 @X0 1 a ]
 [e = _broadcast_therm_temp *U + _temps_array * -> F23519 `ux -> -> # *U _temps_array `ui `ux ]
-"102
-[; ;can_msgs.c: 102:     msg_data[0] = absolute_therm_id>>8;
+"101
+[; ;can_msgs.c: 101:     msg_data[0] = absolute_therm_id>>8;
 [e = *U + &U _msg_data * -> -> -> 0 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> >> -> _absolute_therm_id `ui -> 8 `i `uc ]
-"103
-[; ;can_msgs.c: 103:     msg_data[1] = absolute_therm_id & 0xff;
+"102
+[; ;can_msgs.c: 102:     msg_data[1] = absolute_therm_id & 0xff;
 [e = *U + &U _msg_data * -> -> -> 1 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> & -> _absolute_therm_id `ui -> -> 255 `i `ui `uc ]
-"104
-[; ;can_msgs.c: 104:     msg_data[2] = (uint8_t)broadcast_therm_temp;
+"103
+[; ;can_msgs.c: 103:     msg_data[2] = (uint8_t)broadcast_therm_temp;
 [e = *U + &U _msg_data * -> -> -> 2 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> _broadcast_therm_temp `uc ]
-"105
-[; ;can_msgs.c: 105:     msg_data[3] = (23 - 0 + 1);
+"104
+[; ;can_msgs.c: 104:     msg_data[3] = (23 - 0 + 1);
 [e = *U + &U _msg_data * -> -> -> 3 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> + - -> 23 `i -> 0 `i -> 1 `i `uc ]
-"106
-[; ;can_msgs.c: 106:     msg_data[4] = (uint8_t)min_temp;
+"105
+[; ;can_msgs.c: 105:     msg_data[4] = (uint8_t)min_temp;
 [e = *U + &U _msg_data * -> -> -> 4 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> _min_temp `uc ]
-"107
-[; ;can_msgs.c: 107:     msg_data[5] = (uint8_t)max_temp;
+"106
+[; ;can_msgs.c: 106:     msg_data[5] = (uint8_t)max_temp;
 [e = *U + &U _msg_data * -> -> -> 5 `i `ui `ux -> -> # *U &U _msg_data `ui `ux -> _max_temp `uc ]
-"108
-[; ;can_msgs.c: 108:     msg_data[6] = max_temp_i;
+"107
+[; ;can_msgs.c: 107:     msg_data[6] = max_temp_i;
 [e = *U + &U _msg_data * -> -> -> 6 `i `ui `ux -> -> # *U &U _msg_data `ui `ux _max_temp_i ]
-"109
-[; ;can_msgs.c: 109:     msg_data[7] = min_temp_i;
+"108
+[; ;can_msgs.c: 108:     msg_data[7] = min_temp_i;
 [e = *U + &U _msg_data * -> -> -> 7 `i `ui `ux -> -> # *U &U _msg_data `ui `ux _min_temp_i ]
+"111
+[; ;can_msgs.c: 111:     msg.msgId = 0x1838F380 + module_id;
+[e = . _msg 0 -> + -> 406385536 `l -> _module_id `l `ul ]
 "112
-[; ;can_msgs.c: 112:     msg.msgId = 0x1838F380 | module_id;
-[e = . _msg 0 -> | -> 406385536 `l -> _module_id `l `ul ]
-"113
-[; ;can_msgs.c: 113:     msg.field.formatType = CAN_2_0_FORMAT;
+[; ;can_msgs.c: 112:     msg.field.formatType = CAN_2_0_FORMAT;
 [e = . . . _msg 1 1 3 -> . `E23390 0 `uc ]
-"114
-[; ;can_msgs.c: 114:     msg.field.brs = CAN_NON_BRS_MODE;
+"113
+[; ;can_msgs.c: 113:     msg.field.brs = CAN_NON_BRS_MODE;
 [e = . . . _msg 1 1 4 -> . `E23378 0 `uc ]
-"115
-[; ;can_msgs.c: 115:     msg.field.dlc = DLC_8;
+"114
+[; ;can_msgs.c: 114:     msg.field.dlc = DLC_8;
 [e = . . . _msg 1 1 2 -> . `E23419 8 `uc ]
-"116
-[; ;can_msgs.c: 116:     msg.field.frameType = CAN_FRAME_DATA;
+"115
+[; ;can_msgs.c: 115:     msg.field.frameType = CAN_FRAME_DATA;
 [e = . . . _msg 1 1 1 -> . `E23386 0 `uc ]
-"117
-[; ;can_msgs.c: 117:     msg.field.idType = CAN_FRAME_EXT;
+"116
+[; ;can_msgs.c: 116:     msg.field.idType = CAN_FRAME_EXT;
 [e = . . . _msg 1 1 0 -> . `E23382 1 `uc ]
-"118
-[; ;can_msgs.c: 118:     msg.data = msg_data;
+"117
+[; ;can_msgs.c: 117:     msg.data = msg_data;
 [e = . _msg 2 &U _msg_data ]
-"122
-[; ;can_msgs.c: 122:     if(++broadcast_therm_i >= (23 - 0 + 1)) {
+"121
+[; ;can_msgs.c: 121:     if(++broadcast_therm_i >= (23 - 0 + 1)) {
 [e $ ! >= -> =+ F23519 -> -> 1 `i `uc `i + - -> 23 `i -> 0 `i -> 1 `i 3297  ]
 {
-"123
-[; ;can_msgs.c: 123:         broadcast_therm_i = 0;
+"122
+[; ;can_msgs.c: 122:         broadcast_therm_i = 0;
 [e = F23519 -> -> 0 `i `uc ]
-"124
-[; ;can_msgs.c: 124:     }
+"123
+[; ;can_msgs.c: 123:     }
 }
 [e :U 3297 ]
-"126
-[; ;can_msgs.c: 126:     return msg;
+"125
+[; ;can_msgs.c: 125:     return msg;
 [e ) _msg ]
 [e $UE 3291  ]
-"127
-[; ;can_msgs.c: 127: }
+"126
+[; ;can_msgs.c: 126: }
 [e :UE 3291 ]
 }

@@ -39234,9 +39234,6 @@ void OSCILLATOR_Initialize(void);
 # 98 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 35 "./config.h" 2
-
-
-static uint8_t module_id = 1;
 # 44 "main.c" 2
 
 # 1 "./can_msgs.h" 1
@@ -39249,9 +39246,9 @@ static uint8_t broadcast_therm_i = 0;
 
 int8_t get_checksum(int8_t* data, uint8_t len);
 # 56 "./can_msgs.h"
-CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[]);
+CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[], uint8_t module_id);
 # 68 "./can_msgs.h"
-CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[]);
+CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[], uint8_t module_id);
 # 45 "main.c" 2
 
 # 1 "./therm_LUT.h" 1
@@ -43391,7 +43388,7 @@ int8_t adc_to_temp(adc_result_t reading)
  return therm_lut[reading];
 }
 
-
+uint8_t module_id;
 int8_t temps[(23 - 0 + 1)];
 
 void main(void)
@@ -43404,10 +43401,10 @@ void main(void)
  ADC_SelectContext(CONTEXT_1);
 
 
-
-
-
-
+    module_id = (1 - PORTDbits.RD2) * 1 +
+                (1 - PORTDbits.RD3) * 2 +
+                (1 - PORTDbits.RD4) * 4 +
+                (1 - PORTDbits.RD5) * 8 + 1;
 
     while (1)
     {
@@ -43436,12 +43433,12 @@ void main(void)
       if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ)))
       {
 
-    msg = get_TM2BMS_Broadcast_msg(temps);
+    msg = get_TM2BMS_Broadcast_msg(temps, module_id);
     CAN1_Transmit(TXQ, &msg);
     while(CAN1_TransmitFIFOStatusGet(TXQ) == CAN_TX_FIFO_FULL);
 
 
-    msg = get_TM_General_Broadcast_msg(temps);
+    msg = get_TM_General_Broadcast_msg(temps, module_id);
     CAN1_Transmit(TXQ, &msg);
     while (CAN1_TransmitFIFOStatusGet(TXQ) == CAN_TX_FIFO_FULL);
       }

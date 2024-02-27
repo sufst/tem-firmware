@@ -7,7 +7,6 @@
 #include "config.h"
 
 static uint8_t msg_data[8];
-extern uint8_t module_id;
 
 uint8_t get_checksum(uint8_t* data, uint8_t len) {
     uint8_t sum = 0;
@@ -18,7 +17,7 @@ uint8_t get_checksum(uint8_t* data, uint8_t len) {
 }
 
 
-CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[]) {
+CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[], uint8_t module_id) {
     CAN_MSG_OBJ msg;
     
     //calculate data
@@ -57,7 +56,7 @@ CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[]) {
     msg_data[7] = get_checksum((uint8_t*)msg_data, 7) + 0x41;
     
     // assemble packet
-    msg.msgId = 0x1839F380 | module_id;
+    msg.msgId = 0x1839F380 + module_id;
     msg.field.formatType = CAN_2_0_FORMAT;
     msg.field.brs = CAN_NON_BRS_MODE;
     msg.field.dlc = DLC_8;
@@ -69,7 +68,7 @@ CAN_MSG_OBJ get_TM2BMS_Broadcast_msg(int8_t temps_array[]) {
 }
 
 
-CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[]) {
+CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[], uint8_t module_id) {
     static uint8_t broadcast_therm_i;
     
     CAN_MSG_OBJ msg;
@@ -109,7 +108,7 @@ CAN_MSG_OBJ get_TM_General_Broadcast_msg(int8_t temps_array[]) {
     msg_data[7] = min_temp_i;
     
     // assemble packet
-    msg.msgId = 0x1838F380 | module_id;
+    msg.msgId = 0x1838F380 + module_id;
     msg.field.formatType = CAN_2_0_FORMAT;
     msg.field.brs = CAN_NON_BRS_MODE;
     msg.field.dlc = DLC_8;
